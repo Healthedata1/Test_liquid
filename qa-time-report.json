@@ -1,5 +1,5 @@
 {
-  "date" : "Tue, 19 Sep, 2023 17:35:25 +0000",
+  "date" : "Tue, 19 Sep, 2023 21:06:11 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
@@ -8,53 +8,43 @@
       "processes" : [
         {
           "activity" : "load",
-          "start" : 147,
-          "length" : 809
+          "start" : 132,
+          "length" : 731
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 148,
+          "start" : 133,
           "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 148,
-          "length" : 762
+          "start" : 133,
+          "length" : 768
         },
         {
           "activity" : "validate",
-          "start" : 149,
-          "length" : 3067
+          "start" : 133,
+          "length" : 3101
         },
         {
-          "activity" : "validate",
-          "start" : 152,
+          "activity" : "scanForUsageStats",
+          "start" : 136,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 153,
-          "length" : 165
+          "start" : 138,
+          "length" : 161
         },
         {
           "activity" : "generate2",
-          "start" : 156,
-          "length" : 264
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 196,
-          "length" : 1
+          "start" : 140,
+          "length" : 296
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 196,
-          "length" : 2
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 207,
-          "length" : 1
+          "start" : 181,
+          "length" : 3
         }
       ]
     },
@@ -64,33 +54,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 147,
-          "length" : 45
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 148,
-          "length" : 1
+          "start" : 132,
+          "length" : 44
         },
         {
           "activity" : "generateNarratives",
-          "start" : 149,
-          "length" : 14
+          "start" : 133,
+          "length" : 13
         },
         {
           "activity" : "validate",
-          "start" : 152,
-          "length" : 331
+          "start" : 136,
+          "length" : 251
         },
         {
           "activity" : "generate1",
-          "start" : 154,
-          "length" : 26
+          "start" : 138,
+          "length" : 16
         },
         {
           "activity" : "generate2",
-          "start" : 157,
-          "length" : 30
+          "start" : 140,
+          "length" : 54
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 191,
+          "length" : 2
         }
       ]
     }

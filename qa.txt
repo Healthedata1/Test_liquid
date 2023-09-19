@@ -3,7 +3,7 @@
 
 err = 0, warn = 1, info = 3
 IG Publisher Version: 1.4.6
-Generated Tue Sep 19 17:36:25 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
+Generated Tue Sep 19 21:07:11 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
  Build Errors : 5 / 0 / 0
  /home/runner/work/Test_liquid/Test_liquid/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox : 0 / 1 / 1
  /home/runner/work/Test_liquid/Test_liquid/input/examples/patient-deceased-example : 0 / 0 / 4
