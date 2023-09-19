@@ -73,8 +73,8 @@ pages:
   downloads.md:
     title: Downloads
 
-  ImplementationGuide-healthedata1-sandbox.md:
-    title: CDex ImplementationGuide Resource
+  ImplementationGuide.md:
+    title: ImplementationGuide Resource
 
   changes.md:
     title: Change Log
@@ -130,4 +130,4 @@ menu:
   Artifact Index: artifacts.html
   Downloads: downloads.html
   Change Log: changes.html
-  IG Page: 'ImplementationGuide-healthedata1-sandbox.html'
+  IG Page: 'ImplementationGuide.html'
