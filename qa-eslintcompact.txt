@@ -8,6 +8,6 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 0, warn = 1, info = 5
+err = 1, warn = 1, info = 6
 IG Publisher Version: 1.4.6
-Generated Tue Sep 19 22:28:31 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
+Generated Tue Sep 19 22:46:46 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)

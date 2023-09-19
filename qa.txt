@@ -1,20 +1,22 @@
 ﻿HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 0, warn = 1, info = 5
+err = 1, warn = 1, info = 6
 IG Publisher Version: 1.4.6
-Generated Tue Sep 19 22:28:31 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
- Build Errors : 5 / 0 / 0
+Generated Tue Sep 19 22:46:46 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
+ Build Errors : 6 / 0 / 1
  /home/runner/work/Test_liquid/Test_liquid/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox : 0 / 1 / 1
  /home/runner/work/Test_liquid/Test_liquid/input/examples/patient-deceased-example : 0 / 0 / 4
  /home/runner/work/Test_liquid/Test_liquid/input/examples/practitioner-1 : 0 / 0 / 3
 </table>
 == n/a ==
+ERROR: /home/runner/work/Test_liquid/Test_liquid/output/liquid/foo.html: Root node must be 'html' or 'div', but is p
 ERROR: /home/runner/work/Test_liquid/Test_liquid/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 192, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: /home/runner/work/Test_liquid/Test_liquid/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 193, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
 ERROR: /home/runner/work/Test_liquid/Test_liquid/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 178, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
 ERROR: /home/runner/work/Test_liquid/Test_liquid/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 198, column 8: The link 'csvs.zip' for "CSV(compressed folder)" cannot be resolved
 ERROR: /home/runner/work/Test_liquid/Test_liquid/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 213, column 8: The link 'schematrons.zip' for "Schematrons(compressed folder)" cannot be resolved
+INFORMATION: /home/runner/work/Test_liquid/Test_liquid/output/liquid/foo.html: The html source does not contain the publish box; this is recommended for publishing support
 == fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json ==
 WARNING: /home/runner/work/Test_liquid/Test_liquid/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox: Unknown Parameters: [apply-wg=true]
 == input/examples/patient-deceased-example.json ==

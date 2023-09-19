@@ -1,5 +1,5 @@
 {
-  "date" : "Tue, 19 Sep, 2023 22:27:47 +0000",
+  "date" : "Tue, 19 Sep, 2023 22:45:43 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
@@ -8,62 +8,47 @@
       "processes" : [
         {
           "activity" : "load",
-          "start" : 113,
-          "length" : 616
+          "start" : 148,
+          "length" : 1370
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 113,
-          "length" : 5
+          "start" : 149,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 113,
-          "length" : 697
+          "start" : 149,
+          "length" : 1273
         },
         {
           "activity" : "validate",
-          "start" : 114,
-          "length" : 2414
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 116,
-          "length" : 1
+          "start" : 151,
+          "length" : 3757
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 116,
-          "length" : 1
-        },
-        {
-          "activity" : "processProvenanceDetails",
-          "start" : 117,
+          "start" : 154,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 117,
-          "length" : 131
+          "start" : 157,
+          "length" : 225
         },
         {
           "activity" : "generate2",
-          "start" : 119,
-          "length" : 224
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 149,
-          "length" : 1
+          "start" : 160,
+          "length" : 310
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 149,
-          "length" : 3
+          "start" : 201,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 156,
+          "start" : 211,
           "length" : 1
         }
       ]
@@ -74,33 +59,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 112,
-          "length" : 19
+          "start" : 148,
+          "length" : 31
         },
         {
-          "activity" : "loadInfo",
-          "start" : 113,
+          "activity" : "load-configure",
+          "start" : 148,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 114,
+          "start" : 151,
           "length" : 12
         },
         {
           "activity" : "validate",
-          "start" : 116,
-          "length" : 146
+          "start" : 154,
+          "length" : 347
         },
         {
           "activity" : "generate1",
-          "start" : 118,
-          "length" : 15
+          "start" : 157,
+          "length" : 17
         },
         {
           "activity" : "generate2",
-          "start" : 119,
-          "length" : 25
+          "start" : 160,
+          "length" : 48
         }
       ]
     },
@@ -110,33 +95,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 113,
-          "length" : 36
+          "start" : 148,
+          "length" : 77
         },
         {
-          "activity" : "checkR4R4B",
-          "start" : 113,
+          "activity" : "load",
+          "start" : 148,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 114,
-          "length" : 7
+          "start" : 151,
+          "length" : 9
         },
         {
           "activity" : "validate",
-          "start" : 117,
-          "length" : 214
+          "start" : 155,
+          "length" : 345
         },
         {
           "activity" : "generate1",
-          "start" : 118,
-          "length" : 23
+          "start" : 157,
+          "length" : 22
         },
         {
           "activity" : "generate2",
-          "start" : 119,
-          "length" : 47
+          "start" : 160,
+          "length" : 55
         }
       ]
     }
