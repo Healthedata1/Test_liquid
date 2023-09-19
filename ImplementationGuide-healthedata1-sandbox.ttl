@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-19T21:06:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-19T22:27:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -729,6 +729,21 @@
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
        ] ;
        fhir:groupingId [ fhir:v "TestExamples" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/Practitioner/practitioner-1> ;
+         fhir:reference [ fhir:v "Practitioner/practitioner-1" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner 1 Example" ] ;
+       fhir:description [ fhir:v "This is a practitioner 1 example for the *US Core Practitioner Profile*." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

@@ -2,10 +2,12 @@
 /home/runner/work/Test_liquid/Test_liquid/input/examples/patient-deceased-example.json: line 25, col 22, Info - The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated (UNKNOWN)
 /home/runner/work/Test_liquid/Test_liquid/input/examples/patient-deceased-example.json: line 33, col 22, Info - The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated (UNKNOWN)
 /home/runner/work/Test_liquid/Test_liquid/input/examples/patient-deceased-example.json: line 50, col 22, Info - The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated (UNKNOWN)
+/home/runner/work/Test_liquid/Test_liquid/input/examples/practitioner-1.json: line 24, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0 (INFORMATIONAL)
+/home/runner/work/Test_liquid/Test_liquid/input/examples/practitioner-1.json: line 32, col 30, Info - Code System URI 'https://www.usps.com' is unknown so the code cannot be validated (UNKNOWN)
 
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 0, warn = 1, info = 3
+err = 0, warn = 1, info = 5
 IG Publisher Version: 1.4.6
-Generated Tue Sep 19 21:07:11 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
+Generated Tue Sep 19 22:28:31 UTC 2023. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)

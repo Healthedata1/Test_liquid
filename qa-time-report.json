@@ -1,50 +1,106 @@
 {
-  "date" : "Tue, 19 Sep, 2023 21:06:11 +0000",
+  "date" : "Tue, 19 Sep, 2023 22:27:47 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json",
-      "size" : 4982,
+      "size" : 5326,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 132,
-          "length" : 731
+          "start" : 113,
+          "length" : 616
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 133,
+          "start" : 113,
           "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 133,
-          "length" : 768
+          "start" : 113,
+          "length" : 697
         },
         {
           "activity" : "validate",
-          "start" : 133,
-          "length" : 3101
+          "start" : 114,
+          "length" : 2414
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 116,
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 136,
+          "start" : 116,
+          "length" : 1
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 117,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 138,
-          "length" : 161
+          "start" : 117,
+          "length" : 131
         },
         {
           "activity" : "generate2",
-          "start" : 140,
-          "length" : 296
+          "start" : 119,
+          "length" : 224
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 149,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 181,
+          "start" : 149,
           "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 156,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/practitioner-1.json",
+      "size" : 1829,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 112,
+          "length" : 19
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 113,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 114,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 116,
+          "length" : 146
+        },
+        {
+          "activity" : "generate1",
+          "start" : 118,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 119,
+          "length" : 25
         }
       ]
     },
@@ -54,33 +110,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 132,
-          "length" : 44
+          "start" : 113,
+          "length" : 36
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 113,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 133,
-          "length" : 13
+          "start" : 114,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 136,
-          "length" : 251
+          "start" : 117,
+          "length" : 214
         },
         {
           "activity" : "generate1",
-          "start" : 138,
-          "length" : 16
+          "start" : 118,
+          "length" : 23
         },
         {
           "activity" : "generate2",
-          "start" : 140,
-          "length" : 54
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 191,
-          "length" : 2
+          "start" : 119,
+          "length" : 47
         }
       ]
     }

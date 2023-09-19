@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 5, errors = 0, warn = 1, info = 3-->
+<!-- broken links = 5, errors = 0, warn = 1, info = 5-->
 <head>
   <title>HealthEData_1Sandbox : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,12 +36,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for HealthEData_1Sandbox</h1>
- <p>Generated Tue Sep 19 21:07:11 UTC 2023, FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = <a href="http://www.fhir.org/guides/healthedata1-sandbox">http://www.fhir.org/guides/healthedata1-sandbox</a> (<a href="http://www.fhir.org/guides/healthedata1-sandbox/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Tue Sep 19 22:28:31 UTC 2023, FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = <a href="http://www.fhir.org/guides/healthedata1-sandbox">http://www.fhir.org/guides/healthedata1-sandbox</a> (<a href="http://www.fhir.org/guides/healthedata1-sandbox/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.4.6</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = healthedata1-sandbox, Canonical = http://www.fhir.org/guides/healthedata1-sandbox</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from http://www.fhir.org/guides/healthedata1-sandbox/package-list.json?nocache=1695157631010 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from http://www.fhir.org/guides/healthedata1-sandbox/package-list.json?nocache=1695162511222 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
@@ -88,14 +88,14 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
   </li>
   <li>
 hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (1 uses)
+ (2 uses)
   </li>
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://www.fhir.org/guides/healthedata1-sandbox (Problem #1 with package-list.json at http://www.fhir.org/guides/healthedata1-sandbox: Invalid HTTP response 404 from http://www.fhir.org/guides/healthedata1-sandbox/package-list.json?nocache=1695157570429 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://www.fhir.org/guides/healthedata1-sandbox (Problem #1 with package-list.json at http://www.fhir.org/guides/healthedata1-sandbox: Invalid HTTP response 404 from http://www.fhir.org/guides/healthedata1-sandbox/package-list.json?nocache=1695162462228 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 1, info = 3, broken links = 5</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 1, info = 5, broken links = 5</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -157,6 +157,14 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Patient-deceased-example.html">input/examples/patient-deceased-example.json</a></td><td><b>The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Practitioner-practitioner-1.html">input/examples/practitioner-1.json</a></td><td><b>Code System URI 'https://www.usps.com' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 </body>

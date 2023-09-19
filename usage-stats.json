@@ -6,10 +6,12 @@
   "profiles": {},
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "Patient.meta"
+      "Patient.meta",
+      "Practitioner.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "Patient.meta"
+      "Patient.meta",
+      "Practitioner.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
       "ImplementationGuide"
@@ -37,6 +39,9 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction": [
+      "Practitioner.identifier"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"

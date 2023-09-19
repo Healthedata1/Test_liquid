@@ -18,7 +18,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2023-09-19T21:06:11+00:00",
+  "date" : "2023-09-19T22:27:47+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -834,6 +834,18 @@
       "description" : "This is a deceased patient example for the *US Core Patient Profile*.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
       "groupingId" : "TestExamples"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner-1"
+      },
+      "name" : "Practitioner 1 Example",
+      "description" : "This is a practitioner 1 example for the *US Core Practitioner Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
     }],
     "page" : {
       "extension" : [{
