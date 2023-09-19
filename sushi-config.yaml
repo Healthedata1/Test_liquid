@@ -32,7 +32,10 @@ description: This is a **Healthedata1** sandbox for creation of resources and ex
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 5.0.1
+  hl7.fhir.us.core:
+    uri: 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core'
+    id: uscore
+    version: 6.1.0
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.uv.bulkdata: 2.0.0
   hl7.fhir.uv.smart-app-launch: 2.0.0
@@ -51,7 +54,7 @@ groups:
     name: Test Examples 
     description: Examples for Testing Stuff Out!!!
     resources:
-      # - Patient/deceased-example
+      - Patient/deceased-example
 
 
 
@@ -96,10 +99,9 @@ parameters:
   #  value: #path #A relative path that contains liquid templates for generating narrative
   path-liquid: input/images/liquid
   excludexml: true
-  escludejsn: false
+  excludejson: false
   excludettl: true
   excludemap: true
-  excludeexample: true
   # custom parameter also possible too
   #foo: bar
   # no-narrative:

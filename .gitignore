@@ -15,7 +15,7 @@ Thumbs.db
 /_genonce.sh
 /_updatePublisher.bat
 /_updatePublisher.sh
-/resources-yaml
-/examples-yaml
+# /resources-yaml
+# /examples-yaml
 /scripts
 /.github

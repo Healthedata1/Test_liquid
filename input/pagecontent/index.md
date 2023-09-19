@@ -6,7 +6,7 @@ testbed for ideas....
 
 using http:
 
-[US Core](http://hl7.org/fhir/us/core/STU4/index.html)
+[US Core]({{site.data.fhir.uscore}})
 
 [FHIR](http://hl7.org/fhir/)
 
@@ -27,7 +27,7 @@ using path variable
 using http:
 
 
-- [US Core](http://hl7.org/fhir/us/core/STU4/index.html)
+- [US Core]({{site.data.fhir.uscore}})
 - [FHIR](http://hl7.org/fhir/)
 
 using https:
@@ -41,7 +41,7 @@ using http:
 
 |link|
 |---|
-|[US Core](http://hl7.org/fhir/us/core/STU4/index.html)|
+|[US Core]({{site.data.fhir.uscore}})|
 |[FHIR](http://hl7.org/fhir/)|
 {:.grid}
 
