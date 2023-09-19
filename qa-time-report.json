@@ -1,0 +1,62 @@
+{
+  "date" : "Tue, 19 Sep, 2023 02:02:21 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json",
+      "size" : 4689,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 155,
+          "length" : 1174
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 156,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 156,
+          "length" : 1166
+        },
+        {
+          "activity" : "validate",
+          "start" : 157,
+          "length" : 3258
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 160,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 162,
+          "length" : 169
+        },
+        {
+          "activity" : "generate2",
+          "start" : 165,
+          "length" : 305
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 201,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 202,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 211,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}
