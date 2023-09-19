@@ -5,6 +5,12 @@
   "extensions": [],
   "profiles": {},
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "Patient.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "Patient.meta"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
       "ImplementationGuide"
     ],
@@ -25,6 +31,15 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
     ]
   }
 }

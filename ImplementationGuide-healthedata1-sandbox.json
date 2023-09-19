@@ -18,7 +18,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2023-09-19T02:02:21+00:00",
+  "date" : "2023-09-19T17:02:29+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -51,10 +51,10 @@
     "version" : "1.0.0"
   },
   {
-    "id" : "hl7_fhir_us_core",
+    "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "5.0.1"
+    "version" : "6.1.0"
   },
   {
     "id" : "hl7_fhir_uv_sdc",
@@ -178,7 +178,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "escludejsn"
+        "valueString" : "excludejson"
       },
       {
         "url" : "value",
@@ -201,17 +201,6 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "excludemap"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludeexample"
       },
       {
         "url" : "value",
@@ -409,6 +398,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "active-tables"
       },
       {
@@ -545,7 +545,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "escludejsn"
+        "valueCode" : "excludejson"
       },
       {
         "url" : "value",
@@ -568,17 +568,6 @@
       "extension" : [{
         "url" : "code",
         "valueCode" : "excludemap"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "excludeexample"
       },
       {
         "url" : "value",
@@ -776,6 +765,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -821,6 +821,19 @@
       "id" : "TestExamples",
       "name" : "Test Examples",
       "description" : "Examples for Testing Stuff Out!!!"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/deceased-example"
+      },
+      "name" : "Deceased Patient Example",
+      "description" : "This is a deceased patient example for the *US Core Patient Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+      "groupingId" : "TestExamples"
     }],
     "page" : {
       "extension" : [{
