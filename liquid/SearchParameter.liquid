@@ -42,7 +42,6 @@
                 <li>"ap" <i>{{ SearchParameter.comparator[8] }}</i> (Conformance Expectation = {{ SearchParameter.comparator.extension[8].value }})</li>
             </ul>
     {% endif %}
-
     {% if SearchParameter.modifier %}
          <!-- not able to iterate or index in liquid due to limitations in the FHIR builds liquid implementation -->
         <p><b>modifier codes</b> :</p>
