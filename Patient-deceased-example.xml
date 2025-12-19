@@ -12,7 +12,18 @@
     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b style="color: maroon">Exception generating Narrative: Script template: Error reading include: foo.html: Error reading include: {1}</b></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+
+		    <!-- <h2>SearchParameter: </h2>
+				<b> description</b> : 
+			<br/> -->
+			<p>
+				<b> id</b> deceased-example</p>
+  <p>BAR</p>
+
+
+    <!-- this include does not work :-(
+  nor does "{ % comment % } my comment { % endcomment % }" :-( --></div>
   </text>
   <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
     <extension url="ombCategory">

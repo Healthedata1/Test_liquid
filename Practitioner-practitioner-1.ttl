@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,37 +11,61 @@
   fhir:id [ fhir:v "practitioner-1"] ; # 
   fhir:meta [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Practitioner 1 Example" ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-name>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Practitioner 1 Example"
+       ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "This is a practitioner 1 example for the *US Core Practitioner Profile*." ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-description>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+       ]
      ] ) ;
      fhir:profile ( [
        fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception generating Narrative: Script template: Unknown flow control statement 'comment'</b></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception generating Narrative: Script template: Unknown flow control statement 'comment'</b></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/sid/us-npi>
+     ] ;
      fhir:value [ fhir:v "9941339100" ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction>
+       ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [ fhir:v "https://www.usps.com"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "https://www.usps.com"^^xsd:anyURI ;
+             fhir:l <https://www.usps.com>
+           ] ;
            fhir:code [ fhir:v "MA" ]
          ] ) ;
          fhir:text [ fhir:v "Massachusetts" ]
        ]
      ] ) ;
-     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ;
+       fhir:l <http://www.acme.org/practitioners>
+     ] ;
      fhir:value [ fhir:v "25456" ]
   ] ) ; # 
   fhir:name ( [

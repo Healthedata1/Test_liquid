@@ -14,7 +14,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception generating Narrative: Script template: Error reading include: foo.html: Error reading include: {1}</b></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n\t\t    <!-- <h2>SearchParameter: </h2>\n\t\t\t\t<b> description</b> : \n\t\t\t<br/> -->\n\t\t\t<p>\n\t\t\t\t<b> id</b> deceased-example</p>\n  <p>BAR</p>\n\n\n    <!-- this include does not work :-(\n  nor does \"{ % comment % } my comment { % endcomment % }\" :-( --></div>"
   },
   "extension" : [{
     "extension" : [{

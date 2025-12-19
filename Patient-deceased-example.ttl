@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,72 +11,126 @@
   fhir:id [ fhir:v "deceased-example"] ; # 
   fhir:meta [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Deceased Patient Example" ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-name>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Deceased Patient Example"
+       ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "This is a deceased patient example for the *US Core Patient Profile*." ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-description>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "This is a deceased patient example for the *US Core Patient Profile*."
+       ]
      ] ) ;
      fhir:profile ( [
        fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception generating Narrative: Script template: Error reading include: foo.html: Error reading include: {1}</b></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n		    <!-- <h2>SearchParameter: </h2>\n				<b> description</b> : \n			<br/> -->\n			<p>\n				<b> id</b> deceased-example</p>\n  <p>BAR</p>\n\n\n    <!-- this include does not work :-(\n  nor does \"{ % comment % } my comment { % endcomment % }\" :-( --></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "ombCategory"^^xsd:anyURI ;
+         fhir:l fhir:ombCategory
+       ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ;
+           fhir:l <urn:oid:2.16.840.1.113883.6.238>
+         ] ;
          fhir:code [ fhir:v "2106-3" ] ;
          fhir:display [ fhir:v "White" ]
        ]
      ] [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "ombCategory"^^xsd:anyURI ;
+         fhir:l fhir:ombCategory
+       ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ;
+           fhir:l <urn:oid:2.16.840.1.113883.6.238>
+         ] ;
          fhir:code [ fhir:v "2028-9" ] ;
          fhir:display [ fhir:v "Asian" ]
        ]
      ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Mixed" ]
+       fhir:url [
+         fhir:v "text"^^xsd:anyURI ;
+         fhir:l fhir:text
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Mixed"
+       ]
      ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-race>
+     ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "ombCategory"^^xsd:anyURI ;
+         fhir:l fhir:ombCategory
+       ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ;
+           fhir:l <urn:oid:2.16.840.1.113883.6.238>
+         ] ;
          fhir:code [ fhir:v "2186-5" ] ;
          fhir:display [ fhir:v "Not Hispanic or Latino" ]
        ]
      ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Not Hispanic or Latino" ]
+       fhir:url [
+         fhir:v "text"^^xsd:anyURI ;
+         fhir:l fhir:text
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Not Hispanic or Latino"
+       ]
      ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity>
+     ]
   ] ) ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "usual" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
          fhir:code [ fhir:v "MR" ] ;
          fhir:display [ fhir:v "Medical Record Number" ]
        ] ) ;
        fhir:text [ fhir:v "Medical Record Number" ]
      ] ;
-     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ;
+       fhir:l <http://hospital.smarthealthit.org>
+     ] ;
      fhir:value [ fhir:v "55555555" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:family [ fhir:v "Shaw" ] ;
      fhir:given ( [ fhir:v "Mary" ] [ fhir:v "A." ] )
@@ -90,7 +145,10 @@
   ] ) ; # 
   fhir:gender [ fhir:v "female"] ; # 
   fhir:birthDate [ fhir:v "1937-10-21"^^xsd:date] ; # 
-  fhir:deceased [ fhir:v "2022-07-22"^^xsd:date] ; # 
+  fhir:deceased [
+     a fhir:DateTime ;
+     fhir:v "2022-07-22"^^xsd:date
+  ] ; # 
   fhir:address ( [
      fhir:line ( [ fhir:v "49 Meadow St" ] ) ;
      fhir:city [ fhir:v "Mounds" ] ;
