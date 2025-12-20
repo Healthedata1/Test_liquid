@@ -1,5 +1,9 @@
 [deceased-example]: Patient-deceased-example.html
 [practitioner-1]: Practitioner-practitioner-1.html
+[UsCoreClientCapabilityStatement]: CapabilityStatement-us-core-client.html
+[UsCoreClientCapabilityStatementLiquid]: CapabilityStatement-us-core-client-liquid.html
+[UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html
+[UsCoreServerCapabilityStatementLiquid]: CapabilityStatement-us-core-server-liquid.html
 [USCoreAllergyintoleranceClinicalStatus]: SearchParameter-us-core-allergyintolerance-clinical-status.html
 [USCoreAllergyintolerancePatient]: SearchParameter-us-core-allergyintolerance-patient.html
 [USCoreCareplanCategory]: SearchParameter-us-core-careplan-category.html
