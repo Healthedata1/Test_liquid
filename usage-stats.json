@@ -6,6 +6,8 @@
   "profiles": {},
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/artifact-reference": [
+      "CapabilityStatement.implementationGuide",
+      "CapabilityStatement.rest.resource.operation",
       "CapabilityStatement.rest.resource.supportedProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [

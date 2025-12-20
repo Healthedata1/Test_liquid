@@ -110,6 +110,13 @@ This Section describes the expected capabilities of the US Core Server actor whi
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
           "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reference",
+          "valueReference" : {
+            "reference" : "https://hl7.org/fhir/smart-app-launch/STU2/index.html",
+            "display" : "SMART App Launch version 2.0.0 and later"
+          }
         }
       ]
     }
@@ -2207,6 +2214,13 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 {
                   "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode" : "SHALL"
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reference",
+                  "valueReference" : {
+                    "reference" : "OperationDefinition-docref.html",
+                    "display" : "$docref"
+                  }
                 }
               ],
               "name" : "docref",
@@ -6957,6 +6971,13 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 {
                   "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode" : "SHOULD"
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reference",
+                  "valueReference" : {
+                    "reference" : "https://hl7.org/fhir/R4/valueset-operation-expand.html",
+                    "display" : "$expand"
+                  }
                 }
               ],
               "name" : "expand",
