@@ -10,7 +10,13 @@
 | :--- |
 | *Page standards status:*[Informative](http://hl7.org/fhir/R4/versions.html#std-process) |
 
-**Exception generating Narrative: Script template: Unknown flow control statement 'comment'**
+Test whether can access site data
+
+site.data.ig.id = ****** (should be healthedata1-sandbox) 
+
+Test whether it creates links magically 
+
+ `http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|9.0.0-ballot` = http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|9.0.0-ballot (should link to profile in 8.0.1) 
 
 
 

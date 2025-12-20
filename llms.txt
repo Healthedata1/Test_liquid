@@ -11,6 +11,13 @@
 
 ## Resources
 
+### CapabilityStatements
+
+* [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md)
+* [US Core Client CapabilityStatement](CapabilityStatement-us-core-client.md)
+* [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md)
+* [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md)
+
 ### ImplementationGuides
 
 * [Health eData 1 Sandbox](index.md)
