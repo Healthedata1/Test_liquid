@@ -71,7 +71,7 @@
                 {% if cs.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() %}
                   <strong>{{cs.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong> support
                 {% endif %}
-                {{cs}}
+                {% if cs.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').exists() %}<a href="{{ cs.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}">{{ cs.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</a>{% else %}{{ig}}{% endif %}
               </li>
             {% endfor %}
           </ul>
@@ -88,7 +88,7 @@
                 {% if cs.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() %}
                   <strong>{{cs.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong> support
                 {% endif %}
-                {{cs}}
+                {% if cs.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').exists() %}<a href="{{ cs.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}">{{ cs.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</a>{% else %}{{ig}}{% endif %}
               </li>
             {% endfor %}
           </ul>
@@ -105,7 +105,7 @@
                 {% if ig.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() %}
                   <strong>{{ig.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong> support
                 {% endif %}
-                {{ig}}
+                {% if ig.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').exists() %}<a href="{{ ig.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}">{{ ig.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</a>{% else %}{{ig}}{% endif %}
               </li>
             {% endfor %}
           </ul>
@@ -116,8 +116,8 @@
    </table>
   {% endif %}
 
-  <br/>
-  <!-- TODO - Make this a summary of capabilities, including system wide and each paradigm
+  <!-- <br/>
+   TODO - Make this a summary of capabilities, including system wide and each paradigm
   <p>
     <b>Jump to:</b>
   </p>
@@ -137,7 +137,7 @@
 
   <!--  REST Capabilities -->
   {% for Arest in rest %}
-    <br/>
+   <!-- <br/> -->
     <a name="{{Arest.mode}}"> </a>
     <h3 id="behavior">FHIR {{Arest.mode | capitalize }} RESTful Capabilities</h3>
     {% if Arest.documentation.exists() %}
@@ -174,13 +174,13 @@
               {% if rest_cap.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() %}
                 <strong>{{rest_cap.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong> support the
               {% endif %}
-              <code>{{rest_cap.code}}</code>{% if rest_cap.documentation.exists() %}<sup>+</sup>{% endif %} interaction.</li>
+              <code>{{rest_cap.code}}</code> interaction.</li>
           {% endfor %}
         </ul>
         {% for rest_cap in Arest.interaction %}
           {% if rest_cap.documentation.exists() %}
             <blockquote>
-              <sup>+</sup>{{rest_cap.code}}{{rest_cap.documentation}}
+              {{rest_cap.code}}{{rest_cap.documentation}}
             </blockquote>
           {% endif %}
         {% endfor %}
@@ -196,13 +196,13 @@
               {% if rest_cap.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() %}
                 <strong>{{rest_cap.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong> support the
               {% endif %}
-              <code>{{rest_cap.name}}</code>{% if rest_cap.documentation.exists() %}<sup>+</sup>{% endif %} operation.</li>
+              <code>{{rest_cap.name}}</code> operation.</li>
           {% endfor %}
         </ul>
         {% for rest_cap in Arest.operation %}
           {% if rest_cap.documentation.exists() %}
             <blockquote>
-              <sup>+</sup>{{rest_cap.name}}{{rest_cap.documentation}}
+              {{rest_cap.name}}{{rest_cap.documentation}}
             </blockquote>
           {% endif %}
         {% endfor %}
@@ -219,13 +219,13 @@
               {% if rest_cap.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() %}
                 <strong>{{rest_cap.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong> support the
               {% endif %}
-              <code>{{rest_cap.name}}</code>{% if rest_cap.documentation.exists() %}<sup>+</sup>{% endif %} search parameter.</li>
+              <code>{{rest_cap.name}}</code> search parameter.</li>
           {% endfor %}
         </ul>
         {% for rest_cap in Arest.searchParam %}
           {% if rest_cap.documentation.exists() %}
             <blockquote>
-              <sup>+</sup>{{rest_cap.name}}{{rest_cap.documentation}}
+              {{rest_cap.name}}{{rest_cap.documentation}}
             </blockquote>
           {% endif %}
         {% endfor %}
@@ -234,7 +234,7 @@
 
 
 
-    <!-- Resource Capabilities -->
+    <!-- Resource Capabilities Summary Table -->
     {% if Arest.resource %}
 
       <h4>Summary of Resource/Profile Capabilities</h4>
@@ -262,7 +262,7 @@
           {% for r in Arest.resource %}
           <tr>
             <td>
-              <a href="#{{Arest.mode}}_{{r.type}}"><span style="white-space: nowrap;">{{r.type}}{% include expectation_handler.html action='symbol' show_symbol=include_symbols expectation=r.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value %}</span></a>
+              <a href="#{{Arest.mode}}_{{r.type}}"><span style="white-space: nowrap;">{{r.type}}</span></a>
             </td>
 
             <!-- Supported Interactions
@@ -278,9 +278,15 @@
             <!-- Supported Profiles -->
             <td>
               {% if r.supportedProfile %}
-                {% for supportedProfile in r.supportedProfile.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/artifact-reference') %}
-                 <span style="color: grey;">•</span> <a href="{{ supportedProfile.value.reference }}">{{ supportedProfile.value.display }}</a><br />
-                {% endfor %}
+                {% if r.supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').exists() %}
+                  {% for supportedProfile in r.supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference') %}
+                    <span style="color: grey;">•</span> <a href="{{ supportedProfile.value.reference }}">{{ supportedProfile.value.display }}</a><br />
+                  {% endfor %}
+                {% else %}
+                   {% for supportedProfile in r.supportedProfile %}{{r.supportedProfile}}{% endfor %}
+                {% endif %}
+              {% else %}
+                 <span style="color: grey;">-</span>
               {% endif %}
             </td>
 
@@ -292,6 +298,8 @@
                  <!-- Each set of optional and required combo search parameters -->
                   {% for sp in r.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination') %}{{', ' + sp.extension.where(url != 'http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value.join('+')}}{% endfor %}
                 {% endif %}
+              {% else %}
+                 <span style="color: grey;">-</span>
               {% endif %}
             </td>
 
@@ -328,22 +336,26 @@
       <br/>
 
       <h3 class="no_toc" id="resource-details">RESTful {{Arest.mode | capitalize }} Capabilities by Resource/Profile:</h3>
-      <!-- Each REST Resource Detail -->
+
+
+      <!-- Resource Detail -->
+
       {% for resource in Arest.resource %}
         <h4 class="no_toc" id="{{Arest.mode}}_{{resource.type}}">{{resource.type}}</h4>
 
           <p>Conformance Expectation:	<strong>{{resource.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong></p>
-
+          <!-- Documenation -->
           {% if resource.documentation %}<p>Resource Specific Documentation:</p>
             <blockquote>{{ resource.documentation }}</blockquote>{% endif %}
 
           {% if resource.profile %}<p>Base Profile: <a href="{{resource.profile}}">{{resource.profile}}</p>{% endif %}
 
+          <!-- supported profiles -->
           {% if resource.supportedProfile %}<p>Supported Profiles:</p>
             <ul>
               {% for supportedProfile in resource.supportedProfile %}
                 <li>{% if supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() %}<strong>{{supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value}}</strong> support {% endif %}
-                 <a href="{{ supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}">{{ supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</a>
+                {% if supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').exists() %}<a href="{{ supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}">{{ supportedProfile.extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</a>{% else %}{{supportedProfile}}{% endif %}
                 </li>
               {% endfor %}
             </ul>
@@ -359,74 +371,36 @@
           {% if resource.updateCreate %}Server allows the client to create new identities on the server{% endif %}
         </p>
 
-
         <!-- Resource Interactions -->
-        {% if resource.operation.exists() %}<p>{{resource.type}} Interaction Summary:</p>
+        {% if resource.interaction.exists() %}<p>FHIR RESTful Interactions</p>
+        <div style="padding-left: 2em;">
+        <p>Summary:</p>
           <ul>
             {% if resource.interaction.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL').exists() %}
-              <li><strong>SHALL</strong> support{%for i in resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL')) %} {{ i.code }}{% if i.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
+              <li><strong>SHALL</strong> support {{ resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL')).code }}</li>
             {% endif %}
             {% if resource.interaction.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT').exists() %}
-              <li><strong>SHALL NOT</strong> support{%for i in resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT')) %} {{ i.code }}{% if i.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
+              <li><strong>SHALL NOT</strong> support {{ resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT')).code }}</li>
             {% endif %}
             {% if resource.interaction.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD').exists() %}
-              <li><strong>SHOULD</strong> support{%for i in resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD')) %} {{ i.code }}{% if i.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
+              <li><strong>SHOULD</strong> support {{ resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD')).code }}</li>
             {% endif %}
             {% if resource.interaction.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY').exists() %}
-              <li><strong>MAY</strong> support{%for i in resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY')) %} {{ i.code }}{% if i.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
+              <li><strong>MAY</strong> support {{ resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY')).code }}</li>
             {% endif %}
             {% if resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false) %}
-              <li>{%for i in resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false) %} {{ i.code }}{% if i.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
+              <li>{%for i in resource.interaction.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false) %} {{ i.code }}, {% endfor %}</li>
             {% endif %}
           </ul>
-
-          {% for i in resource.interaction %}
-            {% if i.documentation.exists() %}
-              <blockquote>
-                <p>{{i.code}}<sup>+</sup></p>{{i.documentation}}
-              </blockquote>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-
-        <!-- Resource Operations -->
-        {% if resource.operation.exists() %}<p>{{resource.type}} Operation Summary:</p>
-          <ul>
-            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL').exists() %}
-              <li><strong>SHALL</strong> support{%for o in resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL')) %} {{ o.name }}{% if o.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
-            {% endif %}
-            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT').exists() %}
-              <li><strong>SHALL NOT</strong> support{%for o in resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT')) %} {{ o.name }}{% if o.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
-            {% endif %}
-            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD').exists() %}
-              <li><strong>SHOULD</strong> support{%for o in resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD')) %} {{ o.name }}{% if o.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
-            {% endif %}
-            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY').exists() %}
-              <li><strong>MAY</strong> support{%for o in resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY')) %} {{ o.name }}{% if o.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
-            {% endif %}
-            {% if resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false)  %}
-              <li>{%for i in resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false) %} {{ o.name }}{% if o.documentation.exists() %}<sup>+</sup>{% endif %}, {% endfor %}</li>
-            {% endif %}
-          </ul>
-
-          {% for o in resource.operation %}
-            {% if o.documentation.exists() %}
-              <blockquote>
-                <p>{{o.name}}<sup>+</sup></p>{{o.documentation}}
-              </blockquote>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-
-        <!-- TODO Nexted ul items do not appear with a subbullet style -->
+        <!-- Rest interaction details -->
         {% if resource.interaction.where(code='create' or code='update' or code='delete' or code='patch') %}
           <br/>
-          <p>Modify Criteria:</p>
+          <p>Modify Criteria Details:</p>
           <ul>
             {%for i in resource.interaction %}
               {% if i.code = 'create' %}
                 <li>
-                  A {{ Arest.mode }} <strong>{% include expectation_handler.html action='verb' extension=i.extension %}</strong> be capable of a <code>create</code> interaction {% if Arest.mode = 'server' %}creating{% else %}posting{% endif %} a {{resource.type}} resource using:
+                  A {{ Arest.mode }} <strong>{% include expectation_handler.html action='verb' extension=i.extension %}</strong> be capable of {% if Arest.mode = 'server' %}creating{% else %}posting{% endif %} a {{resource.type}} resource using:
                   <code class="highlighter-rouge">POST [base]/{{resource.type}} {?_format=[mime-type]}</code>
                   {% if resource.conditionalCreate %}
                     <ul>
@@ -473,23 +447,18 @@
                   {% endif %}
                 </li>
               {% endif %}
-
-
               {% if i.code = 'patch' %}
                 <li>
                   A {{ Arest.mode }} <strong>{% include expectation_handler.html action='verb' extension=i.extension %}</strong> be capable of {% if Arest.mode = 'server' %}patching{% else %}patching{% endif %} an existing {{resource.type}} resource using:
                   <code class="highlighter-rouge">PATCH [base]/{{resource.type}}/[id] {?_format=[mime-type]}</code>
                 </li>
               {% endif %}
-
             {%endfor %}
           </ul>
         {% endif %}
-
-
         {% if resource.interaction.where(code='read' or code='vread' or code='search-type' or code='history-instance' or code='history-type') %}
           <br/>
-          <p>Fetch and Search Criteria:</p>
+          <p>Fetch and Search Criteria Details:</p>
           <ul>
             {%for i in resource.interaction %}
               {% if i.code = 'read' %}
@@ -658,10 +627,18 @@
           </ul>
         {% endif %}
 
+          {% for i in resource.interaction %}
+            {% if i.documentation.exists() %}
+              <blockquote>
+                <p>{{i.code}}</p>{{i.documentation}}
+              </blockquote>
+            {% endif %}
+          {% endfor %}
+
         {% if resource.searchParam.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value != 'MAY') %}
           <br/>
-          <p>Search Parameter Summary:</p>
-          <table class="grid">
+          <p>Search Parameter Requirements (When Used Alone or in Combination):</p>
+          <table class="grid" style="margin-left: 1em;">
             <thead>
               <tr>
                 <th style="white-space: nowrap;">Conformance</th>
@@ -721,28 +698,10 @@
                     {% endif %}</code>
                 </td>
               </tr>
+
               {% endfor %}
-            </tbody>
-          </table>
-
-        {% endif %}
-
-        <!-- Search Combination -->
-
-        {% if resource.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination').exists() %}
-          <br/>
-          <p>Search Parameter Combination Summary:</p>
-          <table class="grid">
-            <thead>
-              <tr>
-                <th style="white-space: nowrap;">Conformance</th>
-                <th>Parameter Combination</th>
-                <th>Types</th>
-                <th style="word-wrap: break-word;">Example</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for s in resource.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination') %}
+              {% if resource.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination').exists() %}
+                {% for s in resource.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination') %}
                 {% assign last = s.extension.where(url='required' or url='optional').last().value %}
                 <tr>
                   <td>
@@ -759,12 +718,14 @@
                   </td>
                 </tr>
               {% endfor %}
+              {% endif %}
             </tbody>
           </table>
         {% endif %}
+
         {% if resource.searchParam.documentation.exists() %}
           <div>
-            <p>Search Parameter Requirements (When Used Alone or in Combination):</p>
+            <!--<p>Search Parameter Requirements (When Used Alone or in Combination):</p>-->
             <ul>
               {% for s in resource.searchParam.where(documentation.exists()) %}
                 <li><a href="{{ 'SearchParameter-' + s.definition.value.split('/').last() + '.html' }}">{{s.name}}</a> ({{s.type}}):{{s.documentation}}</li>
@@ -773,20 +734,41 @@
           </div>
         {% endif %}
 
+        </div> <!-- end padding left -->
+       {% endif %}
+
+        {% if resource.operation.exists() %}<p>FHIR Operations:</p>
+          <ul>
+            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL').exists() %}
+              <li><strong>SHALL</strong> support <a href="{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}"><code>{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</code></a></li>
+            {% endif %}
+            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT').exists() %}
+              <li><strong>SHALL-NOT</strong> support <a href="{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}"><code>{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHALL-NOT')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</code></a></li>
+            {% endif %}
+            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD').exists() %}
+              <li><strong>SHOULD</strong> support <a href="{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}"><code>{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'SHOULD')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</code></a></li>
+            {% endif %}
+            {% if resource.operation.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY').exists() %}
+              <li><strong>MAY</strong> support <a href="{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}"><code>{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').where(value = 'MAY')).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</code></a></li>
+            {% endif %}
+            {% if resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false)  %}
+              <li><a href="{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false)).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.reference }}"><code>{{ resource.operation.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').exists() = false)).extension('http://hl7.org/fhir/StructureDefinition/artifact-reference').value.display }}</code></a></li>
+            {% endif %}
+          </ul>
+
+          {% for o in resource.operation %}
+            {% if o.documentation.exists() %}
+              <blockquote>
+                <p><code>{{ '$' + o.name }}</code>:</p>{{o.documentation}}
+              </blockquote>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        <hr/>
       {% endfor %}
     {% endif %}
-
-
-
   {% endfor %}
-
-
-
-
-
-
-
-
 
   <!-- Messaging Capabilities -->
   {% for Amsg in messaging %}
@@ -797,7 +779,7 @@
     {% if Amsg.endpoint.exists() %}
       <h3>End point(s): </h3>
       <div class="table-wrapper">
-        <table cellpadding="grid">
+        <table class="grid">
           <tbody>
             <tr>
               <th>Address</th>

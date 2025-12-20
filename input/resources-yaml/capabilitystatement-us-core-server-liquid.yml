@@ -53,6 +53,12 @@ _implementationGuide:
             -
                 url: 'http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation'
                 valueCode: SHOULD
+
+            -
+                url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
+                valueReference:
+                    reference: https://hl7.org/fhir/smart-app-launch/STU2/index.html
+                    display: SMART App Launch version 2.0.0 and later
 rest:
     -
         mode: server
@@ -1921,6 +1927,11 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation'
                                 valueCode: SHALL
+                            -
+                                url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
+                                valueReference:
+                                    reference: OperationDefinition-docref.html
+                                    display: '$docref'
                         name: docref
                         definition: 'http://hl7.org/fhir/us/core/OperationDefinition/docref'
                         documentation: >-
@@ -5832,6 +5843,11 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation'
                                 valueCode: SHOULD
+                            -
+                                url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
+                                valueReference:
+                                    reference: https://hl7.org/fhir/R4/valueset-operation-expand.html
+                                    display: '$expand'
                         name: expand
                         definition: 'http://hl7.org/fhir/OperationDefinition/ValueSet-expand'
                         documentation: 'If a server supports DocumentReference for creating, using, and sharing clinical notes, it **SHOULD** also support the `context` and `contextdirection` parameters of the $expand operation to enable clients to determine the supported note and report types, as well as the supported read/write formats for notes on the server.'
