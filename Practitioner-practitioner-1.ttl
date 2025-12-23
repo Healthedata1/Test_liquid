@@ -10,28 +10,9 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "practitioner-1"] ; # 
   fhir:meta [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-name>
-       ] ;
-       fhir:value [
-         a fhir:String ;
-         fhir:v "Practitioner 1 Example"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-description>
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "This is a practitioner 1 example for the *US Core Practitioner Profile*."
-       ]
-     ] ) ;
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner?version=0.1.0>
      ] )
   ] ; # 
   fhir:text [

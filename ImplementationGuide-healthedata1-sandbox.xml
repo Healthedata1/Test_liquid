@@ -17,7 +17,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2025-12-21T18:02:20+00:00"/>
+  <date value="2025-12-23T17:52:44+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -625,7 +625,7 @@
       </reference>
       <name value="Deceased Patient Example"/>
       <description value="This is a deceased patient example for the *US Core Patient Profile*."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"/>
       <groupingId value="TestExamples"/>
     </resource>
     <resource>
@@ -637,7 +637,7 @@
       </reference>
       <name value="Practitioner 1 Example"/>
       <description value="This is a practitioner 1 example for the *US Core Practitioner Profile*."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

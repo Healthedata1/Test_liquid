@@ -10,28 +10,9 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "deceased-example"] ; # 
   fhir:meta [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-name>
-       ] ;
-       fhir:value [
-         a fhir:String ;
-         fhir:v "Deceased Patient Example"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-description>
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "This is a deceased patient example for the *US Core Patient Profile*."
-       ]
-     ] ) ;
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?version=0.1.0>
      ] )
   ] ; # 
   fhir:text [

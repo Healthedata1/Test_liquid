@@ -155,7 +155,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "AllergyIntolerance",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -277,7 +277,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "clinical-status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -289,7 +289,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             }
@@ -388,7 +388,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "CarePlan",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -511,7 +511,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "category",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -523,7 +523,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -535,7 +535,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -547,7 +547,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -596,7 +596,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "CareTeam",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -759,7 +759,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -771,7 +771,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "role",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -783,7 +783,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -976,8 +976,8 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Condition",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -1115,7 +1115,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "abatement-date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -1127,7 +1127,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "asserted-date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -1139,7 +1139,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "category",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -1151,7 +1151,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "clinical-status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -1163,7 +1163,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "code",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -1175,7 +1175,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "encounter",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -1187,7 +1187,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "onset-date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -1199,7 +1199,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -1211,7 +1211,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "recorded-date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -1223,7 +1223,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_lastUpdated",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated|0.1.0",
               "type" : "date",
               "documentation" : "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             }
@@ -1238,7 +1238,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Coverage",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -1360,7 +1360,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             }
@@ -1409,7 +1409,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Device",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -1532,7 +1532,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -1544,7 +1544,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -1556,7 +1556,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "type",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -1685,8 +1685,8 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "DiagnosticReport",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -1825,7 +1825,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "category",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -1837,7 +1837,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "code",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -1849,7 +1849,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -1861,7 +1861,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_lastUpdated",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated|0.1.0",
               "type" : "date",
               "documentation" : "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -1873,7 +1873,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -1885,7 +1885,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -1993,8 +1993,8 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "DocumentReference",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -2132,7 +2132,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id|0.1.0",
               "type" : "token"
             },
             {
@@ -2143,7 +2143,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "category",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -2155,7 +2155,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -2167,7 +2167,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -2179,7 +2179,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "period",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -2191,7 +2191,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -2203,7 +2203,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "type",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -2224,7 +2224,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "docref",
-              "definition" : "http://hl7.org/fhir/us/core/OperationDefinition/docref",
+              "definition" : "http://hl7.org/fhir/us/core/OperationDefinition/docref|0.1.0",
               "documentation" : "A server **SHALL** be capable of responding to a $docref operation and  capable of returning at least a reference to a generated CCD document, if available. **MAY** provide references to other 'on-demand' and 'stable' documents (or 'delayed/deferred assembly') that meet the query parameters as well. If a context date range is supplied the server ** SHOULD**  provide references to any document that falls within the date range.  If no date range is supplied, then the server **SHALL** provide references to last or current document(s).  **SHOULD** document what resources, if any, are returned as included resources\n\n\n`GET [base]/DocumentReference/$docref?patient=[id]`"
             }
           ]
@@ -2357,7 +2357,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Encounter",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -2480,7 +2480,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id|0.1.0",
               "type" : "token"
             },
             {
@@ -2491,7 +2491,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "class",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -2503,7 +2503,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -2515,7 +2515,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_lastUpdated",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated|0.1.0",
               "type" : "date",
               "documentation" : "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -2527,7 +2527,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "discharge-disposition",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -2539,7 +2539,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "identifier",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -2551,7 +2551,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "location",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -2563,7 +2563,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -2575,7 +2575,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -2587,7 +2587,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "type",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -2712,7 +2712,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "FamilyMemberHistory",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -2834,7 +2834,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -2846,7 +2846,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "code",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -2912,7 +2912,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Goal",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -3035,7 +3035,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "description",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description|0.1.0",
               "type" : "token"
             },
             {
@@ -3046,7 +3046,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "lifecycle-status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -3058,7 +3058,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -3070,7 +3070,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "target-date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *day*.\n\n\nA server **SHALL** support a value a value precise to the *day*."
             }
@@ -3212,7 +3212,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Immunization",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -3335,7 +3335,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -3347,7 +3347,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -3359,7 +3359,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -3374,7 +3374,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Location",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -3486,7 +3486,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "address",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address|0.1.0",
               "type" : "string"
             },
             {
@@ -3497,7 +3497,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "address-city",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city|0.1.0",
               "type" : "string"
             },
             {
@@ -3508,7 +3508,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "address-postalcode",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode|0.1.0",
               "type" : "string"
             },
             {
@@ -3519,7 +3519,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "address-state",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state|0.1.0",
               "type" : "string"
             },
             {
@@ -3530,7 +3530,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "name",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name|0.1.0",
               "type" : "string"
             }
           ]
@@ -3637,7 +3637,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Medication",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -3788,7 +3788,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "MedicationDispense",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -3922,7 +3922,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -3934,7 +3934,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -3946,7 +3946,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "type",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -4041,7 +4041,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "MedicationRequest",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -4175,7 +4175,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "authoredon",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -4187,7 +4187,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "encounter",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -4199,7 +4199,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "intent",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -4211,7 +4211,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -4223,7 +4223,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -4356,32 +4356,32 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Observation",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -4879,7 +4879,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "category",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -4891,7 +4891,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "code",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -4903,7 +4903,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -4915,7 +4915,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_lastUpdated",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated|0.1.0",
               "type" : "date",
               "documentation" : "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -4927,7 +4927,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -4939,7 +4939,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -4954,7 +4954,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Organization",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -5066,7 +5066,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "address",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address|0.1.0",
               "type" : "string"
             },
             {
@@ -5077,7 +5077,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "name",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name|0.1.0",
               "type" : "string"
             }
           ]
@@ -5142,7 +5142,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Patient",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -5265,7 +5265,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id|0.1.0",
               "type" : "token"
             },
             {
@@ -5276,7 +5276,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "birthdate",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *day*.\n\n\nA server **SHALL** support a value a value precise to the *day*."
             },
@@ -5288,7 +5288,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "death-date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *day*.\n\n\nA server **SHALL** support a value a value precise to the *day*."
             },
@@ -5300,7 +5300,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "family",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family|0.1.0",
               "type" : "string"
             },
             {
@@ -5311,7 +5311,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "given",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given|0.1.0",
               "type" : "string"
             },
             {
@@ -5322,7 +5322,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "identifier",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -5334,7 +5334,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "name",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name|0.1.0",
               "type" : "string"
             }
           ]
@@ -5348,7 +5348,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Practitioner",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -5460,7 +5460,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id|0.1.0",
               "type" : "token"
             },
             {
@@ -5471,7 +5471,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "identifier",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -5483,7 +5483,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "name",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name|0.1.0",
               "type" : "string"
             }
           ]
@@ -5497,7 +5497,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "PractitionerRole",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -5628,7 +5628,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "practitioner",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -5640,7 +5640,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "specialty",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -5710,7 +5710,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Procedure",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -5833,7 +5833,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "code",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -5845,7 +5845,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "date",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -5857,7 +5857,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -5869,7 +5869,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -5884,7 +5884,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Provenance",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -6161,7 +6161,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "QuestionnaireResponse",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -6284,7 +6284,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id|0.1.0",
               "type" : "token"
             },
             {
@@ -6295,7 +6295,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "authored",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -6307,7 +6307,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -6319,7 +6319,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "questionnaire",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -6331,7 +6331,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -6363,7 +6363,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "RelatedPerson",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -6486,7 +6486,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id|0.1.0",
               "type" : "token"
             },
             {
@@ -6497,7 +6497,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "name",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name|0.1.0",
               "type" : "string"
             },
             {
@@ -6508,7 +6508,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             }
@@ -6616,8 +6616,8 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "ServiceRequest",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|9.0.0-ballot",
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|0.1.0",
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -6755,7 +6755,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id|0.1.0",
               "type" : "token"
             },
             {
@@ -6766,7 +6766,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "authored",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored|0.1.0",
               "type" : "date",
               "documentation" : "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*."
             },
@@ -6778,7 +6778,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "category",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -6790,7 +6790,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "code",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             },
@@ -6802,7 +6802,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient|0.1.0",
               "type" : "reference",
               "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both."
             },
@@ -6814,7 +6814,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "status",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status|0.1.0",
               "type" : "token",
               "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both."
             }
@@ -6829,7 +6829,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
           ],
           "type" : "Specimen",
           "supportedProfile" : [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|9.0.0-ballot"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|0.1.0"
           ],
           "_supportedProfile" : [
             {
@@ -6941,7 +6941,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "_id",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id|0.1.0",
               "type" : "token"
             },
             {
@@ -6952,7 +6952,7 @@ This Section describes the expected capabilities of the US Core Server actor whi
                 }
               ],
               "name" : "patient",
-              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient",
+              "definition" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient|0.1.0",
               "type" : "reference"
             }
           ]

@@ -3,13 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="deceased-example"/>
   <meta>
-    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
-      <valueString value="Deceased Patient Example"/>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
-      <valueMarkdown value="This is a deceased patient example for the *US Core Patient Profile*."/>
-    </extension>
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"/>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">

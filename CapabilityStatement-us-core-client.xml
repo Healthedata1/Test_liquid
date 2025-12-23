@@ -64,7 +64,7 @@
         </extension>
       </extension>
       <type value="AllergyIntolerance"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -139,7 +139,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="clinical-status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -148,7 +148,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -214,7 +214,7 @@
         </extension>
       </extension>
       <type value="CarePlan"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -290,7 +290,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="category"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -299,7 +299,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -308,7 +308,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -317,7 +317,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -349,7 +349,7 @@
         </extension>
       </extension>
       <type value="CareTeam"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -445,7 +445,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -454,7 +454,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="role"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -463,7 +463,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -589,7 +589,7 @@
         </extension>
       </extension>
       <type value="Condition"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -600,7 +600,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -676,7 +676,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="abatement-date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -685,7 +685,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="asserted-date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -694,7 +694,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="category"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -703,7 +703,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="clinical-status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -712,7 +712,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="code"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -721,7 +721,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="encounter"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -730,7 +730,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="onset-date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -739,7 +739,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -748,7 +748,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="recorded-date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -757,7 +757,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated|0.1.0"/>
         <type value="date"/>
         <documentation value="A server **SHALL** document the types of changes that can be detected using this parameter.&#xA;&#xA;&#xA;A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -767,7 +767,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Coverage"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -842,7 +842,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -874,7 +874,7 @@
         </extension>
       </extension>
       <type value="Device"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -950,7 +950,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -959,7 +959,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -968,7 +968,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1053,7 +1053,7 @@
         </extension>
       </extension>
       <type value="DiagnosticReport"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1064,7 +1064,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1141,7 +1141,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="category"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1150,7 +1150,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="code"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1159,7 +1159,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -1168,7 +1168,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated|0.1.0"/>
         <type value="date"/>
         <documentation value="A server **SHALL** document the types of changes that can be detected using this parameter.&#xA;&#xA;&#xA;A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -1177,7 +1177,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1186,7 +1186,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1257,7 +1257,7 @@
         </extension>
       </extension>
       <type value="DocumentReference"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1268,7 +1268,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1344,7 +1344,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -1352,7 +1352,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="category"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1361,7 +1361,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -1370,7 +1370,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1379,7 +1379,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="period"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -1388,7 +1388,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1397,7 +1397,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1406,7 +1406,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="docref"/>
-        <definition value="http://hl7.org/fhir/us/core/OperationDefinition/docref"/>
+        <definition value="http://hl7.org/fhir/us/core/OperationDefinition/docref|0.1.0"/>
         <documentation value="A client **SHOULD** be capable of transacting a $docref operation and capable of receiving at least a reference to a generated CCD document, and  **MAY** be able to receive other document types, if available.   **SHOULD**  be capable of receiving documents as included resources in response to the operation.&#xA;&#xA;&#xA;`GET [base]/DocumentReference/$docref?patient=[id]`"/>
       </operation>
     </resource>
@@ -1492,7 +1492,7 @@
         </extension>
       </extension>
       <type value="Encounter"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1568,7 +1568,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -1576,7 +1576,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="class"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1585,7 +1585,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -1594,7 +1594,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated|0.1.0"/>
         <type value="date"/>
         <documentation value="A server **SHALL** document the types of changes that can be detected using this parameter.&#xA;&#xA;&#xA;A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -1603,7 +1603,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="discharge-disposition"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1612,7 +1612,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="identifier"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1621,7 +1621,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="location"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1630,7 +1630,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1639,7 +1639,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1648,7 +1648,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1730,7 +1730,7 @@
         </extension>
       </extension>
       <type value="FamilyMemberHistory"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1805,7 +1805,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1814,7 +1814,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="code"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1857,7 +1857,7 @@
         </extension>
       </extension>
       <type value="Goal"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -1933,7 +1933,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="description"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -1941,7 +1941,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="lifecycle-status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1950,7 +1950,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -1959,7 +1959,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="target-date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *day*.&#xA;&#xA;&#xA;A server **SHALL** support a value a value precise to the *day*."/>
       </searchParam>
@@ -2052,7 +2052,7 @@
         </extension>
       </extension>
       <type value="Immunization"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2128,7 +2128,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -2137,7 +2137,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2146,7 +2146,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2156,7 +2156,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Location"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2227,7 +2227,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="address"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -2235,7 +2235,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="address-city"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -2243,7 +2243,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="address-postalcode"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -2251,7 +2251,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="address-state"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -2259,7 +2259,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name|0.1.0"/>
         <type value="string"/>
       </searchParam>
     </resource>
@@ -2329,7 +2329,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Medication"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2426,7 +2426,7 @@
         </extension>
       </extension>
       <type value="MedicationDispense"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2507,7 +2507,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2516,7 +2516,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2525,7 +2525,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="type"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2588,7 +2588,7 @@
         </extension>
       </extension>
       <type value="MedicationRequest"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2669,7 +2669,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="authoredon"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -2678,7 +2678,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="encounter"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2687,7 +2687,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="intent"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2696,7 +2696,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2705,7 +2705,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -2793,7 +2793,7 @@
         </extension>
       </extension>
       <type value="Observation"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2804,7 +2804,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2815,7 +2815,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2826,7 +2826,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2837,7 +2837,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2848,7 +2848,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2859,7 +2859,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2870,7 +2870,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2881,7 +2881,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2892,7 +2892,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2903,7 +2903,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2914,7 +2914,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2925,7 +2925,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2936,7 +2936,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2947,7 +2947,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>
@@ -2958,7 +2958,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2969,7 +2969,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2980,7 +2980,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -2991,7 +2991,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3002,7 +3002,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3013,7 +3013,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3024,7 +3024,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3035,7 +3035,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3046,7 +3046,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3057,7 +3057,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3068,7 +3068,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3144,7 +3144,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="category"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3153,7 +3153,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="code"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3162,7 +3162,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -3171,7 +3171,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated|0.1.0"/>
         <type value="date"/>
         <documentation value="A server **SHALL** document the types of changes that can be detected using this parameter.&#xA;&#xA;&#xA;A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -3180,7 +3180,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3189,7 +3189,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3199,7 +3199,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Organization"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3270,7 +3270,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="address"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -3278,7 +3278,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name|0.1.0"/>
         <type value="string"/>
       </searchParam>
     </resource>
@@ -3320,7 +3320,7 @@
         </extension>
       </extension>
       <type value="Patient"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3396,7 +3396,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -3404,7 +3404,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="birthdate"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *day*.&#xA;&#xA;&#xA;A server **SHALL** support a value a value precise to the *day*."/>
       </searchParam>
@@ -3413,7 +3413,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="death-date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *day*.&#xA;&#xA;&#xA;A server **SHALL** support a value a value precise to the *day*."/>
       </searchParam>
@@ -3422,7 +3422,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="family"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -3430,7 +3430,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="given"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -3438,7 +3438,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="identifier"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3447,7 +3447,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name|0.1.0"/>
         <type value="string"/>
       </searchParam>
     </resource>
@@ -3456,7 +3456,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Practitioner"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3527,7 +3527,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -3535,7 +3535,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="identifier"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3544,7 +3544,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name|0.1.0"/>
         <type value="string"/>
       </searchParam>
     </resource>
@@ -3553,7 +3553,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="PractitionerRole"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3634,7 +3634,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="practitioner"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3643,7 +3643,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="specialty"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3689,7 +3689,7 @@
         </extension>
       </extension>
       <type value="Procedure"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3765,7 +3765,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="code"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3774,7 +3774,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="date"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -3783,7 +3783,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3792,7 +3792,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -3802,7 +3802,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Provenance"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -3979,7 +3979,7 @@
         </extension>
       </extension>
       <type value="QuestionnaireResponse"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -4055,7 +4055,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -4063,7 +4063,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="authored"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -4072,7 +4072,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4081,7 +4081,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="questionnaire"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4090,7 +4090,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4111,7 +4111,7 @@
         </extension>
       </extension>
       <type value="RelatedPerson"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -4187,7 +4187,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -4195,7 +4195,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="name"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name|0.1.0"/>
         <type value="string"/>
       </searchParam>
       <searchParam>
@@ -4203,7 +4203,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4274,7 +4274,7 @@
         </extension>
       </extension>
       <type value="ServiceRequest"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -4285,7 +4285,7 @@
           </valueReference>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -4361,7 +4361,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -4369,7 +4369,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="authored"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored|0.1.0"/>
         <type value="date"/>
         <documentation value="A client **SHALL** provide a value precise to the *second + time offset*.&#xA;&#xA;&#xA;A server **SHALL** support a value precise to the *second + time offset*."/>
       </searchParam>
@@ -4378,7 +4378,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="category"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4387,7 +4387,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="code"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4396,7 +4396,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient|0.1.0"/>
         <type value="reference"/>
         <documentation value="The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4405,7 +4405,7 @@
           <valueCode value="MAY"/>
         </extension>
         <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status|0.1.0"/>
         <type value="token"/>
         <documentation value="The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.&#xA;&#xA;&#xA;The server **SHALL** support both."/>
       </searchParam>
@@ -4415,7 +4415,7 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Specimen"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|9.0.0-ballot">
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|0.1.0">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -4486,7 +4486,7 @@
           <valueCode value="SHALL"/>
         </extension>
         <name value="_id"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id|0.1.0"/>
         <type value="token"/>
       </searchParam>
       <searchParam>
@@ -4494,7 +4494,7 @@
           <valueCode value="SHOULD"/>
         </extension>
         <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient|0.1.0"/>
         <type value="reference"/>
       </searchParam>
     </resource>

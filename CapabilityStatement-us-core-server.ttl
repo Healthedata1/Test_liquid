@@ -137,8 +137,8 @@
        ] ) ;
        fhir:type [ fhir:v "AllergyIntolerance" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -296,8 +296,8 @@
          ] ) ;
          fhir:name [ fhir:v "clinical-status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -314,8 +314,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -501,8 +501,8 @@
        ] ) ;
        fhir:type [ fhir:v "CarePlan" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -661,8 +661,8 @@
          ] ) ;
          fhir:name [ fhir:v "category" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -679,8 +679,8 @@
          ] ) ;
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -697,8 +697,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -715,8 +715,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -800,8 +800,8 @@
        ] ) ;
        fhir:type [ fhir:v "CareTeam" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -1009,8 +1009,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -1027,8 +1027,8 @@
          ] ) ;
          fhir:name [ fhir:v "role" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -1045,8 +1045,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -1412,8 +1412,8 @@
        ] ) ;
        fhir:type [ fhir:v "Condition" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -1436,8 +1436,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -1596,8 +1596,8 @@
          ] ) ;
          fhir:name [ fhir:v "abatement-date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -1614,8 +1614,8 @@
          ] ) ;
          fhir:name [ fhir:v "asserted-date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -1632,8 +1632,8 @@
          ] ) ;
          fhir:name [ fhir:v "category" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -1650,8 +1650,8 @@
          ] ) ;
          fhir:name [ fhir:v "clinical-status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -1668,8 +1668,8 @@
          ] ) ;
          fhir:name [ fhir:v "code" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -1686,8 +1686,8 @@
          ] ) ;
          fhir:name [ fhir:v "encounter" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -1704,8 +1704,8 @@
          ] ) ;
          fhir:name [ fhir:v "onset-date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -1722,8 +1722,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -1740,8 +1740,8 @@
          ] ) ;
          fhir:name [ fhir:v "recorded-date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -1758,8 +1758,8 @@
          ] ) ;
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -1777,8 +1777,8 @@
        ] ) ;
        fhir:type [ fhir:v "Coverage" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -1936,8 +1936,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -2021,8 +2021,8 @@
        ] ) ;
        fhir:type [ fhir:v "Device" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-device?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-device?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -2181,8 +2181,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -2199,8 +2199,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -2217,8 +2217,8 @@
          ] ) ;
          fhir:name [ fhir:v "type" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -2461,8 +2461,8 @@
        ] ) ;
        fhir:type [ fhir:v "DiagnosticReport" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -2485,8 +2485,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -2646,8 +2646,8 @@
          ] ) ;
          fhir:name [ fhir:v "category" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -2664,8 +2664,8 @@
          ] ) ;
          fhir:name [ fhir:v "code" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -2682,8 +2682,8 @@
          ] ) ;
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -2700,8 +2700,8 @@
          ] ) ;
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -2718,8 +2718,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -2736,8 +2736,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -2938,8 +2938,8 @@
        ] ) ;
        fhir:type [ fhir:v "DocumentReference" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -2962,8 +2962,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -3122,8 +3122,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -3139,8 +3139,8 @@
          ] ) ;
          fhir:name [ fhir:v "category" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3157,8 +3157,8 @@
          ] ) ;
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -3175,8 +3175,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -3193,8 +3193,8 @@
          ] ) ;
          fhir:name [ fhir:v "period" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -3211,8 +3211,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3229,8 +3229,8 @@
          ] ) ;
          fhir:name [ fhir:v "type" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3248,8 +3248,8 @@
          ] ) ;
          fhir:name [ fhir:v "docref" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/OperationDefinition/docref"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/OperationDefinition/docref>
+           fhir:v "http://hl7.org/fhir/us/core/OperationDefinition/docref|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/OperationDefinition/docref?version=0.1.0>
          ] ;
          fhir:documentation [ fhir:v "A server **SHALL** be capable of responding to a $docref operation and  capable of returning at least a reference to a generated CCD document, if available. **MAY** provide references to other 'on-demand' and 'stable' documents (or 'delayed/deferred assembly') that meet the query parameters as well. If a context date range is supplied the server ** SHOULD**  provide references to any document that falls within the date range.  If no date range is supplied, then the server **SHALL** provide references to last or current document(s).  **SHOULD** document what resources, if any, are returned as included resources\n\n\n`GET [base]/DocumentReference/$docref?patient=[id]`" ]
        ] )
@@ -3497,8 +3497,8 @@
        ] ) ;
        fhir:type [ fhir:v "Encounter" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -3657,8 +3657,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -3674,8 +3674,8 @@
          ] ) ;
          fhir:name [ fhir:v "class" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3692,8 +3692,8 @@
          ] ) ;
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -3710,8 +3710,8 @@
          ] ) ;
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -3728,8 +3728,8 @@
          ] ) ;
          fhir:name [ fhir:v "discharge-disposition" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3746,8 +3746,8 @@
          ] ) ;
          fhir:name [ fhir:v "identifier" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3764,8 +3764,8 @@
          ] ) ;
          fhir:name [ fhir:v "location" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -3782,8 +3782,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -3800,8 +3800,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3818,8 +3818,8 @@
          ] ) ;
          fhir:name [ fhir:v "type" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -3992,8 +3992,8 @@
        ] ) ;
        fhir:type [ fhir:v "FamilyMemberHistory" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -4151,8 +4151,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -4169,8 +4169,8 @@
          ] ) ;
          fhir:name [ fhir:v "code" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -4287,8 +4287,8 @@
        ] ) ;
        fhir:type [ fhir:v "Goal" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -4447,8 +4447,8 @@
          ] ) ;
          fhir:name [ fhir:v "description" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -4464,8 +4464,8 @@
          ] ) ;
          fhir:name [ fhir:v "lifecycle-status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -4482,8 +4482,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -4500,8 +4500,8 @@
          ] ) ;
          fhir:name [ fhir:v "target-date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *day*.\n\n\nA server **SHALL** support a value a value precise to the *day*." ]
@@ -4707,8 +4707,8 @@
        ] ) ;
        fhir:type [ fhir:v "Immunization" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -4867,8 +4867,8 @@
          ] ) ;
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -4885,8 +4885,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -4903,8 +4903,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -4922,8 +4922,8 @@
        ] ) ;
        fhir:type [ fhir:v "Location" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -5069,8 +5069,8 @@
          ] ) ;
          fhir:name [ fhir:v "address" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -5086,8 +5086,8 @@
          ] ) ;
          fhir:name [ fhir:v "address-city" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -5103,8 +5103,8 @@
          ] ) ;
          fhir:name [ fhir:v "address-postalcode" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -5120,8 +5120,8 @@
          ] ) ;
          fhir:name [ fhir:v "address-state" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -5137,8 +5137,8 @@
          ] ) ;
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] )
@@ -5277,8 +5277,8 @@
        ] ) ;
        fhir:type [ fhir:v "Medication" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -5499,8 +5499,8 @@
        ] ) ;
        fhir:type [ fhir:v "MedicationDispense" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -5672,8 +5672,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -5690,8 +5690,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -5708,8 +5708,8 @@
          ] ) ;
          fhir:name [ fhir:v "type" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -5886,8 +5886,8 @@
        ] ) ;
        fhir:type [ fhir:v "MedicationRequest" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6059,8 +6059,8 @@
          ] ) ;
          fhir:name [ fhir:v "authoredon" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -6077,8 +6077,8 @@
          ] ) ;
          fhir:name [ fhir:v "encounter" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -6095,8 +6095,8 @@
          ] ) ;
          fhir:name [ fhir:v "intent" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -6113,8 +6113,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -6131,8 +6131,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -6384,8 +6384,8 @@
        ] ) ;
        fhir:type [ fhir:v "Observation" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6408,8 +6408,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6432,8 +6432,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6456,8 +6456,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6480,8 +6480,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6504,8 +6504,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6528,8 +6528,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6552,8 +6552,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6576,8 +6576,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6600,8 +6600,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6624,8 +6624,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6648,8 +6648,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6672,8 +6672,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6696,8 +6696,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6720,8 +6720,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6744,8 +6744,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6768,8 +6768,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6792,8 +6792,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6816,8 +6816,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6840,8 +6840,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6864,8 +6864,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6888,8 +6888,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6912,8 +6912,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6936,8 +6936,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6960,8 +6960,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -6984,8 +6984,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -7144,8 +7144,8 @@
          ] ) ;
          fhir:name [ fhir:v "category" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -7162,8 +7162,8 @@
          ] ) ;
          fhir:name [ fhir:v "code" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -7180,8 +7180,8 @@
          ] ) ;
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -7198,8 +7198,8 @@
          ] ) ;
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A server **SHALL** document the types of changes that can be detected using this parameter.\n\n\nA client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -7216,8 +7216,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -7234,8 +7234,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -7253,8 +7253,8 @@
        ] ) ;
        fhir:type [ fhir:v "Organization" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -7400,8 +7400,8 @@
          ] ) ;
          fhir:name [ fhir:v "address" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -7417,8 +7417,8 @@
          ] ) ;
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] )
@@ -7534,8 +7534,8 @@
        ] ) ;
        fhir:type [ fhir:v "Patient" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -7694,8 +7694,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -7711,8 +7711,8 @@
          ] ) ;
          fhir:name [ fhir:v "birthdate" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *day*.\n\n\nA server **SHALL** support a value a value precise to the *day*." ]
@@ -7729,8 +7729,8 @@
          ] ) ;
          fhir:name [ fhir:v "death-date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *day*.\n\n\nA server **SHALL** support a value a value precise to the *day*." ]
@@ -7747,8 +7747,8 @@
          ] ) ;
          fhir:name [ fhir:v "family" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -7764,8 +7764,8 @@
          ] ) ;
          fhir:name [ fhir:v "given" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -7781,8 +7781,8 @@
          ] ) ;
          fhir:name [ fhir:v "identifier" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -7799,8 +7799,8 @@
          ] ) ;
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] )
@@ -7817,8 +7817,8 @@
        ] ) ;
        fhir:type [ fhir:v "Practitioner" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -7964,8 +7964,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -7981,8 +7981,8 @@
          ] ) ;
          fhir:name [ fhir:v "identifier" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -7999,8 +7999,8 @@
          ] ) ;
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] )
@@ -8017,8 +8017,8 @@
        ] ) ;
        fhir:type [ fhir:v "PractitionerRole" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -8189,8 +8189,8 @@
          ] ) ;
          fhir:name [ fhir:v "practitioner" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-practitioner?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -8207,8 +8207,8 @@
          ] ) ;
          fhir:name [ fhir:v "specialty" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -8334,8 +8334,8 @@
        ] ) ;
        fhir:type [ fhir:v "Procedure" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -8494,8 +8494,8 @@
          ] ) ;
          fhir:name [ fhir:v "code" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -8512,8 +8512,8 @@
          ] ) ;
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -8530,8 +8530,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -8548,8 +8548,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -8567,8 +8567,8 @@
        ] ) ;
        fhir:type [ fhir:v "Provenance" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -8960,8 +8960,8 @@
        ] ) ;
        fhir:type [ fhir:v "QuestionnaireResponse" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -9120,8 +9120,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -9137,8 +9137,8 @@
          ] ) ;
          fhir:name [ fhir:v "authored" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -9155,8 +9155,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -9173,8 +9173,8 @@
          ] ) ;
          fhir:name [ fhir:v "questionnaire" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -9191,8 +9191,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -9243,8 +9243,8 @@
        ] ) ;
        fhir:type [ fhir:v "RelatedPerson" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -9403,8 +9403,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -9420,8 +9420,8 @@
          ] ) ;
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "string" ]
        ] [
@@ -9437,8 +9437,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -9639,8 +9639,8 @@
        ] ) ;
        fhir:type [ fhir:v "ServiceRequest" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -9663,8 +9663,8 @@
            ]
          ] )
        ] [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -9823,8 +9823,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -9840,8 +9840,8 @@
          ] ) ;
          fhir:name [ fhir:v "authored" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [ fhir:v "A client **SHALL** provide a value precise to the *second + time offset*.\n\n\nA server **SHALL** support a value precise to the *second + time offset*." ]
@@ -9858,8 +9858,8 @@
          ] ) ;
          fhir:name [ fhir:v "category" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -9876,8 +9876,8 @@
          ] ) ;
          fhir:name [ fhir:v "code" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -9894,8 +9894,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\n\nThe server **SHALL** support both." ]
@@ -9912,8 +9912,8 @@
          ] ) ;
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\n\nThe server **SHALL** support both." ]
@@ -9931,8 +9931,8 @@
        ] ) ;
        fhir:type [ fhir:v "Specimen" ] ;
        fhir:supportedProfile ( [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|9.0.0-ballot"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen?version=9.0.0-ballot> ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen?version=0.1.0> ;
          fhir:extension ( [
            fhir:url [
              fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
@@ -10078,8 +10078,8 @@
          ] ) ;
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "token" ]
        ] [
@@ -10095,8 +10095,8 @@
          ] ) ;
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
-           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient>
+           fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient|0.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient?version=0.1.0>
          ] ;
          fhir:type [ fhir:v "reference" ]
        ] )

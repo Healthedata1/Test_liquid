@@ -40,7 +40,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-21T18:02:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-23T17:52:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -1766,8 +1766,8 @@
        fhir:description [ fhir:v "This is a deceased patient example for the *US Core Patient Profile*." ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?version=0.1.0>
        ] ;
        fhir:groupingId [ fhir:v "TestExamples" ]
      ] [
@@ -1789,8 +1789,8 @@
        fhir:description [ fhir:v "This is a practitioner 1 example for the *US Core Practitioner Profile*." ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner?version=0.1.0>
        ]
      ] [
        fhir:extension ( [

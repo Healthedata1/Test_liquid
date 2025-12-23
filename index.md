@@ -158,7 +158,7 @@ This is a **Healthedata1** sandbox for creation of resources and examples
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-12-21T18:02:20+00:00",
+  "date" : "2025-12-23T17:52:44+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [
     {
@@ -1127,7 +1127,7 @@ This is a **Healthedata1** sandbox for creation of resources and examples
         },
         "name" : "Deceased Patient Example",
         "description" : "This is a deceased patient example for the *US Core Patient Profile*.",
-        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0",
         "groupingId" : "TestExamples"
       },
       {
@@ -1142,7 +1142,7 @@ This is a **Healthedata1** sandbox for creation of resources and examples
         },
         "name" : "Practitioner 1 Example",
         "description" : "This is a practitioner 1 example for the *US Core Practitioner Profile*.",
-        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"
       },
       {
         "extension" : [

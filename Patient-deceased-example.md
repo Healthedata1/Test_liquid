@@ -23,18 +23,8 @@ BAR
   "resourceType" : "Patient",
   "id" : "deceased-example",
   "meta" : {
-    "extension" : [
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Deceased Patient Example"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "This is a deceased patient example for the *US Core Patient Profile*."
-      }
-    ],
     "profile" : [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"
     ]
   },
   "extension" : [
