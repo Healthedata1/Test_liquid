@@ -635,7 +635,7 @@
             {% endif %}
           {% endfor %}
 
-        {% if resource.searchParam.where(extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value != 'MAY') %}
+        {% if resource.where(searchParam.extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value != 'MAY' or extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination').exists()) %}
           <br/>
           <p>Search Parameter Requirements (When Used Alone or in Combination):</p>
           <table class="grid" style="margin-left: 1em;">

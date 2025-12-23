@@ -86,7 +86,7 @@
         },
         "description": "This is a deceased patient example for the *US Core Patient Profile*.",
         "name": "Deceased Patient Example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0",
         "groupingId": "TestExamples"
       },
       {
@@ -95,7 +95,7 @@
         },
         "description": "This is a practitioner 1 example for the *US Core Practitioner Profile*.",
         "name": "Practitioner 1 Example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"
       },
       {
         "reference": {
