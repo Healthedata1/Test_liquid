@@ -45,7 +45,7 @@
       
       </li>
     
-    <li><b>Published:</b> 2025-12-19 19:16:08-0800</li>
+    <li><b>Published:</b> 2025-01-06</li>
 
     <li><b>Published by:</b> Health eData Inc</li>
     <li><b>Status:</b> Active</li>
@@ -14780,7 +14780,7 @@ Profile as documented in Referencing US Core Profiles.</p>
   <title value="US Core Client CapabilityStatement Liquid Rendered"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-12-19T19:16:08.871976-08:00"/>
+  <date value="2025-01-06"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>

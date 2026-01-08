@@ -56,7 +56,7 @@ This Section describes the expected capabilities of the US Core Client which is 
   "title" : "US Core Client CapabilityStatement Liquid Rendered",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T19:16:08.871976-08:00",
+  "date" : "2025-01-06",
   "publisher" : "Health eData Inc",
   "contact" : [
     {
