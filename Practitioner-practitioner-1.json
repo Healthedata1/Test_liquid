@@ -2,7 +2,15 @@
   "resourceType" : "Practitioner",
   "id" : "practitioner-1",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"]
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Practitioner 1 Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
   },
   "text" : {
     "status" : "extensions",

@@ -22,11 +22,36 @@ This fragment is available on       <a href="index.html">index.html</a>
       <ul>
 
         <li>
-Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see           <a href="https://www.cdc.gov/other/agencymaterials.html">https://www.cdc.gov/other/agencymaterials.html</a>
-.          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
+ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page:           <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>
+          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
              <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
           </div>
           <div style="display: none" id="ipp2_1">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+:                 <a href="Basic-example-requirements-backport.html">Basic/example-requirements-backport</a>
+,                 <a href="Requirements-client-requirements.html">ClientRequirements</a>
+,                 <a href="Requirements-example-requirements.html">ExampleRequirements</a>
+,                 <a href="index.html">HealtheData_1Sandbox</a>
+ and                 <a href="Requirements-server-requirements.html">ServerRequirements</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see           <a href="https://www.cdc.gov/other/agencymaterials.html">https://www.cdc.gov/other/agencymaterials.html</a>
+.          <div onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_2">
 
             <ul>
 
@@ -44,10 +69,10 @@ Most of the information on the CDC and ATSDR websites is not subject to copyrigh
 
         <li>
 This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
-          <div onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2" data-fhir="generated">
+          <div onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3" data-fhir="generated">
              <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
           </div>
-          <div style="display: none" id="ipp2_2">
+          <div style="display: none" id="ipp2_3">
 
             <ul>
 
@@ -72,13 +97,16 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2020+ Health eData Inc.  Package healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2026-01-08 
+          IG &copy; 2020+ HL7 International / Payer/Provider Information Exchange Work Group.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2026-02-18 
           
           
                       Links: Table of Contents |
                  QA Report
                  
                 
+                 | Version History |
+                 CC0 |
+                 Propose a change
            
          (        <a href="toc.html">src</a>
 )
@@ -89,6 +117,10 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
              
                 CC0
          (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+Copyright (c) 2026 Example Organization. All rights reserved. (        <a href="Basic-example-requirements-backport.html">src</a>
 )
       </li>
       <li>
@@ -120,6 +152,313 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
         <th>
           <b>Content</b>
         </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-client-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">en.wikipedia.org</a>
+        </td>
+        <td>
+US Core Clients should follow the           <a href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">principle of least privilege</a>
+ and access only the necessary resources.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-client-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://httpwg.org/specs/rfc9111.html">httpwg.org</a>
+        </td>
+        <td>
+The           <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control</a>
+ response header stores a response associated with a request and reuses the stored response for subsequent requests. If Cache-Control is present in the Server response headers, the Clients           <strong>SHOULD NOT</strong>
+ search the same data within the time stated in Cache-Control headers.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/sct">snomed.info</a>
+        </td>
+        <td>
+[When using SNOMED codes in US Core Profiles I]mplementers MAY use the default system URI [of           <a href="http://snomed.info/sct">SNOMED CT</a>
+], which refers to an unspecified edition/version [of SNOMED]
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/sct">snomed.info</a>
+        </td>
+        <td>
+[To enable] terminology Servers to be able to validate US Edition-only codes [of           <a href="http://snomed.info/sct">SNOMED CT</a>
+], implementers SHOULD provide the accompanying system URI to describe the edition [see example 2 on           <a href="https://hl7.org/fhir/us/core/STU8/general-guidance.html#snomed-ct-united-states-edition">US Core general guidance</a>
+]
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
+        </td>
+        <td>
+[If a] US Core Profiles binds the Quantity.code element in the Quantity datatype to the           <a href="http://unitsofmeasure.org/">UCUM</a>
+ code system, [then] systems should also use UCUM for the optional valueRange and valueRatio datatypes (which are complex datatypes with Quantity elements)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
+        </td>
+        <td>
+[If a] US Core Profiles binds the Quantity.code element in the Quantity datatype to the           <a href="http://unitsofmeasure.org/">UCUM</a>
+ code system, [when] UCUM code [is] provided [it SHOULD be indicated in the Quantity.unit and Quantity.code elements with Quantity.system = "http://unitsofmeasure.org"]
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
+        </td>
+        <td>
+[If a] US Core Profiles binds the Quantity.code element in the Quantity datatype to the           <a href="http://unitsofmeasure.org/">UCUM</a>
+ code system, [then] if UCUM units are unavailable, represent units in the unit element
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
+        </td>
+        <td>
+[If a] US Core Profiles binds the Quantity.code element in the Quantity datatype to the           <a href="http://unitsofmeasure.org/">UCUM</a>
+ code system, [when]
+no units [are available systems SHOULD NOT supply the unit field]
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.nahdo.org/sites/default/files/2020-12/SourceofPaymentTypologyUsersGuideVersion9.2December2020.pdf">www.nahdo.org</a>
+        </td>
+        <td>
+Implementers should refer to the           <a href="https://www.nahdo.org/sites/default/files/2020-12/SourceofPaymentTypologyUsersGuideVersion9.2December2020.pdf">PHDSC Payer Type Committee User’s Guide</a>
+ for the Source of Payment Typology when selecting codes.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://wiki.ihe.net/index.php/XDS_classCode_Metadata_Coding_System">wiki.ihe.net</a>
+        </td>
+        <td>
+[DocumentReference.type may also use] other category schemes such as the LOINC-based           <a href="http://hl7.org/fhir/R4/valueset-document-classcodes.html">Document Class Value Set</a>
+ and           <a href="https://wiki.ihe.net/index.php/XDS_classCode_Metadata_Coding_System">IHE XDSclassCode</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ as the standard style guide for Location.address.line
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ as the standard style guide for Location.address.city
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ as the standard style guide for Organization.address.line and Organization.address.city
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+          <a href="https://www.healthit.gov/topic/certification-ehrs/about-onc-health-it-certification-program">Certifying systems</a>
+ [, those that are participating in the ONC Health IT certification program,] SHALL ... follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ as the standard style guide for Patient.address.line and Patient.address.city for new and updated records.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+Non-certifying systems[, systems that are not participating in the ONC Health IT certification program,] SHOULD follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ as the standard style guide for Patient.address.line and Patient.address.city for new and updated records.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+[For systems participating in the ONC Health IT certification program,] this requirement [to follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ for Patient.address.line and Patient.address.city] does not apply to historical records or documents that are exposed through FHIR-based APIs. [Organizations MAY choose not to use use Project US@ Technical Specification for Patient Addresses Final Version 1.0 when sending historical records]
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ as the standard style guide for Practitioner.address.line and Practitioner.address.city.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
+        </td>
+        <td>
+Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">Project US@ Technical Specification for Patient Addresses Final Version 1.0</a>
+ as the standard style guide for RelatedPerson.address.line and RelatedPerson.address.city
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=108252007&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=108252007&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">108252007 Laboratory procedure (procedure)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386053000&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386053000&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">386053000 Evaluation procedure (procedure)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410606002&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410606002&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">410606002 Social service procedure (procedure)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387713003&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387713003&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">387713003 Surgical procedure (procedure)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Requirements-server-requirements.html">web</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363679005&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
+        </td>
+        <td>
+          <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363679005&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">363679005 Imaging (procedure)</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ImplementationGuide.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.iso.org/iso-3166-country-codes.html">www.iso.org</a>
+        </td>
+        <td>
+ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page:           <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>
+          <div onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_1">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+:                 <a href="Basic-example-requirements-backport.html">Basic/example-requirements-backport</a>
+,                 <a href="Requirements-client-requirements.html">ClientRequirements</a>
+,                 <a href="Requirements-example-requirements.html">ExampleRequirements</a>
+,                 <a href="index.html">HealtheData_1Sandbox</a>
+ and                 <a href="Requirements-server-requirements.html">ServerRequirements</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </td>
       </tr>
     </table>
     <h2>Internal Images</h2>

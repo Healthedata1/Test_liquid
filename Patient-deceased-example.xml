@@ -3,7 +3,13 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="deceased-example"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Deceased Patient Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a deceased patient example for the *US Core Patient Profile*."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
@@ -11,9 +17,26 @@
 		    <!-- <h2>SearchParameter: </h2>
 				<b> description</b> : 
 			<br/> -->
+			<h3> My Custom Liquid Script </h3>
 			<p>
-				<b> id</b> deceased-example</p>
-  <p>BAR</p>
+				<b>☞ id</b> deceased-example</p>
+
+			<p> and foo = ... <p>BAR</p> !!! </p>
+
+			<p>example meta data</p>
+			<ul>
+			
+				<li>1) Deceased Patient Example  DECEASED PATIENT EXAMPLE  </li>
+		    
+				<li>2) <div><p>This is a deceased patient example for the <em>US Core Patient Profile</em>.</p>
+</div>  <DIV><P>THIS IS A DECEASED PATIENT EXAMPLE FOR THE <EM>US CORE PATIENT PROFILE</EM>.</P>
+</DIV>  </li>
+		    
+			</ul>
+
+
+            prepend example:  foodeceased-example
+
 
 
     <!-- this include does not work :-(

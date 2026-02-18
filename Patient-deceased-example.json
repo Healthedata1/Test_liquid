@@ -2,11 +2,19 @@
   "resourceType" : "Patient",
   "id" : "deceased-example",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"]
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Deceased Patient Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a deceased patient example for the *US Core Patient Profile*."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"]
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n\t\t    <!-- <h2>SearchParameter: </h2>\n\t\t\t\t<b> description</b> : \n\t\t\t<br/> -->\n\t\t\t<p>\n\t\t\t\t<b> id</b> deceased-example</p>\n  <p>BAR</p>\n\n\n    <!-- this include does not work :-(\n  nor does \"{ % comment % } my comment { % endcomment % }\" :-( --></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n\t\t    <!-- <h2>SearchParameter: </h2>\n\t\t\t\t<b> description</b> : \n\t\t\t<br/> -->\n\t\t\t<h3> My Custom Liquid Script </h3>\n\t\t\t<p>\n\t\t\t\t<b>☞ id</b> deceased-example</p>\n\n\t\t\t<p> and foo = ... <p>BAR</p> !!! </p>\n\n\t\t\t<p>example meta data</p>\n\t\t\t<ul>\n\t\t\t\n\t\t\t\t<li>1) Deceased Patient Example  DECEASED PATIENT EXAMPLE  </li>\n\t\t    \n\t\t\t\t<li>2) <div><p>This is a deceased patient example for the <em>US Core Patient Profile</em>.</p>\n</div>  <DIV><P>THIS IS A DECEASED PATIENT EXAMPLE FOR THE <EM>US CORE PATIENT PROFILE</EM>.</P>\n</DIV>  </li>\n\t\t    \n\t\t\t</ul>\n\n\n            prepend example:  foodeceased-example\n\n\n\n    <!-- this include does not work :-(\n  nor does \"{ % comment % } my comment { % endcomment % }\" :-( --></div>"
   },
   "extension" : [{
     "extension" : [{

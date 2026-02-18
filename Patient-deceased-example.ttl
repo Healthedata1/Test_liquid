@@ -6,18 +6,37 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/healthedata1-sandbox/Patient/deceased-example> a fhir:Patient ;
+<http://hl7.org/fhir/us/healthedata1-sandbox/Patient/deceased-example> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "deceased-example"] ; # 
   fhir:meta [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-name>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Deceased Patient Example"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-description>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "This is a deceased patient example for the *US Core Patient Profile*."
+       ]
+     ] ) ;
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?version=0.1.0>
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n		    <!-- <h2>SearchParameter: </h2>\n				<b> description</b> : \n			<br/> -->\n			<p>\n				<b> id</b> deceased-example</p>\n  <p>BAR</p>\n\n\n    <!-- this include does not work :-(\n  nor does \"{ % comment % } my comment { % endcomment % }\" :-( --></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n		    <!-- <h2>SearchParameter: </h2>\n				<b> description</b> : \n			<br/> -->\n			<h3> My Custom Liquid Script </h3>\n			<p>\n				<b>☞ id</b> deceased-example</p>\n\n			<p> and foo = ... <p>BAR</p> !!! </p>\n\n			<p>example meta data</p>\n			<ul>\n			\n				<li>1) Deceased Patient Example  DECEASED PATIENT EXAMPLE  </li>\n		    \n				<li>2) <div><p>This is a deceased patient example for the <em>US Core Patient Profile</em>.</p>\n</div>  <DIV><P>THIS IS A DECEASED PATIENT EXAMPLE FOR THE <EM>US CORE PATIENT PROFILE</EM>.</P>\n</DIV>  </li>\n		    \n			</ul>\n\n\n            prepend example:  foodeceased-example\n\n\n\n    <!-- this include does not work :-(\n  nor does \"{ % comment % } my comment { % endcomment % }\" :-( --></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [

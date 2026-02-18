@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="example-requirements"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+
+<p>These requirements apply to the actor: <i><strong>US Core Requestor(Servers including Certifying Systems)</strong></i></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+    <th>Key</th>
+    <th>Conformance</th>
+    <th>Requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+    <td>stmt-01</td>
+    <td style="text-align: center;">SHALL<br/>(certifying systems<br/>only)</td>
+    <td><div><p>The system <strong>SHALL</strong> allow the actor to search for patients by name.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>stmt-02</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>The system <strong>SHOULD</strong> display patient demographics in a summary view.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>stmt-03</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>The system <strong>MAY</strong> support bulk export of patient records.</p>
+</div></td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="http://example.org/fhir/Requirements/example"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="0.1.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="ExampleRequirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Example Requirements Resource"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2026-02-18T02:49:37+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="HL7 International / Payer/Provider Information Exchange Work Group"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="HL7 International / Payer/Provider Information Exchange Work Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/claims"/>
+      </telecom>
+      <telecom>
+        <system value="email"/>
+        <value value="pie@lists.hl7.org"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="US"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor">
+    <valueCanonical>
+      <extension url="http://hl7.org/fhir/StructureDefinition/display">
+        <valueString value="US Core Requestor (Servers including Certifying Systems)"/>
+      </extension>
+    </valueCanonical>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement">
+      <valueString value="true"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="stmt-01"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The system **SHALL** allow the actor to search for patients by name."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="stmt-02"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The system **SHOULD** display patient demographics in a summary view."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="stmt-03"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The system **MAY** support bulk export of patient records."/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

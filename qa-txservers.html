@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>HealthEData_1Sandbox : Terminology Server Report</title>
+  <title>HealtheData_1Sandbox : Terminology Server Report</title>
   <link href="fhir.css" rel="stylesheet"/>
   <meta charset="utf-8"/>
   <style>
@@ -11,8 +11,8 @@
   </style>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Terminology Server Report for HealthEData_1Sandbox</h1>
- <p>Generated Thu Jan 08 03:51:17 UTC 2026, FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = <a href="http://www.fhir.org/guides/healthedata1-sandbox">http://www.fhir.org/guides/healthedata1-sandbox</a> (<a href="http://www.fhir.org/guides/healthedata1-sandbox/history.html">history</a>))</p>
+ <h1>Terminology Server Report for HealtheData_1Sandbox</h1>
+ <p>Generated Wed Feb 18 02:52:24 UTC 2026, FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/healthedata1-sandbox">http://hl7.org/fhir/us/healthedata1-sandbox</a> (<a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -50,37 +50,44 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:607a3a20-5af0-41b1-b5cb-77bcd48c6c4d</td>
-    <td>urn:ietf:bcp:13</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/ValueSet/mimetypes|4.0.1</td>
-    <td>urn:ietf:bcp:13</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4]</td>
   </tr>
   <tr>
     <td>Found partially authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0</td>
     <td>[urn:oid:2.16.840.1.113883.6.238, http://terminology.hl7.org/CodeSystem/v3-NullFlavor]</td>
-    <td>[auth = , candidates=http://tx.fhir.org/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4]</td>
   </tr>
   <tr>
     <td>Found partially authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0</td>
     <td>[urn:oid:2.16.840.1.113883.6.238, http://terminology.hl7.org/CodeSystem/v3-NullFlavor]</td>
-    <td>[auth = , candidates=http://tx.fhir.org/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4]</td>
   </tr>
   <tr>
     <td>Found partially authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category|6.1.0</td>
     <td>[urn:oid:2.16.840.1.113883.6.238, http://terminology.hl7.org/CodeSystem/v3-NullFlavor]</td>
-    <td>[auth = , candidates=http://tx.fhir.org/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4, auth = http://tx.fhir.org/r4, candidates=https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4]</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -109,11 +116,65 @@
     <td>null</td>
     <td>https://www.usps.com</td>
     <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+</table>
+<p>
+  <b>Errors</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>URL</b>
+    </td>
+    <td>
+      <b>Message</b>
+    </td>
+  </tr>
+  <tr>
+    <td>http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/r4/ValueSet?_format=json&amp;url=http%3A%2F%2Ffhir.org%2Fpackages%2Fus.cdc.phinvads%2FImplementationGuide%2Fus.cdc.phinvads">Error resolving valueSet http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads: Error from https://tx.fhir.org/r4: Unable to open file "E:\fhir-server\fhir-server\us.nlm.vsac#0.24.0\package\ValueSet-2.16.840.1.113762.1.4.1078.1180.json": The system cannot find the file specified.</span>
+    </td>
   </tr>
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 298. Code Systems used: </p>
+<p>Use Count: 13. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -138,16 +199,32 @@
     </td>
   </tr>
   <tr>
+    <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
+    <td>0</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>https://www.usps.com</td>
     <td>0</td>
     <td>2</td>
     <td></td>
   </tr>
   <tr>
-    <td>urn:ietf:bcp:13</td>
-    <td>0</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>3</td>
+    <td>4</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>1</td>
     <td>2</td>
-    <td></td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part2.html">ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code</a>
+    </td>
   </tr>
   <tr>
     <td>urn:oid:2.16.840.1.113883.6.238</td>
@@ -161,151 +238,6 @@
 <p>ValueSets fetched:</p>
 <ul>
   <li>http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads</li>
-  <li>http://hl7.org/fhir/us/core/OperationDefinition/docref|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-coverage-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-device-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-device-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-device-type|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-category|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-period|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-documentreference-type|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-class|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-discharge-disposition|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-identifier|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-lastupdated|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-location|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-encounter-type|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-code|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-familymemberhistory-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-description|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-lifecycle-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-goal-target-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-immunization-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-city|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-postalcode|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address-state|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-location-address|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-location-name|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationdispense-type|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-authoredon|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-address|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-organization-name|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-identifier|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-practitioner-name|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-code|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-date|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-procedure-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-authored|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-questionnaire|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-questionnaireresponse-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-name|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-relatedperson-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-authored|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-category|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-code|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-servicerequest-status|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-id|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/SearchParameter/us-core-specimen-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-care-experience-preference|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-device|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-familymemberhistory|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-location|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancyintent|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sexual-orientation|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference|0.1.0</li>
-  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs|0.1.0</li>
 </ul>
 <h2>Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>

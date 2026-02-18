@@ -1,50 +1,44 @@
-# healthedata1-sandbox#0.1.0: Health eData 1 Sandbox
+# hl7.fhir.us.healthedata1-sandbox#0.1.0: Health eData 1 Sandbox
 
 ## Pages
 
 * [Home](index.md)
+* [Server Requirements - Testing](Requirements-server-requirements-testing.md)
+* [](Requirements-server-requirements.change.history.md)
+* [Client Requirements - XML Representation](Requirements-client-requirements.xml.md)
+* [Client Requirements - JSON Representation](Requirements-client-requirements.json.md)
+* [Server Requirements - JSON Representation](Requirements-server-requirements.json.md)
 * [Guidance](guidance.md)
-* [ImplementationGuide Resource](ImplementationGuide.md)
+* [Client Requirements - Testing](Requirements-client-requirements-testing.md)
+* [Example Requirements Resource](Requirements-example-requirements.md)
+* [Client Requirements - TTL Representation](Requirements-client-requirements.ttl.md)
+* [Example Requirements Resource - TTL Representation](Requirements-example-requirements.ttl.md)
+* [Client Requirements](Requirements-client-requirements.md)
 * [Artifacts Summary](artifacts.md)
-* [Change Log](changes.md)
+* [Example Requirements Resource - JSON Representation](Requirements-example-requirements.json.md)
+* [Server Requirements](Requirements-server-requirements.md)
 * [Downloads](downloads.md)
+* [](Requirements-example-requirements.change.history.md)
+* [Example Requirements Resource - XML Representation](Requirements-example-requirements.xml.md)
+* [Server Requirements - XML Representation](Requirements-server-requirements.xml.md)
+* [Example Requirements Resource - Testing](Requirements-example-requirements-testing.md)
+* [ImplementationGuide Resource](ImplementationGuide.md)
+* [Server Requirements - TTL Representation](Requirements-server-requirements.ttl.md)
+* [](Requirements-client-requirements.change.history.md)
+* [Change Log](changes.md)
 
 ## Resources
 
-### CapabilityStatements
+### Basics
 
-* [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md)
-* [US Core Client CapabilityStatement](CapabilityStatement-us-core-client.md)
-* [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md)
-* [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md)
+* [client-requirements](Basic-client-requirements.md)
+* [example-requirements-backport](Basic-example-requirements-backport.md)
+* [example-requirements](Basic-example-requirements.md)
+* [server-requirements](Basic-server-requirements.md)
 
 ### ImplementationGuides
 
 * [Health eData 1 Sandbox](index.md)
-
-### SearchParameters
-
-* [USCoreAllergyintoleranceClinicalStatus](SearchParameter-us-core-allergyintolerance-clinical-status.md)
-* [USCoreAllergyintolerancePatient](SearchParameter-us-core-allergyintolerance-patient.md)
-* [USCoreCareplanCategory](SearchParameter-us-core-careplan-category.md)
-* [USCoreCareplanDate](SearchParameter-us-core-careplan-date.md)
-* [USCoreCareplanPatient](SearchParameter-us-core-careplan-patient.md)
-* [USCoreCareplanStatus](SearchParameter-us-core-careplan-status.md)
-* [USCoreCareteamPatient](SearchParameter-us-core-careteam-patient.md)
-* [USCoreCareTeamRole](SearchParameter-us-core-careteam-role.md)
-* [USCoreCareteamStatus](SearchParameter-us-core-careteam-status.md)
-* [USCoreConditionAbatementDate](SearchParameter-us-core-condition-abatement-date.md)
-* [USCoreConditionAssertedDate](SearchParameter-us-core-condition-asserted-date.md)
-* [USCoreConditionCategory](SearchParameter-us-core-condition-category.md)
-* [USCoreConditionClinicalStatus](SearchParameter-us-core-condition-clinical-status.md)
-* [USCoreConditionCode](SearchParameter-us-core-condition-code.md)
-* [USCoreConditionEncounter](SearchParameter-us-core-condition-encounter.md)
-* [USCoreConditionLastUpdated](SearchParameter-us-core-condition-lastupdated.md)
-* [USCoreConditionOnsetDate](SearchParameter-us-core-condition-onset-date.md)
-* [USCoreConditionPatient](SearchParameter-us-core-condition-patient.md)
-* [USCoreConditionRecordedDate](SearchParameter-us-core-condition-recorded-date.md)
-* [USCorePractitionerrolePractitioner](SearchParameter-us-core-practitionerrole-practitioner.md)
-* [USCoreRace](SearchParameter-us-core-race.md)
 
 ### Examples
 

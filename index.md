@@ -7,8 +7,8 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://www.fhir.org/guides/healthedata1-sandbox/ImplementationGuide/healthedata1-sandbox | *Version*:0.1.0 | |
-| *IG Standards status:*[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 2 | *Computable Name*:HealthEData_1Sandbox |
+| *Official URL*:http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox | *Version*:0.1.0 | |
+| * IG Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 2 | *Computable Name*:HealtheData_1Sandbox |
 
 ### Health eData Sandbox
 
@@ -62,9 +62,9 @@ using https:
 
 ### Cross Version Analysis
 
-This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (healthedata1-sandbox.r4)](package.r4.tgz) and [R4B (healthedata1-sandbox.r4b)](package.r4b.tgz) are available.
+This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (hl7.fhir.us.healthedata1-sandbox.r4)](package.r4.tgz) and [R4B (hl7.fhir.us.healthedata1-sandbox.r4b)](package.r4b.tgz) are available.
 
-bar This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (healthedata1-sandbox.r4)](package.r4.tgz) and [R4B (healthedata1-sandbox.r4b)](package.r4b.tgz) are available.  foo
+bar This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (hl7.fhir.us.healthedata1-sandbox.r4)](package.r4.tgz) and [R4B (hl7.fhir.us.healthedata1-sandbox.r4b)](package.r4b.tgz) are available.  foo
 
 ### IG Dependencies
 
@@ -86,12 +86,17 @@ This IG Contains the following dependencies on other IGs.
 ```
 This publication includes IP covered under the following statements.
 <ul>
-<li>Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see <a href="https://www.cdc.gov/other/agencymaterials.html">https://www.cdc.gov/other/agencymaterials.html</a>.<div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<li>ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="Basic-example-requirements-backport.html">Basic/example-requirements-backport</a>, <a href="Requirements-client-requirements.html">ClientRequirements</a>, <a href="Requirements-example-requirements.html">ExampleRequirements</a>, <a href="index.html">HealtheData_1Sandbox</a> and <a href="Requirements-server-requirements.html">ServerRequirements</a></li>
+</ul>
+</div></li>
+<li>Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see <a href="https://www.cdc.gov/other/agencymaterials.html">https://www.cdc.gov/other/agencymaterials.html</a>.<div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
 <ul>
 <li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-CDCREC.html">CDC Race and Ethnicity</a>: <a href="Patient-deceased-example.html">Patient/deceased-example</a></li>
 </ul>
 </div></li>
-<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_3" onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
 <ul>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v2-0203.html">identifierType</a>: <a href="Patient-deceased-example.html">Patient/deceased-example</a></li>
 </ul>
@@ -102,6 +107,11 @@ This publication includes IP covered under the following statements.
 ```
 
 This publication includes IP covered under the following statements.
+
+* ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
+
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [Basic/example-requirements-backport](Basic-example-requirements-backport.md), [ClientRequirements](Requirements-client-requirements.md), [ExampleRequirements](Requirements-example-requirements.md), [HealtheData_1Sandbox](index.md) and [ServerRequirements](Requirements-server-requirements.md)
+
 
 * Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see [https://www.cdc.gov/other/agencymaterials.html](https://www.cdc.gov/other/agencymaterials.html).
 
@@ -121,11 +131,7 @@ by string
 
 with markdown filter
 
-This is a **Healthedata1** sandbox for creation of resources and examples
-
 without markdown filter
-
-This is a **Healthedata1** sandbox for creation of resources and examples
 
 0: John
 
@@ -142,7 +148,7 @@ This is a **Healthedata1** sandbox for creation of resources and examples
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "healthedata1-sandbox",
+  "id" : "hl7.fhir.us.healthedata1-sandbox",
   "extension" : [
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
@@ -153,25 +159,40 @@ This is a **Healthedata1** sandbox for creation of resources and examples
       "valueInteger" : 2
     }
   ],
-  "url" : "http://www.fhir.org/guides/healthedata1-sandbox/ImplementationGuide/healthedata1-sandbox",
+  "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",
   "version" : "0.1.0",
-  "name" : "HealthEData_1Sandbox",
+  "name" : "HealtheData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2026-01-08T03:47:50+00:00",
-  "publisher" : "Health eData Inc",
+  "date" : "2026-02-18T02:49:37+00:00",
+  "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [
     {
+      "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
       "telecom" : [
         {
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/claims"
+        },
+        {
           "system" : "email",
-          "value" : "mailto:ehaas@healthedatainc.com"
+          "value" : "pie@lists.hl7.org"
         }
       ]
     }
   ],
   "description" : "This is a **Healthedata1** sandbox for creation of resources and examples",
-  "packageId" : "healthedata1-sandbox",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }
+      ]
+    }
+  ],
+  "packageId" : "hl7.fhir.us.healthedata1-sandbox",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [
@@ -385,11 +406,50 @@ This is a **Healthedata1** sandbox for creation of resources and examples
         "extension" : [
           {
             "url" : "code",
+            "valueString" : "ipa-comparison"
+          },
+          {
+            "url" : "value",
+            "valueString" : "{current}"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "ips-comparison"
+          },
+          {
+            "url" : "value",
+            "valueString" : "{current}"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueString" : "propagate-status"
           },
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/us/healthedata1-sandbox/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -468,19 +528,6 @@ This is a **Healthedata1** sandbox for creation of resources and examples
           {
             "url" : "value",
             "valueString" : "input/ignoreWarnings.txt"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-history"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://www.fhir.org/guides/healthedata1-sandbox/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -824,11 +871,50 @@ This is a **Healthedata1** sandbox for creation of resources and examples
         "extension" : [
           {
             "url" : "code",
+            "valueCode" : "ipa-comparison"
+          },
+          {
+            "url" : "value",
+            "valueString" : "{current}"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "ips-comparison"
+          },
+          {
+            "url" : "value",
+            "valueString" : "{current}"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
             "valueCode" : "propagate-status"
           },
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/us/healthedata1-sandbox/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -907,19 +993,6 @@ This is a **Healthedata1** sandbox for creation of resources and examples
           {
             "url" : "value",
             "valueString" : "input/ignoreWarnings.txt"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-history"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://www.fhir.org/guides/healthedata1-sandbox/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -1119,6 +1192,19 @@ This is a **Healthedata1** sandbox for creation of resources and examples
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Requirements"
+          }
+        ],
+        "reference" : {
+          "reference" : "Requirements/client-requirements"
+        },
+        "name" : "Client Requirements",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Patient"
           }
         ],
@@ -1127,8 +1213,34 @@ This is a **Healthedata1** sandbox for creation of resources and examples
         },
         "name" : "Deceased Patient Example",
         "description" : "This is a deceased patient example for the *US Core Patient Profile*.",
-        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0",
+        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
         "groupingId" : "TestExamples"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Requirements"
+          }
+        ],
+        "reference" : {
+          "reference" : "Requirements/example-requirements"
+        },
+        "name" : "Example Requirements Resource",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Basic"
+          }
+        ],
+        "reference" : {
+          "reference" : "Basic/example-requirements-backport"
+        },
+        "name" : "example-requirements-backport",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1142,356 +1254,19 @@ This is a **Healthedata1** sandbox for creation of resources and examples
         },
         "name" : "Practitioner 1 Example",
         "description" : "This is a practitioner 1 example for the *US Core Practitioner Profile*.",
-        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"
+        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CapabilityStatement"
+            "valueString" : "Requirements"
           }
         ],
         "reference" : {
-          "reference" : "CapabilityStatement/us-core-client"
+          "reference" : "Requirements/server-requirements"
         },
-        "name" : "US Core Client CapabilityStatement",
-        "description" : "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CapabilityStatement"
-          }
-        ],
-        "reference" : {
-          "reference" : "CapabilityStatement/us-core-client-liquid"
-        },
-        "name" : "US Core Client CapabilityStatement Liquid Rendered",
-        "description" : "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CapabilityStatement"
-          }
-        ],
-        "reference" : {
-          "reference" : "CapabilityStatement/us-core-server"
-        },
-        "name" : "US Core Server CapabilityStatement",
-        "description" : "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CapabilityStatement"
-          }
-        ],
-        "reference" : {
-          "reference" : "CapabilityStatement/us-core-server-liquid"
-        },
-        "name" : "US Core Server CapabilityStatement Liquid Rendered",
-        "description" : "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-allergyintolerance-clinical-status"
-        },
-        "name" : "USCoreAllergyintoleranceClinicalStatus",
-        "description" : "**active | inactive | resolved**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-allergyintolerance-patient"
-        },
-        "name" : "USCoreAllergyintolerancePatient",
-        "description" : "**Who the sensitivity is for**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-category"
-        },
-        "name" : "USCoreCareplanCategory",
-        "description" : "**Type of plan**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-date"
-        },
-        "name" : "USCoreCareplanDate",
-        "description" : "**Time period plan covers**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-patient"
-        },
-        "name" : "USCoreCareplanPatient",
-        "description" : "**Who the care plan is for**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-status"
-        },
-        "name" : "USCoreCareplanStatus",
-        "description" : "**draft | active | on-hold | revoked | completed | entered-in-error | unknown**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-careteam-patient"
-        },
-        "name" : "USCoreCareteamPatient",
-        "description" : "**Who care team is for**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-careteam-role"
-        },
-        "name" : "USCoreCareTeamRole",
-        "description" : "Returns CareTeam resources with a participant role matching the specified code.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-careteam-status"
-        },
-        "name" : "USCoreCareteamStatus",
-        "description" : "**proposed | active | suspended | inactive | entered-in-error**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-abatement-date"
-        },
-        "name" : "USCoreConditionAbatementDate",
-        "description" : "**Date-related abatements (dateTime and period)**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-asserted-date"
-        },
-        "name" : "USCoreConditionAssertedDate",
-        "description" : "Returns conditions with an [assertedDate extension](http://hl7.org/fhir/StructureDefinition/condition-assertedDate) matching the specified date (dateTime).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-category"
-        },
-        "name" : "USCoreConditionCategory",
-        "description" : "**The category of the condition**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-clinical-status"
-        },
-        "name" : "USCoreConditionClinicalStatus",
-        "description" : "**The clinical status of the condition**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-code"
-        },
-        "name" : "USCoreConditionCode",
-        "description" : "**Code for the condition**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-encounter"
-        },
-        "name" : "USCoreConditionEncounter",
-        "description" : "**Encounter created as part of**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-lastupdated"
-        },
-        "name" : "USCoreConditionLastUpdated",
-        "description" : "**When the resource version last changed**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-onset-date"
-        },
-        "name" : "USCoreConditionOnsetDate",
-        "description" : "**Date related onsets (dateTime and Period)**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-patient"
-        },
-        "name" : "USCoreConditionPatient",
-        "description" : "**Who has the condition?**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-condition-recorded-date"
-        },
-        "name" : "USCoreConditionRecordedDate",
-        "description" : "**Date record was first recorded**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-practitionerrole-practitioner"
-        },
-        "name" : "USCorePractitionerrolePractitioner",
-        "description" : "**Practitioner that is able to provide the defined services for the organization**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "SearchParameter"
-          }
-        ],
-        "reference" : {
-          "reference" : "SearchParameter/us-core-race"
-        },
-        "name" : "USCoreRace",
-        "description" : "Returns patients with a race extension matching the specified code.",
+        "name" : "Server Requirements",
         "exampleBoolean" : false
       }
     ],

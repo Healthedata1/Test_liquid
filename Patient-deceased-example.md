@@ -10,9 +10,22 @@
 | :--- |
 | *Page standards status:*[Informative](http://hl7.org/fhir/R4/versions.html#std-process) |
 
- **id** deceased-example
+###  My Custom Liquid Script 
 
-BAR
+ **☞ id** deceased-example
+
+ and foo = ... 
+BAR !!! 
+
+example meta data
+
+* 1) Deceased Patient Example DECEASED PATIENT EXAMPLE 
+* 2) 
+
+This is a deceased patient example for the **US Core Patient Profile**.
+
+ THIS IS A DECEASED PATIENT EXAMPLE FOR THE US CORE PATIENT PROFILE.  
+prepend example: foodeceased-example
 
 
 
@@ -23,8 +36,18 @@ BAR
   "resourceType" : "Patient",
   "id" : "deceased-example",
   "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Deceased Patient Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a deceased patient example for the *US Core Patient Profile*."
+      }
+    ],
     "profile" : [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|0.1.0"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
     ]
   },
   "extension" : [

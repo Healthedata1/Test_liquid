@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="example-requirements-backport"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic example-requirements-backport</b></p><a name="example-requirements-backport"> </a><a name="hcexample-requirements-backport"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <code>http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements</code></p></div><p><b>Extension Definition for Requirements.url for Version 5.0</b>: <a href="Requirements-example-requirements.html">Example Requirements Resource</a></p><p><b>Extension Definition for Requirements.name for Version 5.0</b>: ExampleRequirements</p><p><b>Extension Definition for Requirements.title for Version 5.0</b>: Example Requirements Resource</p><p><b>Extension Definition for Requirements.version for Version 5.0</b>: 1.0.0</p><p><b>Extension Definition for Requirements.status for Version 5.0</b>: draft</p><p><b>Extension Definition for Requirements.date for Version 5.0</b>: 2026-02-13</p><p><b>Extension Definition for Requirements.publisher for Version 5.0</b>: Example Organization</p><p><b>Extension Definition for Requirements.jurisdiction for Version 5.0</b>: <span title="Codes:{urn:iso:std:iso:3166 US}">United States of America</span></p><p><b>Extension Definition for Requirements.copyright for Version 5.0</b>: </p><div><p>Copyright (c) 2026 Example Organization. All rights reserved.</p>
+</div><blockquote><p><b>Extension Definition for Requirements.actor for Version 5.0</b></p><ul><li>key: actor-01</li><li>reference: Clinical End User</li></ul></blockquote><blockquote><p><b>Extension Definition for Requirements.statement for Version 5.0</b></p><ul><li>key: stmt-01</li><li>conformance: SHALL</li><li>requirement: </li><li>actor: actor-01</li></ul></blockquote><div><p>The system SHALL allow the actor to search for patients by name.</p>
+</div><blockquote><p><b>Extension Definition for Requirements.statement for Version 5.0</b></p><ul><li>key: stmt-02</li><li>conformance: SHOULD</li><li>requirement: </li><li>actor: actor-01</li></ul></blockquote><div><p>The system SHOULD display patient demographics in a summary view.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Requirements}">Requirements</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="http://example.org/fhir/Requirements/example"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="ExampleRequirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Example Requirements Resource"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2026-02-13"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="Example Organization"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="US"/>
+        <display value="United States of America"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.copyright">
+    <valueMarkdown value="Copyright (c) 2026 Example Organization. All rights reserved."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor">
+    <extension url="key">
+      <valueId value="actor-01"/>
+    </extension>
+    <extension url="reference">
+      <valueReference>
+        <display value="Clinical End User"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="key">
+      <valueId value="stmt-01"/>
+    </extension>
+    <extension url="conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="requirement">
+      <valueMarkdown value="The system SHALL allow the actor to search for patients by name."/>
+    </extension>
+    <extension url="actor">
+      <valueId value="actor-01"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="key">
+      <valueId value="stmt-02"/>
+    </extension>
+    <extension url="conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="requirement">
+      <valueMarkdown value="The system SHOULD display patient demographics in a summary view."/>
+    </extension>
+    <extension url="actor">
+      <valueId value="actor-01"/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+      <display value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

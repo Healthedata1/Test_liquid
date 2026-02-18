@@ -1,0 +1,1081 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Client Requirements - JSON Representation - Health eData 1 Sandbox v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.2"}
+    h3,h4,h5,h6{--heading-prefix:"6.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Health eData 1 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Client Requirements</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.org/fhir/us/healthedata1-sandbox/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Requirements-client-requirements.html">Narrative Content</a>
+  </li>
+
+
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Client Requirements - JSON Representation</h2>
+
+  <table class="colstu">
+    <tr>
+
+      <td colspan="1">
+        
+          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 2
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Requirements-client-requirements.json" no-download="true">Raw json</a> | <a href="Requirements-client-requirements.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements">resourceType</a>" : "Requirements",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Requirements.id">id</a>" : "client-requirements",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#Requirements.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n\n&lt;p&gt;These requirements apply to the actor: &lt;i&gt;&lt;strong&gt;US Core Requestor(Servers including Certifying Systems)&lt;/strong&gt;&lt;/i&gt;&lt;/p&gt;\n\n&lt;table class=\&quot;grid\&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n    &lt;th&gt;Key&lt;/th&gt;\n    &lt;th&gt;Conformance&lt;/th&gt;\n    &lt;th&gt;Requirement&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0022&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[When populating a coded element with a &lt;a href=\&quot;http://hl7.org/fhir/R4/terminologies.html#required\&quot;&gt;required binding&lt;/a&gt; to a ValueSet definition] US Core Requestors &lt;strong&gt;SHALL&lt;/strong&gt; be capable of processing the code [from the required binding ValueSet]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0028&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;US Core Requestors SHALL be capable of processing the code in ['DataElement.code.code' or text in 'DataElement.code.text' for a DataElement.code that has an extensible binding]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0032&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Clients SHALL be able to process [elements that are] &lt;a href=\&quot;https://hl7.org/fhir/us/core/must-support.html\&quot;&gt;Mandatory&lt;/a&gt; or &lt;a href=\&quot;https://hl7.org/fhir/us/core/must-support.html\&quot;&gt;Must Support elements&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0035&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;receivers\u00a0SHOULD\u00a0accept instances that ... contain unexpected data elements\u00a0 [&lt;a href=\&quot;http://hl7.org/fhir/R4/conformance-rules.html#isModifier\&quot;&gt;definition&lt;/a&gt;]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0036&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD-NOT&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;receivers\u00a0SHOULD\u00a0[NOT] accept instances that ... contain unexpected data elements\u00a0… when those elements are modifier elements [&lt;a href=\&quot;http://hl7.org/fhir/R4/conformance-rules.html#isModifier\&quot;&gt;definition&lt;/a&gt;]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0037&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Unless a Client determines they can process [a resource with a modifier] safely, rejection is typically the only safe action if unexpected modifier elements are present.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0053&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When searching using the &lt;code&gt;token&lt;/code&gt; type searchparameter &lt;a href=\&quot;http://hl7.org/fhir/R4/search.html#token\&quot;&gt;(how to search by token)&lt;/a&gt; The Client &lt;strong&gt;SHALL&lt;/strong&gt; provide at least a code value&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0054&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When searching using the &lt;code&gt;token&lt;/code&gt; type searchparameter &lt;a href=\&quot;http://hl7.org/fhir/R4/search.html#token\&quot;&gt;(how to search by token)&lt;/a&gt; The Client … &lt;strong&gt;MAY&lt;/strong&gt; provide both the system and code values.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0056&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When searching using the &lt;code&gt;reference&lt;/code&gt; type searchparameter &lt;a href=\&quot;http://hl7.org/fhir/R4/search.html#reference\&quot;&gt;(how to search by reference)&lt;/a&gt; The Client &lt;strong&gt;SHALL&lt;/strong&gt; provide at least an id value&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0057&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When searching using the &lt;code&gt;reference&lt;/code&gt; type searchparameter &lt;a href=\&quot;http://hl7.org/fhir/R4/search.html#reference\&quot;&gt;(how to search by reference)&lt;/a&gt; The Client … &lt;strong&gt;MAY&lt;/strong&gt; provide both the Type and id values.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0059&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When searching using the &lt;code&gt;date&lt;/code&gt; type searchparameter &lt;a href=\&quot;http://hl7.org/fhir/R4/search.html#date\&quot;&gt;(how to search by date)&lt;/a&gt; The Client &lt;strong&gt;SHALL&lt;/strong&gt; provide values precise to the day for elements of datatype &lt;code&gt;date&lt;/code&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0060&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When searching using the &lt;code&gt;date&lt;/code&gt; type searchparameter &lt;a href=\&quot;http://hl7.org/fhir/R4/search.html#date\&quot;&gt;(how to search by date)&lt;/a&gt; The Client &lt;strong&gt;SHALL&lt;/strong&gt; provide values precise … to the second + time offset for elements of datatype &lt;code&gt;dateTime&lt;/code&gt;.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0076&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;For querying and reading US Core Profiles, Must Support on any profile data element &lt;strong&gt;SHALL&lt;/strong&gt; be interpreted as follows…:&lt;/p&gt;\n&lt;p&gt;US Core Requestors &lt;strong&gt;SHALL&lt;/strong&gt; be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0079&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;For querying and reading US Core Profiles, Must Support on any profile data element &lt;strong&gt;SHALL&lt;/strong&gt; be interpreted as follows…:&lt;/p&gt;\n&lt;p&gt;When querying US Core Responders, US Core Requestors &lt;strong&gt;SHALL&lt;/strong&gt; interpret missing data elements within resource instances as data not present in the US Core Responder’s system.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0082&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;For querying and reading US Core Profiles, Must Support on any profile data element &lt;strong&gt;SHALL&lt;/strong&gt; be interpreted as follows…:&lt;/p&gt;\n&lt;p&gt;US Core Requestors &lt;strong&gt;SHALL&lt;/strong&gt; be able to process resource instances containing data elements asserting missing information.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0083&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Implementors [US Core Requestors] seeking ONC certification [in the ONC IT Health Certification program] &lt;strong&gt;SHALL&lt;/strong&gt; interpret Additional USCDI Requirements as Must Support elements as documented above and below;&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0085&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Implementors [US Core Requestors] [not] seeking ONC certification [in the ONC IT Health Certification program] &lt;strong&gt;SHALL&lt;/strong&gt; interpret Additional USCDI Requirements as … optional.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0092&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[W]hen claiming conformance [to a profile with a must support primitive element] … US Core requestors SHALL be capable of processing the value [of the primitive element]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0098&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When claiming conformance [to a must support complex element with no must support sub-elements] … US Core Requestors SHALL be capable of processing a value in [the complex element]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0100&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When claiming conformance [to a must support complex element with one or more must support sub-elements] … US Core Requestors SHALL be capable of processing a values in [each must support sub-element]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0102&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems [US Core Requestors] can support the other elements [of a complex element, not labeled as a Must Support], but this is not a requirement of US Core&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0104&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The U.S. Core Data for Interoperability (USCDI) may require additional elements, [which is a requirement for certification in the ONC IT Health Certification program, but not a requirement of US Core conformance for US Core Requestors]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0106&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;In certain profiles, only specific resource references are labeled as Must Support.&lt;/p&gt;\n&lt;p&gt;...&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;US Core Requestors &lt;strong&gt;SHALL&lt;/strong&gt; be capable of processing [such an element] with a valid reference to [all listed Must Support profile(s).]&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0108&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems [US Core Requestors] can support other [resource] references [other than those labeled as Must Support], but this is not a requirement of US Core&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0110&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;In specific profiles, only a single resource reference is present on an element labeled Must Support.&lt;/p&gt;\n&lt;p&gt;…&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;US Core Requestors &lt;strong&gt;SHALL&lt;/strong&gt; be capable of processing [such an element] with a valid reference to [the Must Support Profile.]&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0112&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI&lt;/p&gt;\n&lt;p&gt;… When claiming conformance to [such a] profile:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;US Core Requestors &lt;strong&gt;SHALL&lt;/strong&gt; be capable of processing [the Must Support or data type choice]&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0113&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI&lt;/p&gt;\n&lt;p&gt;…&lt;/p&gt;\n&lt;p&gt;[US Core Requestors] &lt;strong&gt;MAY&lt;/strong&gt; support ... processing other [data type] choice elements (such as Observation.effectivePeriod), but this is not a requirement of US Core.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0116&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;There are several instances in this Guide where there is a choice of supporting one or another profile element to meet the Must Support or Additional USCDI requirement. In such cases, … the Client application &lt;strong&gt;SHALL&lt;/strong&gt; support all elements.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0127&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;US Core Clients should follow the &lt;a href=\&quot;https://en.wikipedia.org/wiki/Principle_of_least_privilege\&quot;&gt;principle of least privilege&lt;/a&gt; and access only the necessary resources.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0172&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;US Core requires ... additional metadata [to be available through the Server's &lt;a href=\&quot;https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#using-well-known\&quot;&gt;Well-Known Uniform Resource Identifier (URI)&lt;/a&gt;]: ... [in] &lt;code&gt;scopes_supported&lt;/code&gt; [the] array of scopes a Client may request. The app SHOULD inspect the returned scopes and accommodate the differences from the scopes it asked for and registered.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0194&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[When Clients request a resource in a specific language] Clients MAY request language/locale using the http &lt;a href=\&quot;https://www.ietf.org/rfc/rfc2616.txt\&quot;&gt;Accept-Language&lt;/a&gt; header.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0226&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems [Clients] may support other [DiagnosticReport] categories as well.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0232&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;a Client can determine the note and report types supported by a Server by invoking the standard FHIR Value Set Expansion (&lt;a href=\&quot;http://hl7.org/fhir/R4/valueset-operation-expand.html\&quot;&gt;$expand&lt;/a&gt;) operation defined in the FHIR R4 specification.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0251&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application MUST support all methods [for referencing a medication resource: returned bundle, as an external resource, or as a &lt;a href=\&quot;http://hl7.org/fhir/R4/references.html#contained\&quot;&gt;contained&lt;/a&gt; resource]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0264&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;To provide a list of a patient’s medications, it may be necessary to “de-duplicate” them. The de-duplication activity ... SHOULD be provided by the Client.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0275&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;API consumers can query by category  when accessing patient information.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0286&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Therefore, Client applications must plan on deduplication methods that rely on something other than a common identifier across FHIR versions.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0292&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0293&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]\nMedicationStatement may be deprecated, and the data SHOULD be mapped to MedicationRequest.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0294&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]\nCare teams as represented by CarePlan in DSTU2 SHOULD be replaced by and the data mapped to CareTeam in R4&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0299&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When updating between versions, Clients SHOULD consider the impact of any changes to data visualization on the usability for the end user and the maintenance of data integrity.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0301&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Separate authorization is required [between different versions of FHIR]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0314&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core Practitioner Profile]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0315&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core PractitionerRole Profile]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0316&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core RelatedPerson Profile]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0369&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [DocumentReference.attachment.url]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0370&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [DocumentReference.attachment.data]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0376&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [ Encounter.reasonCode]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0377&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [Encounter.reasonReference]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0380&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [Encounter.location.location]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0381&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [Encounter.serviceProvider]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0388&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support ... Goal.startDate&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0389&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support ... Goal.target.dueDate&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0403&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [using a code in .medicationCodeableConcept to represent medications when supporting the US Core MedicationDispense profile]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0404&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [referencing a Medication resource in .medicationReferencet to represent medications when supporting the US Core MedicationDispense profile]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0409&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [medicationRequest.reporedtBoolean]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0410&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support [MedicationRequest.reportedReference]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0412&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonCode.]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0413&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonReference.]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0415&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program,] Clients SHALL support all target resources in MedicationRequest.reasonReference.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0476&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support both [the PractionerRole profile and the Practioner.address element]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0483&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core Procedure Profile for communicating the reason or justification for a referral as Additional USCDI Requirements&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0485&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [Procedure.reasonCode and Procedure.reasonReference]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0487&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program,] when using Procedure.reasonReference … Clients SHALL support all target resources in Procedure.reasonReference&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0517&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core ServiceRequest Profile for communicating the reason or justification for a referral as Additional USCDI Requirements&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0519&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [ServiceRequest.reasonCode and ServiceRequest.reasonReference]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0521&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For organizations participating in the ONC Health IT Certification program,] when using ServiceRequest.reasonReference … Clients SHALL support all target resources in ServiceRequest.reasonReference&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0525&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Client application SHALL support both [ Specimen.identifier and Specimen.accessionIdentifier]&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0526&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Clients may request Specimen resources be included with the Observation or DiagnosticReport resource query.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0527&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Clients] SHOULD Support the Following Implementation Guide &lt;a href=\&quot;http://hl7.org/fhir/smart-app-launch/history.html\&quot;&gt;SMART App Launch version 2.0.0 and later&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0528&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Clients] MAY support the transaction interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0529&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Clients] MAY support the batch interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0530&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Clients] MAY support the search-system interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0531&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Clients] MAY support the history-system interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0544&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Server] MAY support the transaction interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0545&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Server] MAY support the batch interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0546&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Server] MAY support the search-system interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0547&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[Server] MAY support the history-system interaction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0551&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems SHALL establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0553&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;US Federal systems SHOULD conform with the risk management and mitigation requirements defined in NIST 800 series documents.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0555&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;US Federal systems … SHOULD include security category assignment following NIST 800-60 vol. 2 Appendix D.14.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0557&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The coordination of risk management and the related security and privacy controls … SHOULD be defined in the Business Associate Agreement when available.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0559&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems SHALL reference a single time source to establish a common time base for security auditing and clinical data records among computing systems.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0561&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The selected time service SHOULD be documented in the Business Associate Agreement when available.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0563&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems SHALL keep audit logs of the various transactions.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0565&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems SHALL use TLS version 1.2 or higher for all transmissions not taking place over a secure network connection.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0567&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;US Federal systems SHOULD conform with FIPS PUB 140-2.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0569&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems SHALL conform to &lt;a href=\&quot;http://hl7.org/fhir/R4/security.html#http\&quot;&gt;FHIR Communications Security&lt;/a&gt; requirements.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0571&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;For Authentication and Authorization, Systems SHALL support any &lt;a href=\&quot;http://hl7.org/fhir/smart-app-launch/history.html\&quot;&gt;SMART App Launch version&lt;/a&gt; for Client &amp;lt;-&amp;gt; Server interactions.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0573&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems SHALL implement consent requirements per their state, local, and institutional policies.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0575&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The Business Associate Agreements SHOULD document systems’ mutual consent requirements.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0577&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems SHOULD provide Provenance statements using the &lt;a href=\&quot;https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-provenance.html\&quot;&gt;US Core Provenance Profile&lt;/a&gt; resource and associated requirements.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0579&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems MAY implement the &lt;a href=\&quot;http://hl7.org/fhir/R4/security.html#digital%20signatures\&quot;&gt;FHIR Digital Signatures&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0581&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Systems MAY protect the confidentiality of data at rest via encryption and associated access controls.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0582&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The [additional] current binding [&lt;a href=\&quot;https://hl7.org/fhir/R5/terminologies.html#binding\&quot;&gt;FHIR R5 link&lt;/a&gt;] requires newly recorded, non-legacy data to be drawn from the [bound] value set.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0800&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;MAY&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;For querying and reading US Core Profiles, Must Support on any profile data element &lt;strong&gt;SHALL&lt;/strong&gt; be interpreted as follows…:&lt;/p&gt;\n&lt;p&gt;[The US Core Requesters processing of the resource instances] may result in a determination not to use the resource if the resource content does not meet business requirements.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0815&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;When the Server supports [ the _include search parameter], Clients &lt;strong&gt;SHOULD&lt;/strong&gt; use the _include search parameter to retrieve referenced content instead of searching for a resource and then performing a separate search for other references (for example, Patient, Encounter, and Location) in the result set.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0816&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;If the Server does not support the _include search parameter, Clients &lt;strong&gt;SHOULD&lt;/strong&gt; consolidate duplicate searches before searching for referenced resources in the result set&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0817&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD-NOT&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The &lt;a href=\&quot;https://httpwg.org/specs/rfc9111.html\&quot;&gt;HTTP Cache-Control&lt;/a&gt; response header stores a response associated with a request and reuses the stored response for subsequent requests. If Cache-Control is present in the Server response headers, the Clients &lt;strong&gt;SHOULD NOT&lt;/strong&gt; search the same data within the time stated in Cache-Control headers.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0829&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL-NOT&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;US Core SearchParameters referenced in [the US Core Client] CapabilityStatement that are derived from standard FHIR SearchParameters are only defined to document ... Client expectations. They specify additional expectations for the following SearchParameter elements:B7&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;multipleAnd&lt;/li&gt;\n&lt;li&gt;multipleOr&lt;/li&gt;\n&lt;li&gt;comparator&lt;/li&gt;\n&lt;li&gt;modifier&lt;/li&gt;\n&lt;li&gt;chain&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;They &lt;strong&gt;SHALL NOT&lt;/strong&gt; be interpreted as search parameters for search.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0830&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHOULD&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;Clients &lt;strong&gt;SHOULD&lt;/strong&gt; use the standard FHIR SearchParameters.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0849&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;[For the US Core Observation Screening Assessment Profile,] the Client system ... SHALL support [both] Reference(US Core Observation Screening Assessment Profile) [and] Reference(US Core QuestionnaireResponse Profile) for Observation.derivedFrom&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0853&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The certifying Client application &lt;strong&gt;SHALL&lt;/strong&gt; support the [&lt;a href=\&quot;https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html\&quot;&gt;US Core Interpreter Needed Extension&lt;/a&gt;] on [the &lt;a href=\&quot;https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html\&quot;&gt;US Core Patient Profile&lt;/a&gt;] .&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0854&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;The certifying Client application &lt;strong&gt;SHALL&lt;/strong&gt; support the [&lt;a href=\&quot;https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html\&quot;&gt;US Core Interpreter Needed Extension&lt;/a&gt;] on [the &lt;a href=\&quot;https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-encounter.html\&quot;&gt;US Core Encounter Profile&lt;/a&gt;].&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n    &lt;tr&gt;\n    &lt;td&gt;CONF-0869&lt;/td&gt;\n    &lt;td style=\&quot;text-align: center;\&quot;&gt;SHALL&lt;/td&gt;\n    &lt;td&gt;&lt;div&gt;&lt;p&gt;'Observation.performer' target profiles &lt;a href=\&quot;https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-practitioner.html\&quot;&gt;US Core Practitioner Profile&lt;/a&gt; and &lt;a href=\&quot;https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html\&quot;&gt;US Core Patient Profile&lt;/a&gt; are labeled Must Support.... Clients SHALL support both.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    \n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#Requirements.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueInteger</a>" : 2,
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">_valueInteger</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#integer.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCanonical</a>" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "trial-use",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">_valueCode</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCanonical</a>" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.url">url</a>" : "http://example.org/fhir/Requirements/client-requirements",
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.name">name</a>" : "ClientRequirements",
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.title">title</a>" : "Client Requirements",
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.date">date</a>" : "2026-02-18T02:49:37+00:00",
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.publisher">publisher</a>" : "HL7 International / Payer/Provider Information Exchange Work Group",
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 International / Payer/Provider Information Exchange Work Group",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.hl7.org/Special/committees/claims"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "pie@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "US"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.actor">_actor</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#canonical.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/display",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "US Core Requester (Clients including Certifying Systems)"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement">statement</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0022",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[When populating a coded element with a [required binding](http://hl7.org/fhir/R4/terminologies.html#required) to a ValueSet definition] US Core Requestors **SHALL** be capable of processing the code [from the required binding ValueSet]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0028",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "US Core Requestors SHALL be capable of processing the code in ['DataElement.code.code' or text in 'DataElement.code.text' for a DataElement.code that has an extensible binding]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0032",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Clients SHALL be able to process [elements that are] [Mandatory](https://hl7.org/fhir/us/core/must-support.html) or [Must Support elements](https://hl7.org/fhir/us/core/must-support.html)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0035",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "receivers\u00a0SHOULD\u00a0accept instances that ... contain unexpected data elements\u00a0 [[definition](http://hl7.org/fhir/R4/conformance-rules.html#isModifier)]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0036",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD-NOT"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "receivers\u00a0SHOULD\u00a0[NOT] accept instances that ... contain unexpected data elements\u00a0… when those elements are modifier elements [[definition](http://hl7.org/fhir/R4/conformance-rules.html#isModifier)]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0037",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Unless a Client determines they can process [a resource with a modifier] safely, rejection is typically the only safe action if unexpected modifier elements are present."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0053",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When searching using the `token` type searchparameter [(how to search by token)](http://hl7.org/fhir/R4/search.html#token) The Client **SHALL** provide at least a code value"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0054",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When searching using the `token` type searchparameter [(how to search by token)](http://hl7.org/fhir/R4/search.html#token) The Client … **MAY** provide both the system and code values."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0056",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When searching using the `reference` type searchparameter [(how to search by reference)](http://hl7.org/fhir/R4/search.html#reference) The Client **SHALL** provide at least an id value"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0057",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When searching using the `reference` type searchparameter [(how to search by reference)](http://hl7.org/fhir/R4/search.html#reference) The Client … **MAY** provide both the Type and id values."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0059",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When searching using the `date` type searchparameter [(how to search by date)](http://hl7.org/fhir/R4/search.html#date) The Client **SHALL** provide values precise to the day for elements of datatype `date`"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0060",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When searching using the `date` type searchparameter [(how to search by date)](http://hl7.org/fhir/R4/search.html#date) The Client **SHALL** provide values precise … to the second + time offset for elements of datatype `dateTime`."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0076",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:\n\nUS Core Requestors **SHALL** be capable of processing resource instances containing the data elements without generating an error or causing the application to fail."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0079",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:\n\nWhen querying US Core Responders, US Core Requestors **SHALL** interpret missing data elements within resource instances as data not present in the US Core Responder’s system."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0082",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:\n\nUS Core Requestors **SHALL** be able to process resource instances containing data elements asserting missing information."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0083",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Implementors [US Core Requestors] seeking ONC certification [in the ONC IT Health Certification program] **SHALL** interpret Additional USCDI Requirements as Must Support elements as documented above and below;"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0085",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Implementors [US Core Requestors] [not] seeking ONC certification [in the ONC IT Health Certification program] **SHALL** interpret Additional USCDI Requirements as … optional."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0092",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[W]hen claiming conformance [to a profile with a must support primitive element] … US Core requestors SHALL be capable of processing the value [of the primitive element]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0098",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When claiming conformance [to a must support complex element with no must support sub-elements] … US Core Requestors SHALL be capable of processing a value in [the complex element]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0100",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When claiming conformance [to a must support complex element with one or more must support sub-elements] … US Core Requestors SHALL be capable of processing a values in [each must support sub-element]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0102",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems [US Core Requestors] can support the other elements [of a complex element, not labeled as a Must Support], but this is not a requirement of US Core"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0104",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The U.S. Core Data for Interoperability (USCDI) may require additional elements, [which is a requirement for certification in the ONC IT Health Certification program, but not a requirement of US Core conformance for US Core Requestors]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0106",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "In certain profiles, only specific resource references are labeled as Must Support.\n\n...\n\n- US Core Requestors **SHALL** be capable of processing [such an element] with a valid reference to [all listed Must Support profile(s).]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0108",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems [US Core Requestors] can support other [resource] references [other than those labeled as Must Support], but this is not a requirement of US Core"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0110",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "In specific profiles, only a single resource reference is present on an element labeled Must Support.\n\n…\n\n- US Core Requestors **SHALL** be capable of processing [such an element] with a valid reference to [the Must Support Profile.]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0112",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI\n\n… When claiming conformance to [such a] profile:\n\n- US Core Requestors **SHALL** be capable of processing [the Must Support or data type choice]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0113",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI\n\n…\n\n[US Core Requestors] **MAY** support ... processing other [data type] choice elements (such as Observation.effectivePeriod), but this is not a requirement of US Core."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0116",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "There are several instances in this Guide where there is a choice of supporting one or another profile element to meet the Must Support or Additional USCDI requirement. In such cases, … the Client application **SHALL** support all elements."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0127",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "US Core Clients should follow the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) and access only the necessary resources."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0172",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "US Core requires ... additional metadata [to be available through the Server's [Well-Known Uniform Resource Identifier (URI)](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#using-well-known)]: ... [in] `scopes_supported` [the] array of scopes a Client may request. The app SHOULD inspect the returned scopes and accommodate the differences from the scopes it asked for and registered."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0194",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[When Clients request a resource in a specific language] Clients MAY request language/locale using the http [Accept-Language](https://www.ietf.org/rfc/rfc2616.txt) header."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0226",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems [Clients] may support other [DiagnosticReport] categories as well."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0232",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "a Client can determine the note and report types supported by a Server by invoking the standard FHIR Value Set Expansion ([$expand](http://hl7.org/fhir/R4/valueset-operation-expand.html)) operation defined in the FHIR R4 specification."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0251",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application MUST support all methods [for referencing a medication resource: returned bundle, as an external resource, or as a [contained](http://hl7.org/fhir/R4/references.html#contained) resource]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0264",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "To provide a list of a patient’s medications, it may be necessary to “de-duplicate” them. The de-duplication activity ... SHOULD be provided by the Client."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0275",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "API consumers can query by category  when accessing patient information."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0286",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Therefore, Client applications must plan on deduplication methods that rely on something other than a common identifier across FHIR versions."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0292",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0293",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]\nMedicationStatement may be deprecated, and the data SHOULD be mapped to MedicationRequest."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0294",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]\nCare teams as represented by CarePlan in DSTU2 SHOULD be replaced by and the data mapped to CareTeam in R4"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0299",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When updating between versions, Clients SHOULD consider the impact of any changes to data visualization on the usability for the end user and the maintenance of data integrity."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0301",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Separate authorization is required [between different versions of FHIR]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0314",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core Practitioner Profile]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0315",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core PractitionerRole Profile]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0316",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core RelatedPerson Profile]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0369",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [DocumentReference.attachment.url]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0370",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [DocumentReference.attachment.data]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0376",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [ Encounter.reasonCode]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0377",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [Encounter.reasonReference]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0380",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [Encounter.location.location]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0381",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [Encounter.serviceProvider]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0388",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support ... Goal.startDate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0389",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support ... Goal.target.dueDate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0403",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [using a code in .medicationCodeableConcept to represent medications when supporting the US Core MedicationDispense profile]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0404",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [referencing a Medication resource in .medicationReferencet to represent medications when supporting the US Core MedicationDispense profile]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0409",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [medicationRequest.reporedtBoolean]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0410",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support [MedicationRequest.reportedReference]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0412",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonCode.]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0413",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonReference.]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0415",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program,] Clients SHALL support all target resources in MedicationRequest.reasonReference."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0476",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support both [the PractionerRole profile and the Practioner.address element]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0483",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core Procedure Profile for communicating the reason or justification for a referral as Additional USCDI Requirements"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0485",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [Procedure.reasonCode and Procedure.reasonReference]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0487",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program,] when using Procedure.reasonReference … Clients SHALL support all target resources in Procedure.reasonReference"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0517",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core ServiceRequest Profile for communicating the reason or justification for a referral as Additional USCDI Requirements"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0519",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [ServiceRequest.reasonCode and ServiceRequest.reasonReference]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0521",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For organizations participating in the ONC Health IT Certification program,] when using ServiceRequest.reasonReference … Clients SHALL support all target resources in ServiceRequest.reasonReference"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0525",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Client application SHALL support both [ Specimen.identifier and Specimen.accessionIdentifier]"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0526",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Clients may request Specimen resources be included with the Observation or DiagnosticReport resource query."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0527",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Clients] SHOULD Support the Following Implementation Guide [SMART App Launch version 2.0.0 and later](http://hl7.org/fhir/smart-app-launch/history.html)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0528",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Clients] MAY support the transaction interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0529",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Clients] MAY support the batch interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0530",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Clients] MAY support the search-system interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0531",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Clients] MAY support the history-system interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0544",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Server] MAY support the transaction interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0545",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Server] MAY support the batch interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0546",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Server] MAY support the search-system interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0547",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[Server] MAY support the history-system interaction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0551",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems SHALL establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0553",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "US Federal systems SHOULD conform with the risk management and mitigation requirements defined in NIST 800 series documents."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0555",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "US Federal systems … SHOULD include security category assignment following NIST 800-60 vol. 2 Appendix D.14."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0557",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The coordination of risk management and the related security and privacy controls … SHOULD be defined in the Business Associate Agreement when available."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0559",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems SHALL reference a single time source to establish a common time base for security auditing and clinical data records among computing systems."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0561",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The selected time service SHOULD be documented in the Business Associate Agreement when available."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0563",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems SHALL keep audit logs of the various transactions."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0565",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems SHALL use TLS version 1.2 or higher for all transmissions not taking place over a secure network connection."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0567",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "US Federal systems SHOULD conform with FIPS PUB 140-2."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0569",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems SHALL conform to [FHIR Communications Security](http://hl7.org/fhir/R4/security.html#http) requirements."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0571",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "For Authentication and Authorization, Systems SHALL support any [SMART App Launch version](http://hl7.org/fhir/smart-app-launch/history.html) for Client &lt;-&gt; Server interactions."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0573",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems SHALL implement consent requirements per their state, local, and institutional policies."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0575",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The Business Associate Agreements SHOULD document systems’ mutual consent requirements."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0577",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems SHOULD provide Provenance statements using the [US Core Provenance Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-provenance.html) resource and associated requirements."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0579",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems MAY implement the [FHIR Digital Signatures](http://hl7.org/fhir/R4/security.html#digital%20signatures)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0581",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Systems MAY protect the confidentiality of data at rest via encryption and associated access controls."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0582",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The [additional] current binding [[FHIR R5 link](https://hl7.org/fhir/R5/terminologies.html#binding)] requires newly recorded, non-legacy data to be drawn from the [bound] value set."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0800",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "MAY"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:\n\n[The US Core Requesters processing of the resource instances] may result in a determination not to use the resource if the resource content does not meet business requirements."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0815",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "When the Server supports [ the _include search parameter], Clients **SHOULD** use the _include search parameter to retrieve referenced content instead of searching for a resource and then performing a separate search for other references (for example, Patient, Encounter, and Location) in the result set."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0816",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "If the Server does not support the _include search parameter, Clients **SHOULD** consolidate duplicate searches before searching for referenced resources in the result set"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0817",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD-NOT"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The [HTTP Cache-Control](https://httpwg.org/specs/rfc9111.html) response header stores a response associated with a request and reuses the stored response for subsequent requests. If Cache-Control is present in the Server response headers, the Clients **SHOULD NOT** search the same data within the time stated in Cache-Control headers."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Requirements.statement.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : true
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0829",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "US Core SearchParameters referenced in [the US Core Client] CapabilityStatement that are derived from standard FHIR SearchParameters are only defined to document ... Client expectations. They specify additional expectations for the following SearchParameter elements:B7\n\n- multipleAnd\n- multipleOr\n- comparator\n- modifier\n- chain\n\nThey **SHALL NOT** be interpreted as search parameters for search. "
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0830",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHOULD"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "Clients **SHOULD** use the standard FHIR SearchParameters."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0849",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "[For the US Core Observation Screening Assessment Profile,] the Client system ... SHALL support [both] Reference(US Core Observation Screening Assessment Profile) [and] Reference(US Core QuestionnaireResponse Profile) for Observation.derivedFrom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0853",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The certifying Client application **SHALL** support the [[US Core Interpreter Needed Extension](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html)] on [the [US Core Patient Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html)] ."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0854",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : "The certifying Client application **SHALL** support the [[US Core Interpreter Needed Extension](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html)] on [the [US Core Encounter Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-encounter.html)]. "
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.key">key</a>" : "CONF-0869",
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.conformance">conformance</a>" : [
+        "SHALL"
+      ],
+      "<a href="http://hl7.org/fhir/R5/requirements.html#XRequirements.statement.requirement">requirement</a>" : " 'Observation.performer' target profiles [US Core Practitioner Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-practitioner.html) and [US Core Patient Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html) are labeled Must Support.... Clients SHALL support both."
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 02:49+0000">2026-02-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

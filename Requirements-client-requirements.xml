@@ -1,0 +1,2011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="client-requirements"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+
+<p>These requirements apply to the actor: <i><strong>US Core Requestor(Servers including Certifying Systems)</strong></i></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+    <th>Key</th>
+    <th>Conformance</th>
+    <th>Requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+    <td>CONF-0022</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[When populating a coded element with a <a href="http://hl7.org/fhir/R4/terminologies.html#required">required binding</a> to a ValueSet definition] US Core Requestors <strong>SHALL</strong> be capable of processing the code [from the required binding ValueSet]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0028</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>US Core Requestors SHALL be capable of processing the code in ['DataElement.code.code' or text in 'DataElement.code.text' for a DataElement.code that has an extensible binding]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0032</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Clients SHALL be able to process [elements that are] <a href="https://hl7.org/fhir/us/core/must-support.html">Mandatory</a> or <a href="https://hl7.org/fhir/us/core/must-support.html">Must Support elements</a></p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0035</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>receivers SHOULD accept instances that ... contain unexpected data elements  [<a href="http://hl7.org/fhir/R4/conformance-rules.html#isModifier">definition</a>]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0036</td>
+    <td style="text-align: center;">SHOULD-NOT</td>
+    <td><div><p>receivers SHOULD [NOT] accept instances that ... contain unexpected data elements … when those elements are modifier elements [<a href="http://hl7.org/fhir/R4/conformance-rules.html#isModifier">definition</a>]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0037</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>Unless a Client determines they can process [a resource with a modifier] safely, rejection is typically the only safe action if unexpected modifier elements are present.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0053</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>When searching using the <code>token</code> type searchparameter <a href="http://hl7.org/fhir/R4/search.html#token">(how to search by token)</a> The Client <strong>SHALL</strong> provide at least a code value</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0054</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>When searching using the <code>token</code> type searchparameter <a href="http://hl7.org/fhir/R4/search.html#token">(how to search by token)</a> The Client … <strong>MAY</strong> provide both the system and code values.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0056</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>When searching using the <code>reference</code> type searchparameter <a href="http://hl7.org/fhir/R4/search.html#reference">(how to search by reference)</a> The Client <strong>SHALL</strong> provide at least an id value</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0057</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>When searching using the <code>reference</code> type searchparameter <a href="http://hl7.org/fhir/R4/search.html#reference">(how to search by reference)</a> The Client … <strong>MAY</strong> provide both the Type and id values.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0059</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>When searching using the <code>date</code> type searchparameter <a href="http://hl7.org/fhir/R4/search.html#date">(how to search by date)</a> The Client <strong>SHALL</strong> provide values precise to the day for elements of datatype <code>date</code></p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0060</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>When searching using the <code>date</code> type searchparameter <a href="http://hl7.org/fhir/R4/search.html#date">(how to search by date)</a> The Client <strong>SHALL</strong> provide values precise … to the second + time offset for elements of datatype <code>dateTime</code>.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0076</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>For querying and reading US Core Profiles, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows…:</p>
+<p>US Core Requestors <strong>SHALL</strong> be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0079</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>For querying and reading US Core Profiles, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows…:</p>
+<p>When querying US Core Responders, US Core Requestors <strong>SHALL</strong> interpret missing data elements within resource instances as data not present in the US Core Responder’s system.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0082</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>For querying and reading US Core Profiles, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows…:</p>
+<p>US Core Requestors <strong>SHALL</strong> be able to process resource instances containing data elements asserting missing information.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0083</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Implementors [US Core Requestors] seeking ONC certification [in the ONC IT Health Certification program] <strong>SHALL</strong> interpret Additional USCDI Requirements as Must Support elements as documented above and below;</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0085</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Implementors [US Core Requestors] [not] seeking ONC certification [in the ONC IT Health Certification program] <strong>SHALL</strong> interpret Additional USCDI Requirements as … optional.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0092</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[W]hen claiming conformance [to a profile with a must support primitive element] … US Core requestors SHALL be capable of processing the value [of the primitive element]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0098</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>When claiming conformance [to a must support complex element with no must support sub-elements] … US Core Requestors SHALL be capable of processing a value in [the complex element]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0100</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>When claiming conformance [to a must support complex element with one or more must support sub-elements] … US Core Requestors SHALL be capable of processing a values in [each must support sub-element]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0102</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>Systems [US Core Requestors] can support the other elements [of a complex element, not labeled as a Must Support], but this is not a requirement of US Core</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0104</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>The U.S. Core Data for Interoperability (USCDI) may require additional elements, [which is a requirement for certification in the ONC IT Health Certification program, but not a requirement of US Core conformance for US Core Requestors]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0106</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>In certain profiles, only specific resource references are labeled as Must Support.</p>
+<p>...</p>
+<ul>
+<li>US Core Requestors <strong>SHALL</strong> be capable of processing [such an element] with a valid reference to [all listed Must Support profile(s).]</li>
+</ul>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0108</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>Systems [US Core Requestors] can support other [resource] references [other than those labeled as Must Support], but this is not a requirement of US Core</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0110</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>In specific profiles, only a single resource reference is present on an element labeled Must Support.</p>
+<p>…</p>
+<ul>
+<li>US Core Requestors <strong>SHALL</strong> be capable of processing [such an element] with a valid reference to [the Must Support Profile.]</li>
+</ul>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0112</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI</p>
+<p>… When claiming conformance to [such a] profile:</p>
+<ul>
+<li>US Core Requestors <strong>SHALL</strong> be capable of processing [the Must Support or data type choice]</li>
+</ul>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0113</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI</p>
+<p>…</p>
+<p>[US Core Requestors] <strong>MAY</strong> support ... processing other [data type] choice elements (such as Observation.effectivePeriod), but this is not a requirement of US Core.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0116</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>There are several instances in this Guide where there is a choice of supporting one or another profile element to meet the Must Support or Additional USCDI requirement. In such cases, … the Client application <strong>SHALL</strong> support all elements.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0127</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>US Core Clients should follow the <a href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">principle of least privilege</a> and access only the necessary resources.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0172</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>US Core requires ... additional metadata [to be available through the Server's <a href="https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#using-well-known">Well-Known Uniform Resource Identifier (URI)</a>]: ... [in] <code>scopes_supported</code> [the] array of scopes a Client may request. The app SHOULD inspect the returned scopes and accommodate the differences from the scopes it asked for and registered.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0194</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[When Clients request a resource in a specific language] Clients MAY request language/locale using the http <a href="https://www.ietf.org/rfc/rfc2616.txt">Accept-Language</a> header.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0226</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>Systems [Clients] may support other [DiagnosticReport] categories as well.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0232</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>a Client can determine the note and report types supported by a Server by invoking the standard FHIR Value Set Expansion (<a href="http://hl7.org/fhir/R4/valueset-operation-expand.html">$expand</a>) operation defined in the FHIR R4 specification.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0251</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application MUST support all methods [for referencing a medication resource: returned bundle, as an external resource, or as a <a href="http://hl7.org/fhir/R4/references.html#contained">contained</a> resource]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0264</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>To provide a list of a patient’s medications, it may be necessary to “de-duplicate” them. The de-duplication activity ... SHOULD be provided by the Client.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0275</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>API consumers can query by category  when accessing patient information.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0286</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Therefore, Client applications must plan on deduplication methods that rely on something other than a common identifier across FHIR versions.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0292</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0293</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]
+MedicationStatement may be deprecated, and the data SHOULD be mapped to MedicationRequest.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0294</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]
+Care teams as represented by CarePlan in DSTU2 SHOULD be replaced by and the data mapped to CareTeam in R4</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0299</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>When updating between versions, Clients SHOULD consider the impact of any changes to data visualization on the usability for the end user and the maintenance of data integrity.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0301</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Separate authorization is required [between different versions of FHIR]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0314</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core Practitioner Profile]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0315</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core PractitionerRole Profile]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0316</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core RelatedPerson Profile]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0369</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [DocumentReference.attachment.url]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0370</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [DocumentReference.attachment.data]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0376</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [ Encounter.reasonCode]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0377</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [Encounter.reasonReference]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0380</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [Encounter.location.location]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0381</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [Encounter.serviceProvider]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0388</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support ... Goal.startDate</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0389</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support ... Goal.target.dueDate</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0403</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [using a code in .medicationCodeableConcept to represent medications when supporting the US Core MedicationDispense profile]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0404</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [referencing a Medication resource in .medicationReferencet to represent medications when supporting the US Core MedicationDispense profile]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0409</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [medicationRequest.reporedtBoolean]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0410</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support [MedicationRequest.reportedReference]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0412</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonCode.]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0413</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonReference.]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0415</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program,] Clients SHALL support all target resources in MedicationRequest.reasonReference.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0476</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support both [the PractionerRole profile and the Practioner.address element]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0483</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core Procedure Profile for communicating the reason or justification for a referral as Additional USCDI Requirements</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0485</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [Procedure.reasonCode and Procedure.reasonReference]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0487</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program,] when using Procedure.reasonReference … Clients SHALL support all target resources in Procedure.reasonReference</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0517</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core ServiceRequest Profile for communicating the reason or justification for a referral as Additional USCDI Requirements</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0519</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [ServiceRequest.reasonCode and ServiceRequest.reasonReference]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0521</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For organizations participating in the ONC Health IT Certification program,] when using ServiceRequest.reasonReference … Clients SHALL support all target resources in ServiceRequest.reasonReference</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0525</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The Client application SHALL support both [ Specimen.identifier and Specimen.accessionIdentifier]</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0526</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>Clients may request Specimen resources be included with the Observation or DiagnosticReport resource query.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0527</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>[Clients] SHOULD Support the Following Implementation Guide <a href="http://hl7.org/fhir/smart-app-launch/history.html">SMART App Launch version 2.0.0 and later</a></p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0528</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Clients] MAY support the transaction interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0529</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Clients] MAY support the batch interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0530</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Clients] MAY support the search-system interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0531</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Clients] MAY support the history-system interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0544</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Server] MAY support the transaction interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0545</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Server] MAY support the batch interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0546</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Server] MAY support the search-system interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0547</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>[Server] MAY support the history-system interaction</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0551</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Systems SHALL establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0553</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>US Federal systems SHOULD conform with the risk management and mitigation requirements defined in NIST 800 series documents.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0555</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>US Federal systems … SHOULD include security category assignment following NIST 800-60 vol. 2 Appendix D.14.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0557</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>The coordination of risk management and the related security and privacy controls … SHOULD be defined in the Business Associate Agreement when available.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0559</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Systems SHALL reference a single time source to establish a common time base for security auditing and clinical data records among computing systems.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0561</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>The selected time service SHOULD be documented in the Business Associate Agreement when available.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0563</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Systems SHALL keep audit logs of the various transactions.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0565</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Systems SHALL use TLS version 1.2 or higher for all transmissions not taking place over a secure network connection.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0567</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>US Federal systems SHOULD conform with FIPS PUB 140-2.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0569</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Systems SHALL conform to <a href="http://hl7.org/fhir/R4/security.html#http">FHIR Communications Security</a> requirements.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0571</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>For Authentication and Authorization, Systems SHALL support any <a href="http://hl7.org/fhir/smart-app-launch/history.html">SMART App Launch version</a> for Client &lt;-&gt; Server interactions.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0573</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>Systems SHALL implement consent requirements per their state, local, and institutional policies.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0575</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>The Business Associate Agreements SHOULD document systems’ mutual consent requirements.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0577</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>Systems SHOULD provide Provenance statements using the <a href="https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a> resource and associated requirements.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0579</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>Systems MAY implement the <a href="http://hl7.org/fhir/R4/security.html#digital%20signatures">FHIR Digital Signatures</a></p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0581</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>Systems MAY protect the confidentiality of data at rest via encryption and associated access controls.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0582</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The [additional] current binding [<a href="https://hl7.org/fhir/R5/terminologies.html#binding">FHIR R5 link</a>] requires newly recorded, non-legacy data to be drawn from the [bound] value set.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0800</td>
+    <td style="text-align: center;">MAY</td>
+    <td><div><p>For querying and reading US Core Profiles, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows…:</p>
+<p>[The US Core Requesters processing of the resource instances] may result in a determination not to use the resource if the resource content does not meet business requirements.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0815</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>When the Server supports [ the _include search parameter], Clients <strong>SHOULD</strong> use the _include search parameter to retrieve referenced content instead of searching for a resource and then performing a separate search for other references (for example, Patient, Encounter, and Location) in the result set.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0816</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>If the Server does not support the _include search parameter, Clients <strong>SHOULD</strong> consolidate duplicate searches before searching for referenced resources in the result set</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0817</td>
+    <td style="text-align: center;">SHOULD-NOT</td>
+    <td><div><p>The <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control</a> response header stores a response associated with a request and reuses the stored response for subsequent requests. If Cache-Control is present in the Server response headers, the Clients <strong>SHOULD NOT</strong> search the same data within the time stated in Cache-Control headers.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0829</td>
+    <td style="text-align: center;">SHALL-NOT</td>
+    <td><div><p>US Core SearchParameters referenced in [the US Core Client] CapabilityStatement that are derived from standard FHIR SearchParameters are only defined to document ... Client expectations. They specify additional expectations for the following SearchParameter elements:B7</p>
+<ul>
+<li>multipleAnd</li>
+<li>multipleOr</li>
+<li>comparator</li>
+<li>modifier</li>
+<li>chain</li>
+</ul>
+<p>They <strong>SHALL NOT</strong> be interpreted as search parameters for search.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0830</td>
+    <td style="text-align: center;">SHOULD</td>
+    <td><div><p>Clients <strong>SHOULD</strong> use the standard FHIR SearchParameters.</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0849</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>[For the US Core Observation Screening Assessment Profile,] the Client system ... SHALL support [both] Reference(US Core Observation Screening Assessment Profile) [and] Reference(US Core QuestionnaireResponse Profile) for Observation.derivedFrom</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0853</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The certifying Client application <strong>SHALL</strong> support the [<a href="https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html">US Core Interpreter Needed Extension</a>] on [the <a href="https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>] .</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0854</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>The certifying Client application <strong>SHALL</strong> support the [<a href="https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html">US Core Interpreter Needed Extension</a>] on [the <a href="https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>].</p>
+</div></td>
+    </tr>
+    
+    <tr>
+    <td>CONF-0869</td>
+    <td style="text-align: center;">SHALL</td>
+    <td><div><p>'Observation.performer' target profiles <a href="https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> and <a href="https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html">US Core Patient Profile</a> are labeled Must Support.... Clients SHALL support both.</p>
+</div></td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="http://example.org/fhir/Requirements/client-requirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="0.1.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="ClientRequirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Client Requirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2026-02-18T02:49:37+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="HL7 International / Payer/Provider Information Exchange Work Group"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="HL7 International / Payer/Provider Information Exchange Work Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/claims"/>
+      </telecom>
+      <telecom>
+        <system value="email"/>
+        <value value="pie@lists.hl7.org"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="US"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor">
+    <valueCanonical>
+      <extension url="http://hl7.org/fhir/StructureDefinition/display">
+        <valueString value="US Core Requester (Clients including Certifying Systems)"/>
+      </extension>
+    </valueCanonical>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0022"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[When populating a coded element with a [required binding](http://hl7.org/fhir/R4/terminologies.html#required) to a ValueSet definition] US Core Requestors **SHALL** be capable of processing the code [from the required binding ValueSet]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0028"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="US Core Requestors SHALL be capable of processing the code in ['DataElement.code.code' or text in 'DataElement.code.text' for a DataElement.code that has an extensible binding]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0032"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Clients SHALL be able to process [elements that are] [Mandatory](https://hl7.org/fhir/us/core/must-support.html) or [Must Support elements](https://hl7.org/fhir/us/core/must-support.html)"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0035"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="receivers SHOULD accept instances that ... contain unexpected data elements  [[definition](http://hl7.org/fhir/R4/conformance-rules.html#isModifier)]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0036"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD-NOT"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="receivers SHOULD [NOT] accept instances that ... contain unexpected data elements … when those elements are modifier elements [[definition](http://hl7.org/fhir/R4/conformance-rules.html#isModifier)]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0037"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Unless a Client determines they can process [a resource with a modifier] safely, rejection is typically the only safe action if unexpected modifier elements are present."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0053"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When searching using the `token` type searchparameter [(how to search by token)](http://hl7.org/fhir/R4/search.html#token) The Client **SHALL** provide at least a code value"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0054"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When searching using the `token` type searchparameter [(how to search by token)](http://hl7.org/fhir/R4/search.html#token) The Client … **MAY** provide both the system and code values."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0056"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When searching using the `reference` type searchparameter [(how to search by reference)](http://hl7.org/fhir/R4/search.html#reference) The Client **SHALL** provide at least an id value"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0057"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When searching using the `reference` type searchparameter [(how to search by reference)](http://hl7.org/fhir/R4/search.html#reference) The Client … **MAY** provide both the Type and id values."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0059"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When searching using the `date` type searchparameter [(how to search by date)](http://hl7.org/fhir/R4/search.html#date) The Client **SHALL** provide values precise to the day for elements of datatype `date`"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0060"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When searching using the `date` type searchparameter [(how to search by date)](http://hl7.org/fhir/R4/search.html#date) The Client **SHALL** provide values precise … to the second + time offset for elements of datatype `dateTime`."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0076"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:&#xA;&#xA;US Core Requestors **SHALL** be capable of processing resource instances containing the data elements without generating an error or causing the application to fail."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0079"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:&#xA;&#xA;When querying US Core Responders, US Core Requestors **SHALL** interpret missing data elements within resource instances as data not present in the US Core Responder’s system."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0082"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:&#xA;&#xA;US Core Requestors **SHALL** be able to process resource instances containing data elements asserting missing information."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0083"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Implementors [US Core Requestors] seeking ONC certification [in the ONC IT Health Certification program] **SHALL** interpret Additional USCDI Requirements as Must Support elements as documented above and below;"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0085"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Implementors [US Core Requestors] [not] seeking ONC certification [in the ONC IT Health Certification program] **SHALL** interpret Additional USCDI Requirements as … optional."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0092"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[W]hen claiming conformance [to a profile with a must support primitive element] … US Core requestors SHALL be capable of processing the value [of the primitive element]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0098"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When claiming conformance [to a must support complex element with no must support sub-elements] … US Core Requestors SHALL be capable of processing a value in [the complex element]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0100"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When claiming conformance [to a must support complex element with one or more must support sub-elements] … US Core Requestors SHALL be capable of processing a values in [each must support sub-element]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0102"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems [US Core Requestors] can support the other elements [of a complex element, not labeled as a Must Support], but this is not a requirement of US Core"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0104"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The U.S. Core Data for Interoperability (USCDI) may require additional elements, [which is a requirement for certification in the ONC IT Health Certification program, but not a requirement of US Core conformance for US Core Requestors]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0106"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="In certain profiles, only specific resource references are labeled as Must Support.&#xA;&#xA;...&#xA;&#xA;- US Core Requestors **SHALL** be capable of processing [such an element] with a valid reference to [all listed Must Support profile(s).]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0108"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems [US Core Requestors] can support other [resource] references [other than those labeled as Must Support], but this is not a requirement of US Core"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0110"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="In specific profiles, only a single resource reference is present on an element labeled Must Support.&#xA;&#xA;…&#xA;&#xA;- US Core Requestors **SHALL** be capable of processing [such an element] with a valid reference to [the Must Support Profile.]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0112"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI&#xA;&#xA;… When claiming conformance to [such a] profile:&#xA;&#xA;- US Core Requestors **SHALL** be capable of processing [the Must Support or data type choice]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0113"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[If a profile has] a Must Support element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Must Support[, or a profile has] an Additional USCDI element [with] a choice of datatypes for its content [and some of] the datatypes … are labeled as Additional USCDI&#xA;&#xA;…&#xA;&#xA;[US Core Requestors] **MAY** support ... processing other [data type] choice elements (such as Observation.effectivePeriod), but this is not a requirement of US Core."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0116"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="There are several instances in this Guide where there is a choice of supporting one or another profile element to meet the Must Support or Additional USCDI requirement. In such cases, … the Client application **SHALL** support all elements."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0127"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="US Core Clients should follow the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) and access only the necessary resources."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0172"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="US Core requires ... additional metadata [to be available through the Server's [Well-Known Uniform Resource Identifier (URI)](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#using-well-known)]: ... [in] `scopes_supported` [the] array of scopes a Client may request. The app SHOULD inspect the returned scopes and accommodate the differences from the scopes it asked for and registered."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0194"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[When Clients request a resource in a specific language] Clients MAY request language/locale using the http [Accept-Language](https://www.ietf.org/rfc/rfc2616.txt) header."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0226"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems [Clients] may support other [DiagnosticReport] categories as well."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0232"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="a Client can determine the note and report types supported by a Server by invoking the standard FHIR Value Set Expansion ([$expand](http://hl7.org/fhir/R4/valueset-operation-expand.html)) operation defined in the FHIR R4 specification."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0251"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application MUST support all methods [for referencing a medication resource: returned bundle, as an external resource, or as a [contained](http://hl7.org/fhir/R4/references.html#contained) resource]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0264"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="To provide a list of a patient’s medications, it may be necessary to “de-duplicate” them. The de-duplication activity ... SHOULD be provided by the Client."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0275"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="API consumers can query by category  when accessing patient information."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0286"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Therefore, Client applications must plan on deduplication methods that rely on something other than a common identifier across FHIR versions."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0292"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0293"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]&#xA;MedicationStatement may be deprecated, and the data SHOULD be mapped to MedicationRequest."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0294"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The FHIR RESTful resource types supported in a DSTU2 implementation SHOULD be supported in a R4 implementation [with the] exception [of]&#xA;Care teams as represented by CarePlan in DSTU2 SHOULD be replaced by and the data mapped to CareTeam in R4"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0299"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When updating between versions, Clients SHOULD consider the impact of any changes to data visualization on the usability for the end user and the maintenance of data integrity."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0301"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Separate authorization is required [between different versions of FHIR]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0314"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core Practitioner Profile]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0315"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core PractitionerRole Profile]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0316"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[C]lient application[s conforming to the US Core CareTeam profile] SHALL support [US Core RelatedPerson Profile]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0369"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [DocumentReference.attachment.url]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0370"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [DocumentReference.attachment.data]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0376"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [ Encounter.reasonCode]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0377"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [Encounter.reasonReference]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0380"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [Encounter.location.location]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0381"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [Encounter.serviceProvider]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0388"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support ... Goal.startDate"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0389"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support ... Goal.target.dueDate"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0403"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [using a code in .medicationCodeableConcept to represent medications when supporting the US Core MedicationDispense profile]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0404"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [referencing a Medication resource in .medicationReferencet to represent medications when supporting the US Core MedicationDispense profile]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0409"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [medicationRequest.reporedtBoolean]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0410"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support [MedicationRequest.reportedReference]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0412"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonCode.]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0413"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program,] the certifying Client application SHALL support [MedicationRequest.reasonReference.]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0415"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program,] Clients SHALL support all target resources in MedicationRequest.reasonReference."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0476"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support both [the PractionerRole profile and the Practioner.address element]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0483"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core Procedure Profile for communicating the reason or justification for a referral as Additional USCDI Requirements"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0485"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [Procedure.reasonCode and Procedure.reasonReference]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0487"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program,] when using Procedure.reasonReference … Clients SHALL support all target resources in Procedure.reasonReference"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0517"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program] … Clients SHALL support ... US Core ServiceRequest Profile for communicating the reason or justification for a referral as Additional USCDI Requirements"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0519"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program,] The certifying Client application SHALL support both [ServiceRequest.reasonCode and ServiceRequest.reasonReference]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0521"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For organizations participating in the ONC Health IT Certification program,] when using ServiceRequest.reasonReference … Clients SHALL support all target resources in ServiceRequest.reasonReference"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0525"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Client application SHALL support both [ Specimen.identifier and Specimen.accessionIdentifier]"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0526"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Clients may request Specimen resources be included with the Observation or DiagnosticReport resource query."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0527"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Clients] SHOULD Support the Following Implementation Guide [SMART App Launch version 2.0.0 and later](http://hl7.org/fhir/smart-app-launch/history.html)"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0528"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Clients] MAY support the transaction interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0529"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Clients] MAY support the batch interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0530"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Clients] MAY support the search-system interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0531"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Clients] MAY support the history-system interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0544"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Server] MAY support the transaction interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0545"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Server] MAY support the batch interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0546"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Server] MAY support the search-system interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0547"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[Server] MAY support the history-system interaction"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0551"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems SHALL establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0553"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="US Federal systems SHOULD conform with the risk management and mitigation requirements defined in NIST 800 series documents."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0555"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="US Federal systems … SHOULD include security category assignment following NIST 800-60 vol. 2 Appendix D.14."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0557"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The coordination of risk management and the related security and privacy controls … SHOULD be defined in the Business Associate Agreement when available."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0559"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems SHALL reference a single time source to establish a common time base for security auditing and clinical data records among computing systems."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0561"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The selected time service SHOULD be documented in the Business Associate Agreement when available."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0563"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems SHALL keep audit logs of the various transactions."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0565"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems SHALL use TLS version 1.2 or higher for all transmissions not taking place over a secure network connection."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0567"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="US Federal systems SHOULD conform with FIPS PUB 140-2."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0569"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems SHALL conform to [FHIR Communications Security](http://hl7.org/fhir/R4/security.html#http) requirements."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0571"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="For Authentication and Authorization, Systems SHALL support any [SMART App Launch version](http://hl7.org/fhir/smart-app-launch/history.html) for Client &lt;-&gt; Server interactions."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0573"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems SHALL implement consent requirements per their state, local, and institutional policies."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0575"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The Business Associate Agreements SHOULD document systems’ mutual consent requirements."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0577"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems SHOULD provide Provenance statements using the [US Core Provenance Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-provenance.html) resource and associated requirements."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0579"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems MAY implement the [FHIR Digital Signatures](http://hl7.org/fhir/R4/security.html#digital%20signatures)"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0581"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Systems MAY protect the confidentiality of data at rest via encryption and associated access controls."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0582"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The [additional] current binding [[FHIR R5 link](https://hl7.org/fhir/R5/terminologies.html#binding)] requires newly recorded, non-legacy data to be drawn from the [bound] value set."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0800"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="MAY"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="For querying and reading US Core Profiles, Must Support on any profile data element **SHALL** be interpreted as follows…:&#xA;&#xA;[The US Core Requesters processing of the resource instances] may result in a determination not to use the resource if the resource content does not meet business requirements."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0815"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="When the Server supports [ the _include search parameter], Clients **SHOULD** use the _include search parameter to retrieve referenced content instead of searching for a resource and then performing a separate search for other references (for example, Patient, Encounter, and Location) in the result set."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0816"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="If the Server does not support the _include search parameter, Clients **SHOULD** consolidate duplicate searches before searching for referenced resources in the result set"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0817"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD-NOT"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The [HTTP Cache-Control](https://httpwg.org/specs/rfc9111.html) response header stores a response associated with a request and reuses the stored response for subsequent requests. If Cache-Control is present in the Server response headers, the Clients **SHOULD NOT** search the same data within the time stated in Cache-Control headers."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0829"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="US Core SearchParameters referenced in [the US Core Client] CapabilityStatement that are derived from standard FHIR SearchParameters are only defined to document ... Client expectations. They specify additional expectations for the following SearchParameter elements:B7&#xA;&#xA;- multipleAnd&#xA;- multipleOr&#xA;- comparator&#xA;- modifier&#xA;- chain&#xA;&#xA;They **SHALL NOT** be interpreted as search parameters for search. "/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0830"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Clients **SHOULD** use the standard FHIR SearchParameters."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0849"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="[For the US Core Observation Screening Assessment Profile,] the Client system ... SHALL support [both] Reference(US Core Observation Screening Assessment Profile) [and] Reference(US Core QuestionnaireResponse Profile) for Observation.derivedFrom"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0853"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The certifying Client application **SHALL** support the [[US Core Interpreter Needed Extension](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html)] on [the [US Core Patient Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html)] ."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0854"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="The certifying Client application **SHALL** support the [[US Core Interpreter Needed Extension](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-interpreter-needed.html)] on [the [US Core Encounter Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-encounter.html)]. "/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="CONF-0869"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value=" 'Observation.performer' target profiles [US Core Practitioner Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-practitioner.html) and [US Core Patient Profile](https://hl7.org/fhir/us/core/STU8/StructureDefinition-us-core-patient.html) are labeled Must Support.... Clients SHALL support both."/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

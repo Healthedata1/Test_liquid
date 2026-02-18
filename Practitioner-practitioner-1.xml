@@ -3,7 +3,13 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="practitioner-1"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Practitioner 1 Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a practitioner 1 example for the *US Core Practitioner Profile*."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">

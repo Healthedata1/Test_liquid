@@ -1,0 +1,289 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Basic/example-requirements> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-requirements"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n<p>These requirements apply to the actor: <i><strong>US Core Requestor(Servers including Certifying Systems)</strong></i></p>\n\n<table class=\"grid\">\n  <thead>\n    <tr>\n    <th>Key</th>\n    <th>Conformance</th>\n    <th>Requirement</th>\n    </tr>\n  </thead>\n  <tbody>\n    \n    <tr>\n    <td>stmt-01</td>\n    <td style=\"text-align: center;\">SHALL<br/>(certifying systems<br/>only)</td>\n    <td><div><p>The system <strong>SHALL</strong> allow the actor to search for patients by name.</p>\n</div></td>\n    </tr>\n    \n    <tr>\n    <td>stmt-02</td>\n    <td style=\"text-align: center;\">SHOULD</td>\n    <td><div><p>The system <strong>SHOULD</strong> display patient demographics in a summary view.</p>\n</div></td>\n    </tr>\n    \n    <tr>\n    <td>stmt-03</td>\n    <td style=\"text-align: center;\">MAY</td>\n    <td><div><p>The system <strong>MAY</strong> support bulk export of patient records.</p>\n</div></td>\n    </tr>\n    \n  </tbody>\n</table>\n</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 2 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url>
+     ] ;
+     fhir:value [
+       a fhir:Uri ;
+       fhir:v "http://example.org/fhir/Requirements/example"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/Requirements/example>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "0.1.0"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "ExampleRequirements"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Example Requirements Resource"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date>
+     ] ;
+     fhir:value [
+       a fhir:DateTime ;
+       fhir:v "2026-02-18T02:49:37+00:00"^^xsd:dateTime
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact>
+     ] ;
+     fhir:value [
+       a fhir:ContactDetail ;
+       fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
+       fhir:telecom ( [
+         fhir:system [ fhir:v "url" ] ;
+         fhir:value [ fhir:v "http://www.hl7.org/Special/committees/claims" ]
+       ] [
+         fhir:system [ fhir:v "email" ] ;
+         fhir:value [ fhir:v "pie@lists.hl7.org" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:3166>
+         ] ;
+         fhir:code [ fhir:v "US" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor>
+     ] ;
+     fhir:value [
+       a fhir:Canonical ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/display"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/display>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "US Core Requestor (Servers including Certifying Systems)"
+         ]
+       ] )
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "true"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key>
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "stmt-01"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "The system **SHALL** allow the actor to search for patients by name."
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key>
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "stmt-02"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHOULD"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "The system **SHOULD** display patient demographics in a summary view."
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key>
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "stmt-03"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "MAY"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "The system **MAY** support bulk export of patient records."
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/fhir-types>
+       ] ;
+       fhir:code [ fhir:v "Requirements" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

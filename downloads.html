@@ -20,6 +20,8 @@
   	<link rel="stylesheet" href="assets/css/prism.css"/>
   	<link rel="stylesheet" href="assets/css/cqf.css"/>
       <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -48,11 +50,27 @@
 
           <!-- Placeholder for child template header declarations -->
 
+        <div id="hl7-nav">
+          <a id="hl7-logo" href="http://hl7.org" data-no-external="true">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Health eData 1 Sandbox</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - CI Build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
 
 
             </span>
@@ -129,7 +147,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://www.fhir.org/guides/healthedata1-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Downloads</h2>
   
 
@@ -165,6 +183,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#consolidated-csv-and-excel-file-representations-of-profiles" id="markdown-toc-consolidated-csv-and-excel-file-representations-of-profiles">Consolidated CSV and Excel File Representations of Profiles</a></li>
   <li><a href="#schematrons" id="markdown-toc-schematrons">Schematrons</a></li>
   <li><a href="#implementation-guide-details" id="markdown-toc-implementation-guide-details">Implementation Guide Details</a></li>
+  <li><a href="#requirements-table" id="markdown-toc-requirements-table">Requirements Table</a></li>
 </ul>
 
 </div>
@@ -213,7 +232,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Schematrons are also available for download:</p>
 
 <ul>
-  <li><a name="l374">​</a><a href="schematrons.zip">Schematrons(compressed folder)</a></li>
+  <li><a name="l405">​</a><a href="schematrons.zip">Schematrons(compressed folder)</a></li>
 </ul>
 
 <h3 id="implementation-guide-details">Implementation Guide Details</h3>
@@ -223,6 +242,115 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>[US Core ImplementationGuide Resource]</li>
 </ul>
+
+<h3 id="requirements-table">Requirements Table</h3>
+
+<p><a name="l425">​</a>This table lists the requirements defined in the US Core Implementation Guide's narrative sections. These requirements represent the regulatory, business, functional, and technical specifications that design artifacts must meet to ensure interoperability. They are documented here to provide a clear, consolidated reference for implementers working with this guide. This table is based in large part on the <a href="https://inferno.healthit.gov/suites/us_core_v800/dzGXyiQqcuh#us_core_v800/requirements">US Core Server v8.0.0 Specification Requirements</a> created by <a href="https://inferno.healthit.gov/">Inferno</a> and their open-source testing framework to support the ONC Health IT Certification Program. This data is also available as a <a href="#.html">CSV</a> or <a href="#.html">EXCEL</a> file, and as a <a href="Requirements-server-requirements.html">US Core Server Requirements Resource</a> and <a href="Requirements-client-requirements.html">US Core Client Requirements Resource</a></p>
+
+<p><strong>Legend:</strong></p>
+
+<ul>
+  <li><strong>ID:</strong>  A requirement key that identifies the requirement and links it to the statement in the guide.</li>
+  <li><strong>Context:</strong> The page or section topic that pertains to the requirement, For example, <em>US Core Medication Request Profile</em>, or <em>Clinical Notes</em>.</li>
+  <li><strong>Actor:</strong> The roles to which this requirement applies. The actors are:
+    <ul>
+      <li>Server: US Core Responder (Servers including Certifying Systems)</li>
+      <li>Client: US Core Requester (Clients including Certifying Systems)</li>
+      <li>Both: Both US Core Responder and Requester (including Certifying System).</li>
+    </ul>
+  </li>
+  <li><strong>Certifying Systems Only:</strong> A Flag to indicate whether the requirement is an additional USCDI certification requirement.</li>
+  <li><strong>Conformance:</strong> The conformance verb of the requirement: SHALL, SHOULD, MAY, SHOULD-NOT, SHALL NOT, and DEPRECATED*.  Note that there may be several conformance verbs in a single statement.</li>
+  <li>
+    <p><strong>Requirement:</strong> The actual requirements statement which is a direct quote from the IG and may include helpful context in square brackets.</p>
+
+    <p>*If a requirement is removed for some reason, its ID is retired and its Conformance is updated to DEPRECATED.</p>
+  </li>
+</ul>
+
+  <!-- ==================================================================
+This liquid script creates a US Core requirements table using input data from input/data/us_core_reqs.csv which derived from the US Core Server v8.0.0 Specification Requirements which can be downloaded here: https://github.com/inferno-framework/us-core-test-kit/blob/main/lib/us_core_test_kit/requirements/hl7.fhir.us.core_8.0.0_reqs.xlsx
+
+This csv is manually updated when new narrative requirements are added to the guide.  Note that this table is used to create the Requirements Resources as well.
+
+
+with the following columns:
+
+inherited = from the ...us_core_test_kit/requirements/hl7.fhir.us.core_8.0.0_reqs.xlsx
+added = added for US Core publication:
+
+- Is_New: (added) Flag for new or updated content for the current version. Defult is "FALSE"  or empty and set to "TRUE" for new or updated content for the current version. It is used for QA review and published ballot versions of the guide. It set to empty before publishing new versions of the guide.
+- ID*: (inherited) The unique identifier for the requirement. IDs are short, meaningless (they do not contain context like section numbers), and numeric. An approach is incrementing integers. See below for how to handle IDs for child requirements.
+- key: (added) A requirement key that identifies the requirement and links it to the statement in the guide. The format is "CONF-NNNN" where NNNN is a sequentially increasing zero padded integer with the coresponding ID* value.  e.g, "CONF-0022" Mapping: key -> Requirements.statement.key"
+- URL*: (inherited) "The URL of the deepest section that contains the requirement. The URL provides context for the requirement text.
+Mapping: URL ->  Requirements.statement.reference"
+- rel_url: (added) Url of the page from where the requirements statement came from, this is use to create a link back to the page.
+- requirement: (inherited changed columm name from Requirement*) "A direct quote from the IG. Add any clarifications or interpretations in a helper column like the Test Plan column. May include helpful context in square brackets.
+Mapping: requirement -> Requirements.statement.requirement" The format is Markdown and is either a sentence, one of more bullets, or even a paragraph to express a single requirement.
+- conformance: (inherited changed columm name from Conformance*) "The conformance verb of the requirement: SHALL, SHOULD, MAY, SHOULD NOT [updated to SHOULD-NOT], SHALL NOT [updated to SHALL-NOT], and DEPRECATED [see  excel file]Further Consideration below for when to use DEPRECATED)."  Note that there may be several conformance verbs in a single statement. The format is "<CONF>|<CONF>|etc" where "<CONF>" is a conformance verb.
+Mapping: conformance -> Requirements.statement.conformance.
+- actor: (inherited changed columm name from Actors*) "The actor, or actors, that the requirement constrains. The values will depend on the target specification, e.g., for Subscriptions (https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/actors.html), Client and Server.
+Mapping: actor -> Requirements.actor"  NOTE updated to be "Server|Client|Both" since only a single actor supported in the R5 requirements resource.
+- certifiers_only:  (added) Flag to indicate whether the requirement is an additional USCDI certification requirement.  Default is empty or "FALSE" and set to "TRUE" for additional USCDI certification requirements. Mapping: certifiers_only -> Requirements.statement.extension:uscdi-requirements = true
+- Sub-Requirement(s): (inherited)  Not used
+- Conditionality: (inherited)  Not used
+- Conditionality Details: (inherited)  Not used
+- Verifiable?: (inherited)  Not used
+- Verifiability Details: (inherited)  Not used
+- Planning To Test?: (inherited)  Not used
+- Planning To Test Details: (inherited)  Not used
+- Page: (inherited) "The page the requirement came from, extracted from the URL."
+- Section: (inherited) "The section the requirement came from, extracted from the URL."  Useful for context
+- context: (added) The page or section topic that pertains to the requirement, For example, US Core Medication Request Profile, or Clinical Notes.  Usually derived from the source location.\, but can be manually curated too. format = Page: Section
+- Verb Guess: (inherited)  Not used
+- Actor Guess: (inherited)  Not used
+- Section #: (inherited)  Not used
+- Grouping: (inherited)  Not used
+- Priority: (inherited)  Not used
+- Test Plan: (inherited)  Not used
+- Questions: (inherited)  Not used
+- Notes: (inherited)  Not used
+- In Test: (inherited)  Not used
+
+The script sorts and selects the table data and allows for highlighting new and updated content.
+================================================================== -->
+
+<table class="grid">
+<thead>
+<tr>
+<th>ID</th>
+<th>Context</th>
+<th>Actor</th>
+<th>Certifying Systems<br/>
+Only</th>
+<th>Conformance</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+
+  <!-- =============================== end liquid =================================== -->
+
+  <!-- ==================================================================
+This liquid script creates a US Core requirements reference list using input data from input/data/requirements.csv
+which is manually updated when new narrative requirements are added to the guide.  Note that this table is used to create the Requirements Resources as well.
+with the following columns:
+
+- Is_New: Flag for new or updated content for the current version. Defult is "FALSE"  or empty and set to "TRUE" for new or updated content for the current version. It is used for QA review and published ballot versions of the guide. It set to empty before publishing new versions of the guide.
+- key: A requirement key that identifies the requirement and links it to the statement in the guide. The format is "CONF-NNN" where NNN is a sequentially increasing zero padded integer.
+- context: The page or section topic that pertains to the requirement, For example, US Core Medication Request Profile, or Clinical Notes.  Usually derived from the source location.
+- actor: The roles to which this requirement applies. The actors are: "Server|Client|Both"
+- certifiers_only: Flag to indicate whether the requirement is an additional USCDI certification requirement.  Default is empty or "FALSE" and set to "TRUE" for additional USCDI certification requirements. This is
+- conformance: Conformance Verb(s) as defined in RFC 2119 that are used in the requirement.  Note that there may be several conformance verbs in a single statement. The format is "<CONF>|<CONF>|etc" where "<CONF>" is on of "SHALL|SHALL-NOT|SHOULD|SHOULD-NOT|MAY"
+- requirement: The actual requirements statement. The format is Markdown and is either a sentence, one of more bullets, or even a paragraph to express a single requirement.
+- source: Url of the page from where the requirements statement came from, this is use to create a link back to the page.
+-
+================================================================== -->
+
+  <!-- =============================== end liquid =================================== -->
 
 
 
@@ -243,13 +371,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 8, 2026 03:47+0000">2026-01-08</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 02:49+0000">2026-02-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->

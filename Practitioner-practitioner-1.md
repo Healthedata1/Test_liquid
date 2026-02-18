@@ -27,8 +27,18 @@ Test whether it creates links magically
   "resourceType" : "Practitioner",
   "id" : "practitioner-1",
   "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Practitioner 1 Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+      }
+    ],
     "profile" : [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|0.1.0"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
     ]
   },
   "identifier" : [

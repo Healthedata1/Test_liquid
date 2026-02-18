@@ -20,6 +20,8 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -48,11 +50,27 @@
 
         <!-- Placeholder for child template header declarations -->
 
+        <div id="hl7-nav">
+          <a id="hl7-logo" data-no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Health eData 1 Sandbox</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - CI Build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
 
 
             </span>
@@ -122,7 +140,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://www.fhir.org/guides/healthedata1-sandbox/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.org/fhir/us/healthedata1-sandbox/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -185,9 +203,26 @@
 		    <!-- <h2>SearchParameter: </h2>
 				<b> description</b> : 
 			<br/> -->
+			<h3> My Custom Liquid Script </h3>
 			<p>
-				<b> id</b> deceased-example</p>
-  <p>BAR</p>
+				<b>☞ id</b> deceased-example</p>
+
+			<p> and foo = ... <p>BAR</p> !!! </p>
+
+			<p>example meta data</p>
+			<ul>
+			
+				<li>1) Deceased Patient Example  DECEASED PATIENT EXAMPLE  </li>
+		    
+				<li>2) <div><p>This is a deceased patient example for the <em>US Core Patient Profile</em>.</p>
+</div>  <DIV><P>THIS IS A DECEASED PATIENT EXAMPLE FOR THE <EM>US CORE PATIENT PROFILE</EM>.</P>
+</DIV>  </li>
+		    
+			</ul>
+
+
+            prepend example:  foodeceased-example
+
 
 
     <!-- this include does not work :-(
@@ -216,13 +251,16 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 8, 2026 03:47+0000">2026-01-08</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 02:49+0000">2026-02-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
