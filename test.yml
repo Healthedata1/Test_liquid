@@ -1,0 +1,45 @@
+# My new artifacts name list - use to highlight as new and updated content
+
+# ValueSets
+# - USCoreClinicalTestCodes
+# - USCoreNonLaboratoryCodes
+# - USCoreObservationCategory
+# - USCoreSurveyCodes
+# - USCoreProblemOrHealthConcern
+# - USCoreCommonSDOHAssessments
+# - USCoreTagsValueSet
+# - USCoreServiceRequestCategoryCodes
+# - USCorePregnancyIntentCodes
+# - USCorePregnancyStatusCodes
+# - USCoreLaboratoryTestCodes
+# - USCoreSexForClinicalUseCodes
+# - USCoreSimpleObservationCategory
+#- USCoreObservationCategory
+# - US Core QuestionnaireResponse Tags ValueSet
+# - USCoreClinicalResultObservationCategory
+# - USCoreTreatmentInterventionPreferenceValueSet
+# - USCoreClinicalNoteType
+# - USCoreLocationType
+# - USCoreSpecimenCondition
+# - USCoreScreeningAssessmentObservationCategory
+# - USCoreScreeningAssessmentObservationMaximumCategory
+# - USCoreSimpleObservationCategory
+#- USCoreConditionCodesCurrent
+#- USCorePMOServiceRequestCategory
+
+
+# CodeSystems
+# - USCoreObservationCategoryExtensionCodes
+# - USCoreTagsCodeSystem
+# - USCoreCategory
+# - USCoreTreatmentInterventionPreferenceCodeSystem
+#- USCoreCarePlanCategoryExtensionCodes
+
+
+# SearchParameters
+
+
+# Profiles === MOVED TO input/data/profile_metadata.csv TABLE ====
+#- USCoreAllergyIntolerance
+# - USCoreConditionEncounterDiagnosisProfile
+# - USCoreConditionProblemsHealthConcernsProfile

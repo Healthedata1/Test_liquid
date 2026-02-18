@@ -1,0 +1,46 @@
+{
+  "resourceType": "Requirements",
+  "id": "example-requirements",
+  "url": "http://example.org/fhir/Requirements/example",
+  "name": "ExampleRequirements",
+  "title": "Example Requirements Resource",
+  "_actor": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/display",
+          "valueString": "US Core Requestor (Servers including Certifying Systems)"
+        }
+      ]
+    }
+  ],
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+          "valueString": true
+        }
+      ],
+      "key": "stmt-01",
+      "conformance": [
+        "SHALL"
+      ],
+      "requirement": "The system **SHALL** allow the actor to search for patients by name."
+    },
+    {
+      "key": "stmt-02",
+      "conformance": [
+        "SHOULD"
+      ],
+      "requirement": "The system **SHOULD** display patient demographics in a summary view."
+    },
+    {
+      "key": "stmt-03",
+      "conformance": [
+        "MAY"
+      ],
+      "requirement": "The system **MAY** support bulk export of patient records."
+    }
+  ]
+}

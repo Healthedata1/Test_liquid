@@ -1,0 +1,12 @@
+- key: CONF-001
+  conformance: SHALL
+  requirement: '**SHALL** Aliquam tortor erat, semper tristique lorem quis, consequat convallis massa.'
+  certifiers_only: TRUE
+- key: CONF-002
+  conformance: SHOULD
+  requirement: Sed fermentum luctus diam, eget hendrerit odio pharetra in. Nullam feugiat imperdiet libero, et condimentum est. Morbi vel tempus erat. Donec ex nisl, maximus sed augue eu, **SHOULD** hendrerit imperdiet sem. Sed quis porttitor tortor. Integer maximus vitae dolor quis ultrices.
+  certifiers_only: FALSE
+- key: CONF-003
+  conformance: SHALL
+  requirement: '**SHALL** Aliquam egestas libero sed orci rutrum eleifend.'
+  certifiers_only: FALSE

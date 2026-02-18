@@ -1,0 +1,257 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.us.healthedata1-sandbox",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "url": "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",
+  "version": "0.1.0",
+  "name": "HealtheData_1Sandbox",
+  "title": "Health eData 1 Sandbox",
+  "status": "active",
+  "publisher": "HL7 International / Payer/Provider Information Exchange Work Group",
+  "contact": [
+    {
+      "name": "HL7 International / Payer/Provider Information Exchange Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/claims"
+        },
+        {
+          "system": "email",
+          "value": "pie@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "This is a **Healthedata1** sandbox for creation of resources and examples",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.us.healthedata1-sandbox",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "uscore",
+      "packageId": "hl7.fhir.us.core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "version": "6.1.0"
+    },
+    {
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "id": "hl7_fhir_uv_sdc"
+    },
+    {
+      "packageId": "hl7.fhir.uv.bulkdata",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata",
+      "id": "hl7_fhir_uv_bulkdata"
+    },
+    {
+      "packageId": "hl7.fhir.uv.smart-app-launch",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
+      "id": "hl7_fhir_uv_smart_app_launch"
+    },
+    {
+      "id": "vsac",
+      "packageId": "us.nlm.vsac",
+      "uri": "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac",
+      "version": "0.3.0"
+    },
+    {
+      "id": "uscdcphinvads",
+      "packageId": "us.cdc.phinvads",
+      "uri": "http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads",
+      "version": "0.12.0"
+    }
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "id": "TestExamples",
+        "name": "Test Examples",
+        "description": "Examples for Testing Stuff Out!!!"
+      }
+    ],
+    "resource": [
+      {
+        "reference": {
+          "reference": "Requirements/client-requirements"
+        },
+        "exampleBoolean": false,
+        "name": "Client Requirements"
+      },
+      {
+        "reference": {
+          "reference": "Patient/deceased-example"
+        },
+        "description": "This is a deceased patient example for the *US Core Patient Profile*.",
+        "name": "Deceased Patient Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+        "groupingId": "TestExamples"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/example-requirements"
+        },
+        "exampleBoolean": false,
+        "name": "Example Requirements Resource"
+      },
+      {
+        "reference": {
+          "reference": "Basic/example-requirements-backport"
+        },
+        "exampleBoolean": false,
+        "name": "example-requirements-backport"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-1"
+        },
+        "description": "This is a practitioner 1 example for the *US Core Practitioner Profile*.",
+        "name": "Practitioner 1 Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/server-requirements"
+        },
+        "exampleBoolean": false,
+        "name": "Server Requirements"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+              "valueCode": "draft"
+            }
+          ]
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide.html",
+          "title": "ImplementationGuide Resource",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Change Log",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../input/_resources/exp-params.json"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "true"
+      },
+      {
+        "code": "usage-stats-opt-out",
+        "value": "false"
+      },
+      {
+        "code": "path-output",
+        "value": "output"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "path-liquid",
+        "value": "liquid"
+      },
+      {
+        "code": "excludexml",
+        "value": "true"
+      },
+      {
+        "code": "excludejson",
+        "value": "false"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "true"
+      },
+      {
+        "code": "ipa-comparison",
+        "value": "{current}"
+      },
+      {
+        "code": "ips-comparison",
+        "value": "{current}"
+      },
+      {
+        "code": "propagate-status",
+        "value": "true"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/us/healthedata1-sandbox/history.html"
+      }
+    ]
+  }
+}

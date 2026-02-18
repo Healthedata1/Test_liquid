@@ -1,0 +1,92 @@
+resourceType: Basic
+id: example-requirements-backport
+meta:
+  profile:
+    - http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements
+
+# Basic.code identifies this as a backported Requirements resource
+code:
+  coding:
+    - system: http://hl7.org/fhir/fhir-types
+      code: Requirements
+      display: Requirements
+
+extension:
+  # Requirements.url
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url
+    valueUri: http://example.org/fhir/Requirements/example
+
+  # Requirements.name
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name
+    valueString: ExampleRequirements
+
+  # Requirements.title
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title
+    valueString: Example Requirements Resource
+
+  # Requirements.version
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version
+    valueString: 1.0.0
+
+  # Requirements.status
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status
+    valueCode: draft
+
+  # Requirements.date
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date
+    valueDateTime: "2026-02-13"
+
+  # Requirements.publisher
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher
+    valueString: Example Organization
+
+  # Requirements.jurisdiction
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction
+    valueCodeableConcept:
+      coding:
+        - system: urn:iso:std:iso:3166
+          code: US
+          display: United States of America
+
+  # Requirements.copyright
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.copyright
+    valueMarkdown: Copyright (c) 2026 Example Organization. All rights reserved.
+
+  # Requirements.actor
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor
+    extension:
+      # actor.key
+      - url: key
+        valueId: actor-01
+      # actor.reference (canonical reference with display)
+      - url: reference
+        valueReference:
+          display: Clinical End User
+
+  # Requirements.statement (first statement)
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement
+    extension:
+      # statement.key
+      - url: key
+        valueId: stmt-01
+      # statement.conformance
+      - url: conformance
+        valueCode: SHALL
+      # statement.requirement
+      - url: requirement
+        valueMarkdown: The system SHALL allow the actor to search for patients by name.
+      # statement.actor (references actor.key by id)
+      - url: actor
+        valueId: actor-01
+
+  # Requirements.statement (second statement)
+  - url: http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement
+    extension:
+      - url: key
+        valueId: stmt-02
+      - url: conformance
+        valueCode: SHOULD
+      - url: requirement
+        valueMarkdown: The system SHOULD display patient demographics in a summary view.
+      - url: actor
+        valueId: actor-01

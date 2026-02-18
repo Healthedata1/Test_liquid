@@ -3,9 +3,22 @@
 		  <!--<h2>SearchParameter: {{sp.name}}</h2>
 				<b> description</b> : {{sp.description | markdown | safe }}
 			<br/>-->
+			<h3> My Custom Liquid Script </h3>
 			<p>
-				<b> id</b> {{Patient.id}}</p>
-  {% include foo.html %}
+				<b>&#9758; id</b> {{Patient.id}}</p>
+
+			<p> and foo = ... {% include foo.html %} !!! </p>
+
+			<p>example meta data</p>
+			<ul>
+			{% for i in Patient.meta.extension %}
+				<li>{{ forLoop.index }}) {{ i.value }}  {{ i.value||upcase }}  </li>
+		    {% endfor %}
+			</ul>
+
+
+            prepend example:  {{ Patient.id || prepend: "foo" }}
+
 
 
   <!-- this include does not work :-(

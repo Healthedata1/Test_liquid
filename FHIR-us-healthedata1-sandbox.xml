@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="pie" url="http://hl7.org/fhir/us/healthedata1-sandbox">
+<version code="current" url=""/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Requirements/client-requirements" key="Requirements-client-requirements" name="Client Requirements"/>
+<artifact id="Patient/deceased-example" key="Patient-deceased-example" name="Deceased Patient Example"/>
+<artifact id="Requirements/example-requirements" key="Requirements-example-requirements" name="Example Requirements Resource"/>
+<artifact id="Practitioner/practitioner-1" key="Practitioner-practitioner-1" name="Practitioner 1 Example"/>
+<artifact id="Requirements/server-requirements" key="Requirements-server-requirements" name="Server Requirements"/>
+<artifact id="Basic/example-requirements-backport" key="Basic-example-requirements-backport" name="example-requirements-backport"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="changes" name="Change Log"/>
+<page key="downloads" name="Downloads"/>
+<page key="guidance" name="Guidance"/>
+<page key="index" name="Home"/>
+<page key="ImplementationGuide" name="ImplementationGuide Resource"/>
+<page key="toc" name="Table of Contents"/>
+</specification>

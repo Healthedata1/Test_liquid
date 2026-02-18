@@ -1,0 +1,4 @@
+ID,Context,Actor,Conformance Verb,Statement,Source
+CONF-001,Guidance,Server,SHALL,"SHALL Aliquam tortor erat, semper tristique lorem quis, consequat convallis massa.",guidance.html#CONF-001
+CONF-002,Guidance,Client,SHOULD,"Sed fermentum luctus diam, eget hendrerit odio pharetra in. Nullam feugiat imperdiet libero, et condimentum est. Morbi vel tempus erat. Donec ex nisl, maximus sed augue eu, SHOULD hendrerit imperdiet sem. Sed quis porttitor tortor. Integer maximus vitae dolor quis ultrices.",guidance.html#CONF-002
+CONF-003,Guidance,Server,SHALL,SHALL Aliquam egestas libero sed orci rutrum eleifend.,guidance.html#CONF-003
