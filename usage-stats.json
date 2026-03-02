@@ -52,13 +52,15 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
       "Basic",
-      "ImplementationGuide"
+      "ImplementationGuide",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "Basic",
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
+      "ImplementationGuide.definition.page.page",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
       "ImplementationGuide.definition"

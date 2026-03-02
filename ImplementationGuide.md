@@ -43,12 +43,17 @@ This publication includes IP covered under the following statements.
 
 * ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [Basic/example-requirements-backport](Basic-example-requirements-backport.md), [ClientRequirements](Requirements-client-requirements.md), [ExampleRequirements](Requirements-example-requirements.md), [HealtheData_1Sandbox](index.md) and [ServerRequirements](Requirements-server-requirements.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [Basic/example-requirements-backport](Basic-example-requirements-backport.md), [ClientRequirements](Requirements-client-requirements.md)... Show 4 more, [ExampleRequirements](Requirements-example-requirements.md), [HealtheData_1Sandbox](index.md), [ProcedureCodes](ValueSet-proc_codes.md) and [USCoreServerRequirements](Requirements-us-core-server.md)
 
 
 * Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see [https://www.cdc.gov/other/agencymaterials.html](https://www.cdc.gov/other/agencymaterials.html).
 
 * [CDC Race and Ethnicity](http://terminology.hl7.org/5.0.0/CodeSystem-CDCREC.html): [Patient/deceased-example](Patient-deceased-example.md)
+
+
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://terminology.hl7.org/5.0.0/CodeSystem-v3-loinc.html): [ProcedureCodes](ValueSet-proc_codes.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)

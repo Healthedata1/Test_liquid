@@ -19,8 +19,8 @@ BAR !!!
 
 example meta data
 
-* 1) Deceased Patient Example DECEASED PATIENT EXAMPLE 
-* 2) 
+* ) Deceased Patient Example DECEASED PATIENT EXAMPLE 
+* ) 
 
 This is a deceased patient example for the **US Core Patient Profile**.
 
@@ -36,114 +36,94 @@ prepend example: foodeceased-example
   "resourceType" : "Patient",
   "id" : "deceased-example",
   "meta" : {
-    "extension" : [
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Deceased Patient Example"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "This is a deceased patient example for the *US Core Patient Profile*."
-      }
-    ],
-    "profile" : [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-    ]
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Deceased Patient Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a deceased patient example for the *US Core Patient Profile*."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2106-3",
-            "display" : "White"
-          }
-        },
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2028-9",
-            "display" : "Asian"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Mixed"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  "extension" : [{
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
+      }
     },
     {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2186-5",
-            "display" : "Not Hispanic or Latino"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Not Hispanic or Latino"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-    }
-  ],
-  "identifier" : [
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2028-9",
+        "display" : "Asian"
+      }
+    },
     {
-      "use" : "usual",
-      "type" : {
-        "coding" : [
-          {
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "MR",
-            "display" : "Medical Record Number"
-          }
-        ],
-        "text" : "Medical Record Number"
-      },
-      "system" : "http://hospital.smarthealthit.org",
-      "value" : "55555555"
-    }
-  ],
+      "url" : "text",
+      "valueString" : "Mixed"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2186-5",
+        "display" : "Not Hispanic or Latino"
+      }
+    },
+    {
+      "url" : "text",
+      "valueString" : "Not Hispanic or Latino"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+  }],
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical Record Number"
+      }],
+      "text" : "Medical Record Number"
+    },
+    "system" : "http://hospital.smarthealthit.org",
+    "value" : "55555555"
+  }],
   "active" : true,
-  "name" : [
-    {
-      "family" : "Shaw",
-      "given" : ["Mary", "A."]
-    }
-  ],
-  "telecom" : [
-    {
-      "system" : "phone",
-      "value" : "555-555-5555",
-      "use" : "home"
-    },
-    {
-      "system" : "email",
-      "value" : "mary.shaw@example.com"
-    }
-  ],
+  "name" : [{
+    "family" : "Shaw",
+    "given" : ["Mary", "A."]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "555-555-5555",
+    "use" : "home"
+  },
+  {
+    "system" : "email",
+    "value" : "mary.shaw@example.com"
+  }],
   "gender" : "female",
   "birthDate" : "1937-10-21",
   "deceasedDateTime" : "2022-07-22",
-  "address" : [
-    {
-      "line" : ["49 Meadow St"],
-      "city" : "Mounds",
-      "state" : "OK",
-      "postalCode" : "74047",
-      "country" : "US",
-      "period" : {
-        "start" : "2016-12-06"
-      }
+  "address" : [{
+    "line" : ["49 Meadow St"],
+    "city" : "Mounds",
+    "state" : "OK",
+    "postalCode" : "74047",
+    "country" : "US",
+    "period" : {
+      "start" : "2016-12-06"
     }
-  ]
+  }]
 }
 
 ```

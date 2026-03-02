@@ -1,10 +1,10 @@
-# Server Requirements - Testing - Health eData 1 Sandbox v0.1.0
+# US Core Server Requirements - Testing - Health eData 1 Sandbox v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Server Requirements**
+* **US Core Server Requirements**
 
-## Requirements: Server Requirements - Testing 
+## Requirements: US Core Server Requirements - Testing 
 
 | | |
 | :--- | :--- |

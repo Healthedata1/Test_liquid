@@ -27,60 +27,46 @@ Test whether it creates links magically
   "resourceType" : "Practitioner",
   "id" : "practitioner-1",
   "meta" : {
-    "extension" : [
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-        "valueString" : "Practitioner 1 Example"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-        "valueMarkdown" : "This is a practitioner 1 example for the *US Core Practitioner Profile*."
-      }
-    ],
-    "profile" : [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
-    ]
-  },
-  "identifier" : [
-    {
-      "system" : "http://hl7.org/fhir/sid/us-npi",
-      "value" : "9941339100"
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Practitioner 1 Example"
     },
     {
-      "extension" : [
-        {
-          "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "https://www.usps.com",
-                "code" : "MA"
-              }
-            ],
-            "text" : "Massachusetts"
-          }
-        }
-      ],
-      "system" : "http://www.acme.org/practitioners",
-      "value" : "25456"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Bone",
-      "given" : ["Ronald"],
-      "prefix" : ["Dr"]
-    }
-  ],
-  "address" : [
-    {
-      "use" : "work",
-      "line" : ["1003 Healthcare Drive"],
-      "city" : "Amherst",
-      "state" : "MA",
-      "postalCode" : "01002"
-    }
-  ]
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "9941339100"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.usps.com",
+          "code" : "MA"
+        }],
+        "text" : "Massachusetts"
+      }
+    }],
+    "system" : "http://www.acme.org/practitioners",
+    "value" : "25456"
+  }],
+  "name" : [{
+    "family" : "Bone",
+    "given" : ["Ronald"],
+    "prefix" : ["Dr"]
+  }],
+  "address" : [{
+    "use" : "work",
+    "line" : ["1003 Healthcare Drive"],
+    "city" : "Amherst",
+    "state" : "MA",
+    "postalCode" : "01002"
+  }]
 }
 
 ```

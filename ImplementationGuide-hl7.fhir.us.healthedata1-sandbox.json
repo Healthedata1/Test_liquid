@@ -18,7 +18,7 @@
   "name" : "HealtheData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2026-02-18T02:49:37+00:00",
+  "date" : "2026-03-02T20:39:45+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -944,12 +944,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/proc_codes"
+      },
+      "name" : "Procedure Codes",
+      "description" : "This value set includes All LOINC codes defined as type \"clinical,\" therefore excluding laboratory tests, survey instruments, and claims documents. This includes observables such as vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, and cardiac echo, and includes discrete and narrative diagnostic observations and reports.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
       }],
       "reference" : {
-        "reference" : "Requirements/server-requirements"
+        "reference" : "Requirements/us-core-server"
       },
-      "name" : "Server Requirements",
+      "name" : "US Core Server Requirements",
       "exampleBoolean" : false
     }],
     "page" : {

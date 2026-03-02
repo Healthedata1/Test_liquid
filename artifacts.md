@@ -23,7 +23,15 @@ The following artifacts describe the specific requirements to be met by systems 
 | :--- |
 | [Client Requirements](Requirements-client-requirements.md) |
 | [Example Requirements Resource](Requirements-example-requirements.md) |
-| [Server Requirements](Requirements-server-requirements.md) |
+| [US Core Server Requirements](Requirements-us-core-server.md) |
+
+### Terminology: Value Sets 
+
+These define sets of codes used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Procedure Codes](ValueSet-proc_codes.md) | This value set includes All LOINC codes defined as type "clinical," therefore excluding laboratory tests, survey instruments, and claims documents. This includes observables such as vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, and cardiac echo, and includes discrete and narrative diagnostic observations and reports. |
 
 ### Example: Example Instances 
 

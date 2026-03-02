@@ -1,10 +1,10 @@
 HealtheData_1Sandbox : Validation Results
 =========================================
 
-err = 37, warn = 26, info = 13
+err = 41, warn = 26, info = 13
 $--
 Generated $--. FHIR version $-- for hl7.fhir.us.healthedata1-sandbox#$-- (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
- Build Errors : 12 / 6 / 3
+ Build Errors : 13 / 6 / 3
  /home/runner/work/Test_liquid/Test_liquid/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 6 / 1
  /home/runner/work/Test_liquid/Test_liquid/input/examples/patient-deceased-example : 5 / 1 / 4
  /home/runner/work/Test_liquid/Test_liquid/input/examples/practitioner-1 : 0 / 2 / 2
@@ -12,12 +12,13 @@ Generated $--. FHIR version $-- for hl7.fhir.us.healthedata1-sandbox#$-- (canoni
  /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5 : 5 / 0 / 2
  /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5-client : 3 / 0 / 2
  /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5-server : 10 / 0 / 2
+ /home/runner/work/Test_liquid/Test_liquid/input/resources/ValueSet-proc-codes : 4 / 0 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: This IG is version 4.0.1, while the IG 'us.nlm.vsac' is from version 4.0
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Requirements/client-requirements.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Requirements/example-requirements.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Requirements/server-requirements.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Requirements/us-core-server.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Basic/example-requirements-backport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-healthedata1-sandbox in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 ERROR: package.tgz: Error converting pacakge to R4B: Cannot invoke "org.hl7.fhir.r4.model.CanonicalType.hasValue()" because "src" is null
@@ -32,6 +33,7 @@ INFORMATION: downloads.html: The html source contains the word 'SHALL NOT' but i
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 235, column 8: The link 'schematrons.zip' for "Schematrons(compressed folder)" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/p/a at Line 248, column 750: The link '#.html' for "CSV" cannot be resolved (valid targets: [markdown-toc-examples, publish-box, markdown-toc-package-file, segment-post-footer, hl7-search, hl7-search-lnk, markdown-toc-downloadable-copy-of-specification, markdown-toc-consolidated-csv-and-excel-file-representations-of-profiles, requirements-table, family-logo, markdown-toc-implementation-guide-details, top, downloads, stripe, segment-footer, schematrons, segment-content, markdown-toc-requirements-table, segment-header, bottom, hl7-logo, downloadable-copy-of-specification, family-nav, markdown-toc-schematrons, consolidated-csv-and-excel-file-representations-of-profiles, ig-status, markdown-toc, examples, implementation-guide-details, hl7-nav, segment-navbar, package-file, segment-breadcrumb])
 ERROR: downloads.html#/html/body/div/div/div/div/div/p/a at Line 248, column 778: The link '#.html' for "EXCEL" cannot be resolved (valid targets: [markdown-toc-examples, publish-box, markdown-toc-package-file, segment-post-footer, hl7-search, hl7-search-lnk, markdown-toc-downloadable-copy-of-specification, markdown-toc-consolidated-csv-and-excel-file-representations-of-profiles, requirements-table, family-logo, markdown-toc-implementation-guide-details, top, downloads, stripe, segment-footer, schematrons, segment-content, markdown-toc-requirements-table, segment-header, bottom, hl7-logo, downloadable-copy-of-specification, family-nav, markdown-toc-schematrons, consolidated-csv-and-excel-file-representations-of-profiles, ig-status, markdown-toc, examples, implementation-guide-details, hl7-nav, segment-navbar, package-file, segment-breadcrumb])
+ERROR: downloads.html#/html/body/div/div/div/div/div/p/a at Line 248, column 820: The link 'Requirements-server-requirements.html' for "US Core Server Requirements Resource" cannot be resolved
 INFORMATION: guidance.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  [SHALL][CONF-0175] Aliquam tortor erat, semper tristique lorem quis, consequat convallis massa.  In tincidunt massa in sagittis viverra. Mauris vitae ultricies sapien. Nunc volutpat odio eget dolor malesuada, a feugiat felis ultrices. Phasellus tempor ultrices nisl, nec blandit velit ornare quis. Cras est arcu, placerat in turpis nec, pulvinar molestie mauris. Phasellus at neque nunc. Morbi tincidunt varius bibendum.'
 ERROR: index.html#/html/body/div/div/div/div/div/p/a at Line 303, column 206: The link 'package.r4b.tgz' for "R4B (hl7.fhir.us.healthedata1-sandbox.r4b)" cannot be resolved
 ERROR: index.html#/html/body/div/div/div/div/div/p/a at Line 306, column 210: The link 'package.r4b.tgz' for "R4B (hl7.fhir.us.healthedata1-sandbox.r4b)" cannot be resolved
@@ -96,14 +98,19 @@ INFORMATION: Requirements/client-requirements: Requirements.jurisdiction[0]: Ref
 ERROR: Requirements/client-requirements: Requirements.statement[99].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
 ERROR: /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5-client: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/client-requirements vs http://example.org/fhir/Requirements/client-requirements
 == input/resources/Requirements-R5-server.json ==
-ERROR: Requirements.where(url = 'http://example.org/fhir/Requirements/server-requirements'): Conformance resource /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5-server.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/server-requirements) does not match the URL (http://example.org/fhir/Requirements/server-requirements). Use the special-url parameter if you really mean for it not to match
-INFORMATION: Requirements/server-requirements: Requirements.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-ERROR: Requirements/server-requirements: Requirements.statement[10]: The extension http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement is not allowed to be used at this point (this element is [BackboneElement, Requirements.statement]; allowed for this version = e:ElementDefinition)
-ERROR: Requirements/server-requirements: Requirements.statement[11]: The extension http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement is not allowed to be used at this point (this element is [BackboneElement, Requirements.statement]; allowed for this version = e:ElementDefinition)
-ERROR: Requirements/server-requirements: Requirements.statement[19].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
-ERROR: Requirements/server-requirements: Requirements.statement[53].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
-ERROR: Requirements/server-requirements: Requirements.statement[60].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
-ERROR: Requirements/server-requirements: Requirements.statement[247].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
-ERROR: Requirements/server-requirements: Requirements.statement[304].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
-ERROR: Requirements/server-requirements: Requirements.statement[489].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
-ERROR: /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5-server: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/server-requirements vs http://example.org/fhir/Requirements/server-requirements
+ERROR: Requirements.where(url = 'http://hl7.org/fhir/us/core/Requirements/us-core-server'): Conformance resource /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5-server.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/us-core-server) does not match the URL (http://hl7.org/fhir/us/core/Requirements/us-core-server). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Requirements/us-core-server: Requirements.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+ERROR: Requirements/us-core-server: Requirements.statement[10]: The extension http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement is not allowed to be used at this point (this element is [BackboneElement, Requirements.statement]; allowed for this version = e:ElementDefinition)
+ERROR: Requirements/us-core-server: Requirements.statement[11]: The extension http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement is not allowed to be used at this point (this element is [BackboneElement, Requirements.statement]; allowed for this version = e:ElementDefinition)
+ERROR: Requirements/us-core-server: Requirements.statement[19].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
+ERROR: Requirements/us-core-server: Requirements.statement[53].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
+ERROR: Requirements/us-core-server: Requirements.statement[60].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
+ERROR: Requirements/us-core-server: Requirements.statement[247].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
+ERROR: Requirements/us-core-server: Requirements.statement[304].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
+ERROR: Requirements/us-core-server: Requirements.statement[489].extension[0].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot'
+ERROR: /home/runner/work/Test_liquid/Test_liquid/input/resources/Requirements-R5-server: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/us-core-server vs http://hl7.org/fhir/us/core/Requirements/us-core-server
+== input/resources/ValueSet-proc-codes.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/proc_codes'): Conformance resource /home/runner/work/Test_liquid/Test_liquid/input/resources/ValueSet-proc-codes.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/proc_codes) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/proc_codes). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet/proc_codes: ValueSet.id: Invalid Resource id: Invalid Characters ('proc_codes')
+ERROR: ValueSet/proc_codes: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/Test_liquid/Test_liquid/input/resources/ValueSet-proc-codes: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/proc_codes vs http://hl7.org/fhir/us/core/ValueSet/proc_codes

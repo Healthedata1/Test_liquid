@@ -34,9 +34,10 @@ ISO Maintains the copyright on the country codes, and controls it's use carefull
                 <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
 :                 <a href="Basic-example-requirements-backport.html">Basic/example-requirements-backport</a>
 ,                 <a href="Requirements-client-requirements.html">ClientRequirements</a>
-,                 <a href="Requirements-example-requirements.html">ExampleRequirements</a>
-,                 <a href="index.html">HealtheData_1Sandbox</a>
- and                 <a href="Requirements-server-requirements.html">ServerRequirements</a>
+                <span onClick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML" id="ips_1">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span>                </span>
+                <span style="display: none" id="ips2_1">
+, <a href="Requirements-example-requirements.html">ExampleRequirements</a>, <a href="index.html">HealtheData_1Sandbox</a>, <a href="ValueSet-proc_codes.html">ProcedureCodes</a> and <a href="Requirements-us-core-server.html">USCoreServerRequirements</a>                </span>
               </li>
 
 
@@ -68,11 +69,33 @@ Most of the information on the CDC and ATSDR websites is not subject to copyrigh
         </li>
 
         <li>
-This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
-          <div onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3" data-fhir="generated">
+This material contains content from           <a href="http://loinc.org">LOINC</a>
+. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the           <a href="http://loinc.org/license">license</a>
+. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.          <div onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3" data-fhir="generated">
              <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
           </div>
           <div style="display: none" id="ipp2_3">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-loinc.html">LOINC</a>
+:                 <a href="ValueSet-proc_codes.html">ProcedureCodes</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
+          <div onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_4">
 
             <ul>
 
@@ -97,7 +120,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2020+ HL7 International / Payer/Provider Information Exchange Work Group.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2026-02-18 
+          IG &copy; 2020+ HL7 International / Payer/Provider Information Exchange Work Group.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2026-03-02
           
           
                       Links: Table of Contents |
@@ -107,13 +130,13 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
                  | Version History |
                  CC0 |
                  Propose a change
-           
+          
          (        <a href="toc.html">src</a>
 )
       </li>
       <li>
 
-          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide   &reg;&copy; HL7 |
+          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide  &reg;&copy; HL7 |
              
                 CC0
          (        <a href="searchform.html">src</a>
@@ -124,11 +147,27 @@ Copyright (c) 2026 Example Organization. All rights reserved. (        <a href="
 )
       </li>
       <li>
+Copyright/Legal: This material contains content from LOINC (http://loinc.org). LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc (        <a href="ValueSet-proc_codes.html">src</a>
+)
+      </li>
+      <li>
 Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
 )
       </li>
       <li>
-This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license.html Show Usage 
+This material contains content from LOINC. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc. Show Usage
+
+
+* LOINC: ProcedureCodes
+
+
+
+
+ (        <a href="index.html">src</a>
+)
+      </li>
+      <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license.html Show Usage
 
 
 * identifierType: Patient/deceased-example
@@ -180,7 +219,7 @@ The           <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="http://snomed.info/sct">snomed.info</a>
@@ -192,7 +231,7 @@ The           <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="http://snomed.info/sct">snomed.info</a>
@@ -205,7 +244,7 @@ The           <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
@@ -217,7 +256,7 @@ The           <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
@@ -229,7 +268,7 @@ The           <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
@@ -241,7 +280,7 @@ The           <a href="https://httpwg.org/specs/rfc9111.html">HTTP Cache-Control
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a>
@@ -254,7 +293,7 @@ no units [are available systems SHOULD NOT supply the unit field]
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://www.nahdo.org/sites/default/files/2020-12/SourceofPaymentTypologyUsersGuideVersion9.2December2020.pdf">www.nahdo.org</a>
@@ -266,7 +305,7 @@ Implementers should refer to the           <a href="https://www.nahdo.org/sites/
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://wiki.ihe.net/index.php/XDS_classCode_Metadata_Coding_System">wiki.ihe.net</a>
@@ -278,7 +317,7 @@ Implementers should refer to the           <a href="https://www.nahdo.org/sites/
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -290,7 +329,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -302,7 +341,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -314,7 +353,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -327,7 +366,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -339,7 +378,7 @@ Non-certifying systems[, systems that are not participating in the ONC Health IT
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -351,7 +390,7 @@ Non-certifying systems[, systems that are not participating in the ONC Health IT
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -363,7 +402,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf">asapnet.org</a>
@@ -375,7 +414,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=108252007&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
@@ -386,7 +425,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386053000&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
@@ -397,7 +436,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410606002&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
@@ -408,7 +447,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=387713003&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
@@ -419,7 +458,7 @@ Systems SHOULD follow the           <a href="https://asapnet.org/wp-content/uplo
       </tr>
       <tr>
         <td>
-          <a href="Requirements-server-requirements.html">web</a>
+          <a href="Requirements-us-core-server.html">web</a>
         </td>
         <td>
           <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=363679005&amp;edition=MAIN/2024-10-01&amp;release=&amp;languages=en&amp;latestRedirect=false">browser.ihtsdotools.org</a>
@@ -448,9 +487,10 @@ ISO Maintains the copyright on the country codes, and controls it's use carefull
                 <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
 :                 <a href="Basic-example-requirements-backport.html">Basic/example-requirements-backport</a>
 ,                 <a href="Requirements-client-requirements.html">ClientRequirements</a>
-,                 <a href="Requirements-example-requirements.html">ExampleRequirements</a>
-,                 <a href="index.html">HealtheData_1Sandbox</a>
- and                 <a href="Requirements-server-requirements.html">ServerRequirements</a>
+                <span onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML" id="ips_1">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span>                </span>
+                <span style="display: none" id="ips2_1">
+, <a href="Requirements-example-requirements.html">ExampleRequirements</a>, <a href="index.html">HealtheData_1Sandbox</a>, <a href="ValueSet-proc_codes.html">ProcedureCodes</a> and <a href="Requirements-us-core-server.html">USCoreServerRequirements</a>                </span>
               </li>
 
 

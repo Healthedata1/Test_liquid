@@ -40,7 +40,7 @@
   fhir:name [ fhir:v "HealtheData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-02-18T02:49:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-02T20:39:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1969,14 +1969,35 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/proc_codes> ;
+         fhir:reference [ fhir:v "ValueSet/proc_codes" ]
+       ] ;
+       fhir:name [ fhir:v "Procedure Codes" ] ;
+       fhir:description [ fhir:v "This value set includes All LOINC codes defined as type \"clinical,\" therefore excluding laboratory tests, survey instruments, and claims documents. This includes observables such as vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, and cardiac echo, and includes discrete and narrative diagnostic observations and reports." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Requirements"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/server-requirements> ;
-         fhir:reference [ fhir:v "Requirements/server-requirements" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/us-core-server> ;
+         fhir:reference [ fhir:v "Requirements/us-core-server" ]
        ] ;
-       fhir:name [ fhir:v "Server Requirements" ] ;
+       fhir:name [ fhir:v "US Core Server Requirements" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2212,7 +2233,9 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/Practitioner/practitioner-1> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/server-requirements> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/proc_codes> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Requirements/us-core-server> a fhir:Us .
 
 # -------------------------------------------------------------------------------------
 

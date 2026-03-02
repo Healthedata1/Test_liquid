@@ -1,1 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://hl7.org/fhir/us/core/ValueSet/proc_codes,0.1.0,active,,ProcedureCodes,Procedure Codes,"This value set includes All LOINC codes defined as type ""clinical,"" therefore excluding laboratory tests, survey instruments, and claims documents. This includes observables such as vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, and cardiac echo, and includes discrete and narrative diagnostic observations and reports.",,"LOINC"
