@@ -1,8 +1,8 @@
 resourceType: Requirements
-id: server-requirements
-url: http://example.org/fhir/Requirements/server-requirements
-name: ServerRequirements
-title: Server Requirements
+id: us-core-server
+url: http://hl7.org/fhir/us/core/Requirements/us-core-server
+name: USCoreServerRequirements
+title: US Core Server Requirements
 _actor:
   - extension:
       - url: http://hl7.org/fhir/StructureDefinition/display

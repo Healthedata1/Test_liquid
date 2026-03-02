@@ -8,7 +8,8 @@
 <artifact id="Patient/deceased-example" key="Patient-deceased-example" name="Deceased Patient Example"/>
 <artifact id="Requirements/example-requirements" key="Requirements-example-requirements" name="Example Requirements Resource"/>
 <artifact id="Practitioner/practitioner-1" key="Practitioner-practitioner-1" name="Practitioner 1 Example"/>
-<artifact id="Requirements/server-requirements" key="Requirements-server-requirements" name="Server Requirements"/>
+<artifact id="ValueSet/proc_codes" key="ValueSet-proc_codes" name="Procedure Codes"/>
+<artifact id="Requirements/us-core-server" key="Requirements-us-core-server" name="US Core Server Requirements"/>
 <artifact id="Basic/example-requirements-backport" key="Basic-example-requirements-backport" name="example-requirements-backport"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>

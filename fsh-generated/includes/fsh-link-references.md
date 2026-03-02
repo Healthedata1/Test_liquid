@@ -3,4 +3,5 @@
 [ExampleRequirements]: Requirements-example-requirements.html
 [example-requirements-backport]: Basic-example-requirements-backport.html
 [practitioner-1]: Practitioner-practitioner-1.html
-[ServerRequirements]: Requirements-server-requirements.html
+[ProcedureCodes]: ValueSet-proc_codes.html
+[USCoreServerRequirements]: Requirements-us-core-server.html
