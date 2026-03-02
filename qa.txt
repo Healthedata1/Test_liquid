@@ -3,7 +3,7 @@ HealtheData_1Sandbox : Validation Results
 
 err = 41, warn = 26, info = 13
 IG Publisher Version: 2.1.2
-Generated Mon Mar 02 20:42:29 UTC 2026. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
+Generated Mon Mar 02 21:07:33 UTC 2026. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
  Build Errors : 13 / 6 / 3
  /home/runner/work/Test_liquid/Test_liquid/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 6 / 1
  /home/runner/work/Test_liquid/Test_liquid/input/examples/patient-deceased-example : 5 / 1 / 4
